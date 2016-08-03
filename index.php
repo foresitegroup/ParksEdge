@@ -125,29 +125,19 @@
         </div>
       </div>
     </div>
-
-    <script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
-    <script type="text/javascript" src="inc/jquery.cycle2.carousel.min.js"></script>
-    <script type="text/javascript" src="inc/jquery.cycle2.carousel.slidenumbers.js"></script>
-
+    
+    <link rel="stylesheet" href="inc/slick.css">
+    <script type="text/javascript" src="inc/slick.min.js"></script>
+    <script type="text/javascript" src="inc/slick.init.js"></script>
     <div class="home-slider">
-      <div class="caro">
-        <img src="images/home-slider1.jpg" alt="">
-        <img src="images/home-slider2.jpg" alt="">
-        <img src="images/home-slider3.jpg" alt="">
-        <img src="images/home-slider4.jpg" alt="">
-        <img src="images/home-slider5.jpg" alt="">
-        <img src="images/home-slider6.jpg" alt="">
-        <img src="images/home-slider7.jpg" alt="">
-        <img src="images/home-slider8.jpg" alt="">
-      </div>
-
-      <div class="slider-buttons">
-        <div class="site-width">
-          <a href="#" id="prev"><i class="fa fa-play-circle-o fa-rotate-180" aria-hidden="true"></i></a>
-          <a href="#" id="next"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
-        </div>
-      </div>
+      <img src="images/home-slider1.jpg" alt="">
+      <img src="images/home-slider2.jpg" alt="">
+      <img src="images/home-slider3.jpg" alt="">
+      <img src="images/home-slider4.jpg" alt="">
+      <img src="images/home-slider5.jpg" alt="">
+      <img src="images/home-slider6.jpg" alt="">
+      <img src="images/home-slider7.jpg" alt="">
+      <img src="images/home-slider8.jpg" alt="">
     </div>
 
     <div class="home-contact">
@@ -158,10 +148,11 @@
         <a href="#" class="button">CONTACT BY EMAIL</a>
       </div>
     </div>
+    
 
+    <script type="text/javascript" src="inc/slick.init.testimonials.js"></script>
     <div class="home-testimonials">
-      <div class="cycle-slideshow site-width" data-cycle-slides="> div" data-cycle-timeout="8000" data-cycle-pause-on-hover="true" data-cycle-pager-template="<span></span>">
-        <p class="cycle-pager"></p>
+      <div class="site-width">
         <div>
           "Thank you for all you do to keep us parents organized and on track. We barely arrive in the morning with our wits - let alone the kids. It's great to be met by smiling faces who know each and every child by name. Thanks!"<br>
           <br>
@@ -175,36 +166,32 @@
         </div>
 
         <div>
-          "This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long."<br>
+          "This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long. This is a testimonial that is five lines long."<br>
           <br>
           <div class="attr">- PEP Parent</div>
         </div>
 
         <div>
-          "This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long."<br>
+          "This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long. This is a testimonial that is six lines long."<br>
           <br>
           <div class="attr">- PEP Parent</div>
         </div>
 
         <div>
-          "This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long."<br>
+          "This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long. This is a testimonial that is seven lines long."<br>
           <br>
           <div class="attr">- PEP Parent</div>
         </div>
       </div>
     </div>
-
+    
     <div class="home-accreditation">
       <div class="site-width">
         <div class="col1">
           <h1>NAC ACCREDITATION</h1>
           <strong>The Association for Early Learning Leaders</strong>, formerly known as the National Association of Child Care Professionals is a nonprofit organization committed to excellence by promoting leadership development and enhancing program quality through the National Accreditation Commission's standards.<br>
-          <br>
-          <br>
 
           <a href="#">WHAT IS THIS?</a><br>
-          <br>
-          <br>
 
           <img src="images/logo-nac.png" alt="NAC">
         </div>
@@ -212,12 +199,8 @@
         <div class="col2">
           <h1>YOUNGSTAR 5 STAR PROVIDER RATING</h1>
           <strong>YoungStar</strong> is Wisconsin's child care quality rating and improvement system. We give parents the tools and information they need to raise happy, healthy kids. And, we help preschools, home-based programs, learning centers, and other child care providers give children safe, nurturing places to grow.<br>
-          <br>
-          <br>
 
           <a href="#">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
-          <br>
-          <br>
 
           <img src="images/logo-youngstar.png" alt="YoungStar">
         </div>
@@ -245,7 +228,7 @@
 
         <div class="one-fourth">
           <h2>STAY INFORMED</h2>
-          with our Monthly Newsletter to recieve details on news, events and important dates.
+          with our Monthly Newsletter to recieve details on news, events and important dates.<br>
           <a href="#" class="button-border">SIGN-UP!</a>
         </div>
 
