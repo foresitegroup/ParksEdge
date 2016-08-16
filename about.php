@@ -1,0 +1,131 @@
+<?php
+$PageTitle = "About Park's Edge";
+include "header.php";
+?>
+
+<div class="banner" style="background-image: url(images/banner-about.jpg);">
+  <div class="site-width">
+    <strong>Park's Edge Preschool's <a href="#">Vision</a></strong> is to provide families with exceptional child care services in a safe and loving learning environment. Our <a href="#"><strong>Mission</strong></a> is to provide an outstanding Christian environment that focuses on the development of each individual child; spiritually, morally, physically, mentally, socially and emotionally.
+  </div>
+
+  <div class="torn-header-white"></div>
+</div>
+
+<div class="about site-width">
+  <div class="larger">As a non-profit organization at Park's Edge Preschool &amp; Child Care Center, we continually strive to be a valuable extension of the families that we serve. We seek to form a partnership with parents to create and maintain a superior learning environment for their Christian Values and traditions and invite you to come and see this "home away from home" for your children to learn about our special programs developed specifically to meet your families needs.<br>
+  <br>
+
+  We employee a highly trained, diverse and enthusiastic staff around a 12-hour day at Park's Edge Preschool, scheduling staff in accordance with state licensing requirements. We offer a variety of programs that accommodate children from six weeks through twelve years of age. The Center is a special place distinctly designed with a number of features to promote an optimal atmosphere for the individual growth and development of your child.</div><br>
+  <br>
+  <br>
+
+  <h1>PEP LEADERSHIP</h1>
+  <br>
+
+  <span class="about-director">Ellen Kvalheim, <span class="bluetext">Center Director</span></span><br>
+  <div class="two-thirds">
+    "For over 30 years, my professional experience encompasses working with children of all age groups, in various child care settings. My background includes owning and directing a group childcare center, which continues to successfully operate today. I chose directing at Park's Edge Preschool because it offered a Christian environment with dedicated staff and an excellent reputation.<br>
+    <br>
+
+    I earned an Early Childhood Administrative Credential from UWM and a Bachelor's Degree, with distinction, in Human Services from Ottawa University. Registry Level 15.<br>
+    <br>
+
+    I am proud of the accomplishments that the center and staff have made in the process; which is continual. I am anxious to meet and serve all the families at PEP and I look forward to a long-term commitment as the Director at Park's Edge Preschool."
+  </div>
+
+  <div class="one-third last">
+    <div class="team" style="background-image: url(images/team-ellen.jpg);"></div>
+  </div>
+
+  <div style="clear: both;"></div><br>
+  <br>
+  <br>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.team-link').on('touchstart touchend', function(e){
+        e.preventDefault();
+        $(this).toggleClass('hover');
+      });
+    });
+  </script>
+  <div class="one-third">
+    <div class="team" style="background-image: url(images/team-kristin.jpg);">
+      <a class="team-link">
+        <div class="team-hover-content">
+          "I truly enjoy working at Park's Edge, it is a pleasure to take care of the children and encourage them as they grow and mature throughout the years."
+        </div>
+      </a>
+    </div>
+
+    <div class="team-name">Kristin Burr</div>
+    <div class="team-title">Assistant Director</div>
+  </div>
+
+  <div class="one-third">
+    <div class="team" style="background-image: url(images/team-rhianna.jpg);">
+      <a class="team-link">
+        <div class="team-hover-content">
+          "Lorem ipsum tulaliloo po kass ti aamoo! Jeje tatata bala tu chasy tatata bala tu tank yuuu! Hahaha. Poopayee wiiiii po kass aaaaaah chasy hahaha."
+        </div>
+      </a>
+    </div>
+
+    <div class="team-name">Rhianna Corso</div>
+    <div class="team-title">Curriculum Coordinator</div>
+  </div>
+
+  <div class="one-third last">
+    <div class="team" style="background-image: url(images/team-melinda.jpg);">
+      <a class="team-link">
+        <div class="team-hover-content">
+          "Lorem ipsum potatoooo hana dul sae pepete jeje jeje poopayee jiji poulet tikka masala hana dul sae. Tatata bala tu poulet tikka masala."
+        </div>
+      </a>
+    </div>
+
+    <div class="team-name">Melinda</div>
+    <div class="team-title">Safety Coordinator &amp; Toddler Teacher</div>
+  </div>
+</div>
+
+<div class="about-testimonials">
+  <div class="site-width">
+    "Thank you for all you do to keep us parents organized and on track. We barely arrive in the morning with our wits - let alone the kids. It's great to be met by smiling faces who know each and every child by name. Thanks!"<br>
+    <br>
+    <div class="attr">- PEP Parent</div>
+  </div>
+</div>
+
+<div class="about-accreditation">
+  <div class="site-width">
+    <div class="col1">
+      <img src="images/logo-nac-square.png" alt="National Accreditation Commission"><br>
+
+      <strong>The Association for Early Learning Leaders</strong>, formerly known as the National Association of Child Care Professionals is a nonprofit organization committed to excellence by promoting leadership development and enhancing program quality through the National Accreditation Commission's standards.<br>
+
+      <a href="#">WHAT IS THIS?</a><br>
+    </div>
+
+    <div class="col2">
+      <img src="images/logo-youngstar.png" alt="YoungStar"><br>
+
+      <strong>5 Star YoungStar Rating! YoungStar</strong> is Wisconsin's child care quality rating and improvement system. We give parents the tools and information they need to raise happy, healthy kids. And, we help preschools, home-based programs, learning centers, and other child care providers give children safe, nurturing places to grow.<br>
+
+      <a href="#">LEARN MORE <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section">
+  <div class="site-width">
+    For enrollment or to learn more about Park's Edge Preschool email or give us a call at <strong class="orangetext">414-427-9561</strong><br>
+    <br>
+
+    <a href="#" class="button">CONTACT BY EMAIL</a>
+  </div>
+
+  <div class="torn-footer"></div>
+</div>
+
+<?php include "footer.php"; ?>
