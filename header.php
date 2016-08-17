@@ -52,11 +52,11 @@
               <ul>
                 <li><a href="#">Mission &amp; Vision</a></li>
                 <li><a href="#">Leadership &amp; Staff</a></li>
-                <li><a href="#">Testimonials</a></li>
+                <li><a href="testimonials.php">Testimonials</a></li>
                 <li><a href="#">Accreditation</a></li>
               </ul>
             </li>
-            <li><a href="#">Programs</a></li>
+            <li><a href="programs.php">Programs</a></li>
             <li><a href="#">Tour</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Parents</a></li>

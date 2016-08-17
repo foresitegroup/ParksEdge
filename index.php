@@ -65,7 +65,7 @@ include "header.php";
 <link rel="stylesheet" href="inc/slick.css">
 <script type="text/javascript" src="inc/slick.min.js"></script>
 <script type="text/javascript" src="inc/slick.init.slider.js"></script>
-<div class="home-slider">
+<div class="image-slider">
   <img src="images/home-slider1.jpg" alt="">
   <img src="images/home-slider2.jpg" alt="">
   <img src="images/home-slider3.jpg" alt="">

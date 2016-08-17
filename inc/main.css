@@ -26,7 +26,7 @@ IMG {
 
 HR {
   border: none 0;
-  border-top: 1pt solid #000000; /* the border */
+  border-top: 1pt solid #EBEBEB; /* the border */
   height: 1pt; /* whatever the total width of the border-top and border-bottom equal */
 }
 
@@ -51,6 +51,11 @@ H1, H2 {
 
 H2 {
   font-size: 300%;
+}
+
+UL, OL {
+  margin: 0 0 0 0.7em;
+  padding: 0 0 0 0.7em;
 }
 
 .site-width {
@@ -97,6 +102,7 @@ A.button.orange:active {
 }
 
 .bluetext { color: #4FC3F1; }
+.darkbluetext { color: #112C37; }
 .orangetext { color: #F98202; }
 .larger { font-size: 106.25%; }
 
@@ -446,31 +452,32 @@ A#return-to-top:active {
   color: #F98202;
 }
 
-.home-slider {
+.image-slider {
   overflow: hidden;
   position: relative;
 }
 
-.home-slider A.slick-arrow:link,
-.home-slider A.slick-arrow:visited {
+.image-slider A.slick-arrow:link,
+.image-slider A.slick-arrow:visited {
   position: absolute;
   top: 42%;
   z-index: 1000;
   font-size: 40px;
   line-height: 1em;
   color: #FFFFFF;
+  outline: none;
 }
 
-.home-slider .prev.slick-arrow {
+.image-slider .prev.slick-arrow {
   left: 1%;
 }
 
-.home-slider .next.slick-arrow {
+.image-slider .next.slick-arrow {
   right: 1%;
 }
 
-.home-slider A.slick-arrow:hover,
-.home-slider A.slick-arrow:active {
+.image-slider A.slick-arrow:hover,
+.image-slider A.slick-arrow:active {
   color: #F98202;
 }
 
@@ -488,12 +495,33 @@ A#return-to-top:active {
 .contact-section {
   background: #FFFFFF;
   position: relative;
+  padding-bottom: calc(2.2em + 20px);
+}
+
+.contact-section.blue {
+  background: #4FC3F1;
+  color: #FFFFFF;
+  padding: 3em 0 calc(3em + 20px);
 }
 
 .contact-section .orangetext A,
 .home-contact .orangetext A {
   color: #F98202;
 }
+
+.contact-section A:link,
+.contact-section A:visited {
+  color: #112C37;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.contact-section A:hover,
+.contact-section A:active {
+  color: #FFFFFF;
+}
+
+.contact-section .darkbluetext A { text-decoration: none; }
 
 .about-testimonials,
 .home-testimonials {
@@ -802,6 +830,89 @@ A.team-link.hover {
   color: #4FC3F1;
 }
 
+.programs-slider {
+  position: relative;
+}
+
+.programs-slider .banner .site-width {
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-size: 268.75%;
+  line-height: 1em;
+  box-sizing: border-box;
+  padding: 0 7%;
+}
+
+.programs-menu {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 380px;
+  left: 0;
+  right: 0;
+  width: 1000px;
+}
+
+.programs-menu LI {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 156.25%;
+  line-height: 1em;
+  color: #112C37;
+}
+
+.programs-menu LI.slick-active,
+.programs-menu LI:hover {
+  color: #4FC3F1;
+}
+
+.program-content {
+  margin-top: 95px;
+  border-top: 1px solid #EBEBEB;
+  padding: 3em 0;
+  font-size: 106.25%;
+}
+
+.program-content .intro {
+  font-weight: bold;
+  font-size: 117.64%;
+  color: #112C37;
+}
+
+.program-content LI {
+  line-height: 1.8em;
+  padding-bottom: 1em;
+}
+
+.program-content .footnote {
+  font-size: 82.35%;
+  font-weight: 300;
+}
+
+.program-content .links {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.program-content .links A.pricing:link,
+.program-content .links A.pricing:visited {
+  color: #112C37;
+  font-weight: 800;
+  font-size: 18px;
+  margin-left: 4em;
+}
+
+.program-content .links A.pricing:hover,
+.program-content .links A.pricing:active {
+  color: #4FC3F1;
+}
+
+
 
 @media only screen and (max-width: 1260px) {
   /* That darn Donate button.... */
@@ -817,7 +928,7 @@ A.team-link.hover {
 }
 
 @media only screen and (max-width: 1000px) {
-  .site-width { width: 96%; }
+  .site-width, .programs-menu { width: 96%; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -928,8 +1039,8 @@ A.team-link.hover {
     margin-top: 0;
   }
 
-  .home-slider A.slick-arrow:hover,
-  .home-slider A.slick-arrow:active {
+  .image-slider A.slick-arrow:hover,
+  .image-slider A.slick-arrow:active {
     color: #FFFFFF;
   }
 

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.home-slider').slick({
+  $('.image-slider').slick({
     prevArrow: '<a href="#" class="prev"><i class="fa fa-play-circle-o fa-rotate-180" aria-hidden="true"></i></a>',
     nextArrow: '<a href="#" class="next"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>',
     slidesToShow: 3,
