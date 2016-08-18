@@ -11,7 +11,7 @@ include "header.php";
 <div class="programs-slider">
   <div>
     <div class="banner" style="background-image: url(images/banner-programs-christian.jpg);">
-      <div class="site-width">
+      <div class="site-width big">
         Our Programs are NAC Accredited + 5 Star YoungStar Rating!
       </div>
 
@@ -58,7 +58,7 @@ include "header.php";
 
   <div>
     <div class="banner" style="background-image: url(images/banner-programs-infant-toddler.jpg);">
-      <div class="site-width">
+      <div class="site-width big">
         Our Programs are NAC Accredited + 5 Star YoungStar Rating!
       </div>
 
@@ -108,7 +108,7 @@ include "header.php";
 
   <div>
     <div class="banner" style="background-image: url(images/banner-programs-pre-school.jpg);">
-      <div class="site-width">
+      <div class="site-width big">
         Our Programs are NAC Accredited + 5 Star YoungStar Rating!
       </div>
 
@@ -150,7 +150,7 @@ include "header.php";
 
   <div>
     <div class="banner" style="background-image: url(images/banner-programs-school-age.jpg);">
-      <div class="site-width">
+      <div class="site-width big">
         Our Programs are NAC Accredited + 5 Star YoungStar Rating!
       </div>
 
@@ -158,7 +158,7 @@ include "header.php";
     </div>
 
     <div class="site-width program-content">
-      The school age program is available for children before and/or after school, days off and holidays, school closing and summer. Additional programs are available for school-age children through the age of twelve. Planned activities and secure, large special play areas allow the children the time and space to learn, play, and have fun. Transportation is available to and from many neighboring schools.<br>
+      <span class="intro">The school age program is available for children before and/or after school, days off and holidays, school closing and summer. Additional programs are available for school-age children through the age of twelve. Planned activities and secure, large special play areas allow the children the time and space to learn, play, and have fun. Transportation is available to and from many neighboring schools.</span><br>
       <br>
 
       The program offers the help and time for children to complete homework, art experiences, games and other activities. We understand that children are in a structured environment all day; therefore we provide free choice time to expend energy while providing a productive and safe environment. The children receive an afternoon snack and can choose their activity during free choice time. After free choice, children will go outside and will be encouraged to participate in group outdoor activities or to play in small groups. If parents wish, homework time will be available along with the help to complete it.<br>
@@ -185,7 +185,10 @@ include "header.php";
 
 <div class="contact-section blue">
   <div class="site-width">
-    For enrollment or to learn more about Park's Edge Preschool <a href="#">email</a> or give us a call at <strong class="darkbluetext">414-427-9561</strong>
+    For enrollment or to learn more about Park's Edge Preschool email or give us a call at <strong class="darkbluetext">414-427-9561</strong><br>
+    <br>
+
+    <a href="#" class="button">CONTACT BY EMAIL</a>
   </div>
 
   <div class="torn-footer"></div>
