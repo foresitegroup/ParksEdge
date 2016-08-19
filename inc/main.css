@@ -105,6 +105,7 @@ A.button.orange:active {
 .darkbluetext { color: #112C37; }
 .orangetext { color: #F98202; }
 .larger { font-size: 106.25%; }
+.centered { text-align: center; }
 
 .one-half {
   float: left;
@@ -312,6 +313,10 @@ A#return-to-top:active {
   position: relative;
 }
 
+.banner.banner-tour {
+  height: 520px;
+}
+
 .banner .site-width,
 .home-banner .home-banner-slide .site-width {
   position: relative;
@@ -337,6 +342,14 @@ A#return-to-top:active {
   padding: 0 3%;
 }
 
+.banner .site-width.centered {
+  text-align: center;
+}
+
+.banner.banner-tour .site-width {
+  font-size: 137.5%;
+}
+
 .home-banner .home-banner-slide .site-width H1 {
   color: #FFFFFF;
   font-size: 43px;
@@ -354,6 +367,17 @@ A#return-to-top:active {
 }
 
 .banner A:hover, .banner A:active {
+  color: #FFFFFF;
+}
+
+.bannermore {
+  margin-top: 3em;
+  font-weight: 800;
+  font-size: 81.81%;
+  color: #F98202;
+}
+
+.bannermore .fa {
   color: #FFFFFF;
 }
 
@@ -974,6 +998,33 @@ A.team-link.hover {
 .program-content .links A.pricing:hover,
 .program-content .links A.pricing:active {
   color: #4FC3F1;
+}
+
+.tour {
+  padding: 4.5em 0 6em;
+}
+
+.tour-footer-banner {
+  background: url(../images/tour-footer-banner.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 2.7em 0;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-size: 268.75%;
+  line-height: 1.5em;
+}
+
+.tour-footer-banner A:link,
+.tour-footer-banner A:visited {
+  color: #33CC33;
+  text-decoration: underline;
+}
+
+.tour-footer-banner A:hover,
+.tour-footer-banner A:active {
+  color: #F98202;
 }
 
 

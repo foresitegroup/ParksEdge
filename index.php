@@ -56,15 +56,15 @@ include "header.php";
       <br>
       <br>
 
-      <a href="#" class="button orange">PROGRAM DETAILS</a>
+      <a href="programs.php" class="button orange">PROGRAM DETAILS</a>
       <a href="#" class="pricing">PRICING +</a>
     </div>
   </div>
 </div>
 
-<link rel="stylesheet" href="inc/slick.css">
-<script type="text/javascript" src="inc/slick.min.js"></script>
-<script type="text/javascript" src="inc/slick.init.slider.js"></script>
+<link rel="stylesheet" href="inc/slick/slick.css">
+<script type="text/javascript" src="inc/slick/slick.min.js"></script>
+<script type="text/javascript" src="inc/slick/slick.init.slider.js"></script>
 <div class="image-slider">
   <img src="images/home-slider1.jpg" alt="">
   <img src="images/home-slider2.jpg" alt="">
@@ -85,7 +85,7 @@ include "header.php";
   </div>
 </div>
 
-<script type="text/javascript" src="inc/slick.init.testimonials.js"></script>
+<script type="text/javascript" src="inc/slick/slick.init.testimonials.js"></script>
 <div class="home-testimonials">
   <div class="site-width">
     <div>
@@ -126,7 +126,7 @@ include "header.php";
       <h1>NAC ACCREDITATION</h1>
       <strong>The Association for Early Learning Leaders</strong>, formerly known as the National Association of Child Care Professionals is a nonprofit organization committed to excellence by promoting leadership development and enhancing program quality through the National Accreditation Commission's standards.<br>
 
-      <a href="#">WHAT IS THIS?</a><br>
+      <a href="http://www.earlylearningleaders.org/?page=accreditation">WHAT IS THIS?</a><br>
 
       <img src="images/logo-nac.png" alt="NAC">
     </div>
@@ -134,8 +134,13 @@ include "header.php";
     <div class="col2">
       <h1>YOUNGSTAR 5 STAR PROVIDER RATING</h1>
       <strong>YoungStar</strong> is Wisconsin's child care quality rating and improvement system. We give parents the tools and information they need to raise happy, healthy kids. And, we help preschools, home-based programs, learning centers, and other child care providers give children safe, nurturing places to grow.<br>
-
-      <a href="#">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
+      
+      <script src="inc/swipebox/jquery.swipebox.min.js"></script>
+      <link rel="stylesheet" href="inc/swipebox/swipebox.css">
+      <script type="text/javascript">
+        $(document).ready(function() { $('.swipebox').swipebox({autoplayVideos: true, hideBarsDelay : 0}); });
+      </script>
+      <a href="https://www.youtube.com/watch?v=T3s7bcOmHpg" class="swipebox">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
 
       <img src="images/logo-youngstar.png" alt="YoungStar">
     </div>

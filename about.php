@@ -104,15 +104,20 @@ include "header.php";
 
       <strong>The Association for Early Learning Leaders</strong>, formerly known as the National Association of Child Care Professionals is a nonprofit organization committed to excellence by promoting leadership development and enhancing program quality through the National Accreditation Commission's standards.<br>
 
-      <a href="#">WHAT IS THIS?</a><br>
+      <a href="http://www.earlylearningleaders.org/?page=accreditation">WHAT IS THIS?</a><br>
     </div>
 
     <div class="col2">
       <img src="images/logo-youngstar.png" alt="YoungStar"><br>
 
       <strong>5 Star YoungStar Rating! YoungStar</strong> is Wisconsin's child care quality rating and improvement system. We give parents the tools and information they need to raise happy, healthy kids. And, we help preschools, home-based programs, learning centers, and other child care providers give children safe, nurturing places to grow.<br>
-
-      <a href="#">LEARN MORE <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
+      
+      <script src="inc/swipebox/jquery.swipebox.min.js"></script>
+      <link rel="stylesheet" href="inc/swipebox/swipebox.css">
+      <script type="text/javascript">
+        $(document).ready(function() { $('.swipebox').swipebox({autoplayVideos: true, hideBarsDelay : 0}); });
+      </script>
+      <a href="https://www.youtube.com/watch?v=T3s7bcOmHpg" class="swipebox">LEARN MORE <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
     </div>
   </div>
 </div>

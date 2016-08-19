@@ -3,10 +3,10 @@ $PageTitle = "Programs";
 include "header.php";
 ?>
 
-<link rel="stylesheet" href="inc/slick.css">
-<script type="text/javascript" src="inc/slick.min.js"></script>
-<script type="text/javascript" src="inc/slick.init.programs.js"></script>
-<script type="text/javascript" src="inc/slick.init.slider.js"></script>
+<link rel="stylesheet" href="inc/slick/slick.css">
+<script type="text/javascript" src="inc/slick/slick.min.js"></script>
+<script type="text/javascript" src="inc/slick/slick.init.programs.js"></script>
+<script type="text/javascript" src="inc/slick/slick.init.slider.js"></script>
 
 <div class="programs-slider">
   <div>

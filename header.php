@@ -57,7 +57,7 @@
               </ul>
             </li>
             <li><a href="programs.php">Programs</a></li>
-            <li><a href="#">Tour</a></li>
+            <li><a href="tour.php">Tour</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Parents</a></li>
             <li class="donate"><a href="#">Donate</a></li>
