@@ -131,6 +131,62 @@ A.button.orange:active {
   margin-right: 0;
 }
 
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+  margin-bottom: 3.3%;
+}
+ 
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 200px;
+  line-height: 1em;
+}
+
+.video:hover .video-play {
+  color: rgba(249, 130, 2, 0.9);
+}
+
 A#return-to-top:link,
 A#return-to-top:visited {
   position: fixed;
@@ -1004,6 +1060,59 @@ A.team-link.hover {
   padding: 4.5em 0 6em;
 }
 
+.tour H3 {
+  margin: 0 0 0.3em;
+  font-size: 22px;
+  color: #4FC3F1;
+}
+
+.tour-menu {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: table;
+  width: 100%;
+}
+
+.tour-menu LI {
+  display: table-cell;
+  font-weight: 800;
+  font-size: 156.25%;
+  line-height: 1em;
+}
+
+.tour-menu LI:nth-of-type(2) { text-align: center; }
+.tour-menu LI:nth-of-type(3) { text-align: right; }
+
+.tour-menu LI A:link,
+.tour-menu LI A:visited {
+  color: #112C37;
+}
+
+.tour-menu LI A:hover,
+.tour-menu LI A:active {
+  color: #4FC3F1;
+}
+
+.gallery A {
+  float: left;
+  width: 22.5%;
+  margin: 0 3.3% 3.3% 0;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+}
+
+.gallery A:nth-of-type(4n+0) {
+  margin-right: 0;
+}
+
+.gallery A:after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
 .tour-footer-banner {
   background: url(../images/tour-footer-banner.jpg) no-repeat center center;
   background-size: cover;
@@ -1182,6 +1291,18 @@ A.team-link.hover {
   .program-content {
     margin-top: 150px;
   }
+
+  .tour-menu LI {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 1em;
+  }
+
+  .tour-menu LI:nth-of-type(3) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1252,6 +1373,21 @@ A.team-link.hover {
   .programs-slider .banner .site-width {
     padding: 0;
   }
+
+  .tour-menu LI {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gallery A,
+  .gallery A:nth-of-type(4n+0) {
+    width: 49%;
+    margin-right: 2%;
+  }
+
+  .gallery A:nth-of-type(2n+0) {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1314,15 +1450,6 @@ A.team-link.hover {
     margin-bottom: 2em;
   }
 
-/*  .about .two-thirds,
-  .about .one-third {
-    margin-bottom: 3em;
-  }
-
-  .about .one-third.last {
-    margin-bottom: 0;
-  }*/
-
   .team-hover-content {
     padding: 1em 2.6em;
     font-size: 100%;
@@ -1351,12 +1478,22 @@ A.team-link.hover {
   .program-content .links A.pricing:visited {
     margin: 0;
   }
+
+  .gallery A,
+  .gallery A:nth-of-type(4n+0) {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   /* Small Phone */
   H1 { font-size: 300%; }
   H2 { font-size: 275%; }
+
+  .video-play {
+    font-size: 100px;
+  }
 
   #logo IMG {
     height: 60px;
@@ -1381,7 +1518,8 @@ A.team-link.hover {
     font-size: 32px;
   }
 
-  .banner .site-width {
+  .banner .site-width,
+  .banner.banner-tour .site-width {
     font-size: 105%;
   }
 
