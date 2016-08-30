@@ -107,6 +107,9 @@ A.button.orange:active {
 .larger { font-size: 106.25%; }
 .centered { text-align: center; }
 
+.gray-section { background: #F3F4F4; }
+.blue-section { background: #4FC3F1; }
+
 .one-half {
   float: left;
   width: 48%;
@@ -352,6 +355,7 @@ A#return-to-top:active {
   position: relative;
 }
 
+.banner.no-tear,
 .banner,
 .home-banner .home-banner-slide {
   height: 695px;
@@ -362,6 +366,15 @@ A#return-to-top:active {
   -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.55);
   -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.55);
   box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.55);
+}
+
+.banner.no-tear {
+  height: 211px;
+  padding-bottom: 0;
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-size: 250%;
+  line-height: 1em;
 }
 
 .banner {
@@ -1136,6 +1149,131 @@ A.team-link.hover {
   color: #F98202;
 }
 
+.pricing-intro {
+  color: #112C37;
+  font-size: 125%;
+  line-height: 2em;
+  padding: 4em 0;
+}
+
+.pricing-rates {
+  color: #112C37;
+  padding: 6em 0;
+  width: 860px;
+}
+
+.pricing-rates H2 {
+  margin: 0;
+  font-size: 45px;
+  line-height: 1.2em;
+}
+
+.pricing-rates H2 SPAN {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  color: #4FC3F1;
+}
+
+.blue-section .pricing-rates H2 SPAN {
+  color: #FFFFFF;
+}
+
+.pricing-rates HR {
+  border-color: #112C37;
+  margin: 2em 0 3em;
+}
+
+.pricing-rates TABLE {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-rates TH {
+  font-size: 35px;
+  line-height: 1em;
+  font-weight: 800;
+  color: #4FC3F1;
+  text-align: left;
+  padding: 1em 0;
+}
+
+.pricing-rates TH SPAN {
+  text-decoration: underline;
+}
+
+.blue-section .pricing-rates TH {
+  color: #FFFFFF;
+}
+
+.pricing-rates TD {
+  font-size: 30px;
+  line-height: 1em;
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+
+.pricing-rates TH:nth-of-type(2),
+.pricing-rates TD:nth-of-type(2) {
+  width: 1%;
+  padding-right: 13%;
+}
+
+.pricing-rates TH:last-child,
+.pricing-rates TD:last-child {
+  width: 1%;
+}
+
+.pricing-rates TH > DIV {
+  font-size: 15px;
+  color: #112C37;
+}
+
+.pricing {
+  padding: 4em 0;
+  font-size: 112.5%;
+}
+
+.pricing EM {
+  font-size: 77.77%;
+}
+
+.pricing STRONG {
+  color: #1A404F;
+}
+
+.pricing H3 {
+  margin: 0 0 1em;
+  font-weight: 800;
+  font-size: 32px;
+  color: #4FC3F1;
+  text-decoration: underline;
+}
+
+.pricing .one-third H4 {
+  margin: 0;
+  display: inline;
+  font-size: 22px;
+  color: #1A404F;
+}
+
+.pricing .one-third STRONG {
+  color: #7D7D7D;
+}
+
+.pricing .spacer {
+  clear: both;
+  height: 3em;
+}
+
+.banner.pricing-footer {
+  height: 425px;
+  padding-bottom: 0;
+}
+
+.banner.pricing-footer A.button {
+  color: #FFFFFF;
+}
+
 
 
 @media only screen and (max-width: 1260px) {
@@ -1236,7 +1374,7 @@ A.team-link.hover {
     color: #1E3E4A;
   }
   
-  .menu UL LI UL,
+  /*.menu UL LI UL,*/
   .menu UL LI:hover UL {
     display: block;
     position: static;
@@ -1388,6 +1526,24 @@ A.team-link.hover {
   .gallery A:nth-of-type(2n+0) {
     margin-right: 0;
   }
+  
+  .pricing-rates TH {
+    font-size: 31px;
+  }
+
+  .pricing-rates TD {
+    font-size: 26px;
+  }
+
+  .pricing .one-third {
+    float: none;
+    width: 100%;
+    padding: 0 0 2em 0;
+  }
+
+  .pricing .spacer {
+    height: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1483,6 +1639,27 @@ A.team-link.hover {
   .gallery A:nth-of-type(4n+0) {
     width: 100%;
     margin-right: 0;
+  }
+
+  .pricing-rates H2 {
+    font-size: 37px;
+  }
+
+  .pricing-rates TH {
+    font-size: 22px;
+  }
+
+  .pricing-rates TD {
+    font-size: 20px;
+  }
+
+  .pricing-rates TH:nth-of-type(2),
+  .pricing-rates TD:nth-of-type(2) {
+    padding-right: 12%;
+  }
+
+  .pricing .one-third {
+    margin-bottom: 0;
   }
 }
 

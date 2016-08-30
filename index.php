@@ -8,7 +8,7 @@ include "header.php";
       <h1>Providing families with exceptional child care services in a safe &amp; loving learning environment.</h1>
 
       <a href="#" class="button">LEARN MORE</a>
-      <a href="#" class="button">TAKE THE TOUR</a>
+      <a href="tour.php" class="button">TAKE THE TOUR</a>
     </div>
   </div>
 
@@ -57,7 +57,7 @@ include "header.php";
       <br>
 
       <a href="programs.php" class="button orange">PROGRAM DETAILS</a>
-      <a href="#" class="pricing">PRICING +</a>
+      <a href="pricing.php" class="pricing">PRICING +</a>
     </div>
   </div>
 </div>

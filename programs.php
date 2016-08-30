@@ -41,8 +41,8 @@ include "header.php";
       <br>
 
       <div class="links">
-        <a href="#" class="button">TAKE THE TOUR!</a>
-        <a href="#" class="pricing">VIEW PRICING</a>
+        <a href="tour.php" class="button">TAKE THE TOUR!</a>
+        <a href="pricing.php" class="pricing">VIEW PRICING</a>
       </div>
     </div>
 
@@ -93,8 +93,8 @@ include "header.php";
       <br>
 
       <div class="links">
-        <a href="#" class="button">TAKE THE TOUR!</a>
-        <a href="#" class="pricing">VIEW PRICING</a>
+        <a href="tour.php" class="button">TAKE THE TOUR!</a>
+        <a href="pricing.php" class="pricing">VIEW PRICING</a>
       </div>
     </div>
 
@@ -132,8 +132,8 @@ include "header.php";
       <br>
 
       <div class="links">
-        <a href="#" class="button">TAKE THE TOUR!</a>
-        <a href="#" class="pricing">VIEW PRICING</a>
+        <a href="tour.php" class="button">TAKE THE TOUR!</a>
+        <a href="pricing.php" class="pricing">VIEW PRICING</a>
       </div>
     </div>
 
@@ -168,8 +168,8 @@ include "header.php";
       <br>
       
       <div class="links">
-        <a href="#" class="button">TAKE THE TOUR!</a>
-        <a href="#" class="pricing">VIEW PRICING</a>
+        <a href="tour.php" class="button">TAKE THE TOUR!</a>
+        <a href="pricing.php" class="pricing">VIEW PRICING</a>
       </div>
     </div>
 
