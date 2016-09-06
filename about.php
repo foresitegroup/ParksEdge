@@ -5,7 +5,7 @@ include "header.php";
 
 <div class="banner" style="background-image: url(images/banner-about.jpg);">
   <div class="site-width">
-    <strong>Park's Edge Preschool's <a href="#">Vision</a></strong> is to provide families with exceptional child care services in a safe and loving learning environment. Our <a href="#"><strong>Mission</strong></a> is to provide an outstanding Christian environment that focuses on the development of each individual child; spiritually, morally, physically, mentally, socially and emotionally.
+    <strong>Park's Edge Preschool's <span class="bluetext">Vision</span></strong> is to provide families with exceptional child care services in a safe and loving learning environment. Our <strong class="bluetext">Mission</strong> is to provide an outstanding Christian environment that focuses on the development of each individual child; spiritually, morally, physically, mentally, socially and emotionally.
   </div>
 
   <div class="torn-header-white"></div>
@@ -19,7 +19,7 @@ include "header.php";
   <br>
   <br>
 
-  <h1>PEP LEADERSHIP</h1>
+  <h1 id="leadership">PEP LEADERSHIP</h1>
   <br>
 
   <span class="about-director">Ellen Kvalheim, <span class="bluetext">Center Director</span></span><br>
@@ -97,7 +97,7 @@ include "header.php";
   </div>
 </div>
 
-<div class="about-accreditation">
+<div class="about-accreditation" id="accreditation">
   <div class="site-width">
     <div class="col1">
       <img src="images/logo-nac-square.png" alt="National Accreditation Commission"><br>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,14 +51,29 @@
             <li>
               <a href="about.php">Park's Edge</a>
               <ul>
-                <li><a href="#">Mission &amp; Vision</a></li>
-                <li><a href="#">Leadership &amp; Staff</a></li>
+                <li><a href="about.php">Mission &amp; Vision</a></li>
+                <li><a href="about.php#leadership">Leadership &amp; Staff</a></li>
                 <li><a href="testimonials.php">Testimonials</a></li>
-                <li><a href="#">Accreditation</a></li>
+                <li><a href="about.php#accreditation">Accreditation</a></li>
               </ul>
             </li>
-            <li><a href="programs.php">Programs</a></li>
-            <li><a href="tour.php">Tour</a></li>
+            <li>
+              <a href="programs.php">Programs</a>
+              <ul>
+                <li><a href="programs.php" onclick="location.reload();">Christian</a></li>
+                <li><a href="programs.php#infant-toddler" onclick="location.reload();">Infant / Toddler</a></li>
+                <li><a href="programs.php#pre-school" onclick="location.reload();">Pre-School</a></li>
+                <li><a href="programs.php#school-age" onclick="location.reload();">School Age</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="tour.php">Tour</a>
+              <ul>
+                <li><a href="tour.php#infant-toddler">Infant / Toddler</a></li>
+                <li><a href="tour.php#pssa">Pre-School &amp; School Age</a></li>
+                <li><a href="tour.php#outdoor">Outdoor / Facility</a></li>
+              </ul>
+            </li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Parents</a></li>
             <li class="donate"><a href="#">Donate</a></li>

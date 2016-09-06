@@ -58,6 +58,90 @@ UL, OL {
   padding: 0 0 0 0.7em;
 }
 
+INPUT[type="text"],
+INPUT[type="email"],
+INPUT[type="password"],
+TEXTAREA {
+  border: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em 1em;
+  background: #1A404F;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-appearance: none; /* I prefer my styles, Steve Jobs */
+  border-radius: 6px;
+  outline: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  overflow: auto; /* Good ol' IE */
+  margin-bottom: 1.5em;
+}
+
+TEXTAREA {
+  padding: 0.9em 1em;
+  height: 14em;
+  margin-top: 1.5em;
+}
+
+INPUT[type="text"]:focus,
+INPUT[type="email"]:focus,
+INPUT[type="password"]:focus,
+TEXTAREA:focus {
+  background: #4FC3F1;
+}
+
+INPUT::-webkit-input-placeholder { color: #FFFFFF; opacity: 1; }
+INPUT:-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 4-18 */
+INPUT::-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 19+ */
+INPUT:-ms-input-placeholder { color: #FFFFFF; opacity: 1; } /* IE 10+ */
+TEXTAREA::-webkit-input-placeholder { color: #FFFFFF; opacity: 1; }
+TEXTAREA:-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 4-18 */
+TEXTAREA::-moz-placeholder { color: #FFFFFF; opacity: 1; } /* FF 19+ */
+TEXTAREA:-ms-input-placeholder { color: #FFFFFF; opacity: 1; } /* IE 10+ */
+
+INPUT:focus::-webkit-input-placeholder { color: transparent; }
+INPUT:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+INPUT:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+INPUT:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+TEXTAREA:focus::-webkit-input-placeholder { color: transparent; }
+TEXTAREA:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+TEXTAREA:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+TEXTAREA:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+
+INPUT[type="submit"] {
+  border: 0;
+  box-sizing: border-box;
+  padding: 1em 0;
+  border-radius: 6px;
+  background: #4FC3F1;
+  color: #112C37;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1em;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  display: block;
+  margin: 0 auto;
+  -webkit-appearance: none; /* I prefer my styles, Steve Jobs */
+  width: 100%;
+}
+
+INPUT[type="submit"]:hover {
+  background: #112C37;
+  color: #FFFFFF;
+}
+
+INPUT[type="submit"]:focus {
+  outline: none;
+}
+
 .site-width {
   width: 1000px;
   margin: 0 auto;
@@ -1274,6 +1358,193 @@ A.team-link.hover {
   color: #FFFFFF;
 }
 
+.banner-contact .site-width.big {
+  font-size: 58px;
+}
+
+.contact-section.contact {
+  padding: 1.5em 0;
+}
+
+.contact-section.contact .bluetext {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+#contact-form {
+  width: 77.5%;
+  margin: 0 auto;
+}
+
+INPUT[type="checkbox"]#c-subscribe {
+  display: none;
+}
+
+INPUT[type="checkbox"]#c-subscribe + LABEL {
+  display: block;
+  color: #1A404F;
+  font-size: 17px;
+}
+
+INPUT[type="checkbox"]#c-subscribe + LABEL:before {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.5em;
+  cursor: pointer;
+  content: "";
+  background: #4FC3F1;
+  border-radius: 50%;
+  position: relative;
+  top: 0.25em;
+}
+
+INPUT[type="checkbox"]#c-subscribe:checked + LABEL:before {
+  background: #FFFFFF;
+  border: 5px solid #4FC3F1;
+  box-sizing: border-box;
+}
+
+#contact-form-messages {
+  line-height: 1em;
+  height: 1em;
+  color: #E14E41;
+  margin-top: 1.7em;
+}
+
+.contact-footer {
+  background: #112C37;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 2em 0;
+}
+
+.contact-footer .bluetext {
+  font-size: 12px;
+  padding-bottom: 0.5em;
+}
+
+.contact-map {
+  position: relative;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 540px;
+}
+
+#map-canvas A:link, #map-canvas A:visited { color: #255C71; }
+#map-canvas A:hover, #map-canvas A:active { color: #3D97BA; }
+
+.gm-style img { max-width: none; }
+.gm-style label { width: auto; display: inline; }
+
+
+/* BEGIN modal css */
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.blocker {
+  visibility: hidden;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  z-index: 1;
+  text-align: center;
+}
+.blocker:before{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.blocker.behind {
+  background-color: transparent;
+}
+
+.modal {
+  visibility: visible;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 960px;
+  background: #14323F;
+  color: #4FC3F1;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 3.5em;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  visibility: hidden;
+}
+
+.modal a.close-modal:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  content: "\f05c"; 
+  font-size: 48px;
+  color: #33CC33;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+/* END modal css */
+
+#mc_embed_signup FORM {
+  margin-top: 2em;
+}
+
+#mce-EMAIL {
+  float: left;
+  width: 80%;
+  border: 2px solid #A1A1A1;
+  background: #FFFFFF;
+  color: #112C37;
+  margin-bottom: 0;
+}
+
+#mce-EMAIL:focus {
+  background: #A1A1A1;
+}
+
+#mce-EMAIL::-webkit-input-placeholder { color: #112C37; }
+#mce-EMAIL:-moz-placeholder { color: #112C37; } /* FF 4-18 */
+#mce-EMAIL::-moz-placeholder { color: #112C37; } /* FF 19+ */
+#mce-EMAIL:-ms-input-placeholder { color: #112C37; } /* IE 10+ */
+#mce-EMAIL:focus::-webkit-input-placeholder { color: transparent; }
+#mce-EMAIL:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+#mce-EMAIL:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+#mce-EMAIL:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+
+#mc-embedded-subscribe {
+  float: right;
+  width: 15%;
+  border: 2px solid #4FC3F1;
+}
+
+#mc-embedded-subscribe:hover {
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  color: #112C37;
+}
 
 
 @media only screen and (max-width: 1260px) {

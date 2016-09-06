@@ -1,3 +1,23 @@
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup" style="display: none;">
+      Signup for our newsletter to receive news, events &amp; important dates.
+
+      <form action="//parksedgepreschool.us14.list-manage.com/subscribe/post?u=d258958818581feb40eda4843&amp;id=ebbe9285ac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+            <input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d258958818581feb40eda4843_ebbe9285ac" tabindex="-1" value=""></div>
+        </div>
+      </form>
+    </div>
+    <!--End MailChimp Signup Form -->
+
     <div class="pe-footer">
       <div class="site-width">
         <div class="one-fourth bigger">
@@ -16,9 +36,11 @@
         </div>
 
         <div class="one-fourth">
+          <script type="text/javascript" src="inc/jquery.modal.min.js"></script>
+
           <h2>STAY INFORMED</h2>
           with our Monthly Newsletter to recieve details on news, events and important dates.<br>
-          <a href="#" class="button-border">SIGN-UP!</a>
+          <a href="#mc_embed_signup" class="button-border" rel="modal:open">SIGN-UP!</a>
         </div>
 
         <div class="one-fourth">
