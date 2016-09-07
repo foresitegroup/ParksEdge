@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="inc/main.css">
 
     <script type="text/javascript" src="inc/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="inc/jquery.modal.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("a[href^='http'], a[href$='.pdf']").not("[href*='" + window.location.host + "']").attr('target','_blank');
@@ -31,6 +32,11 @@
           } else {
             $("#return-to-top").fadeOut(500);
           }
+        });
+
+        $('a[href="#mailchimp"]').click(function(event) {
+          event.preventDefault();
+          $(this).modal({ fadeDuration: 200, fadeDelay: 0 });
         });
       });
     </script>
@@ -74,7 +80,7 @@
                 <li><a href="tour.php#outdoor">Outdoor / Facility</a></li>
               </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
             <li><a href="#">Parents</a></li>
             <li class="donate"><a href="#">Donate</a></li>
           </ul>

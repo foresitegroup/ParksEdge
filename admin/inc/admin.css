@@ -1,0 +1,83 @@
+A:link, A:visited {
+  color: #4FC3F1;
+  text-decoration: none;
+}
+
+A:hover, A:active {
+  color: #112C37;
+  text-decoration: none;
+}
+
+TEXTAREA {
+  height: 7.5em;
+  margin-top: 0;
+}
+
+.cal {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cal TD {
+  border: 1px solid #1A404F;
+  width: 18.4%;
+  padding: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  line-height: 1.3em;
+}
+
+.cal .cal-head TD {
+  border: 0;
+  text-align: center;
+  color: #1A404F !important;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.cal .cal-nav-l,
+.cal .cal-nav-r {
+  float: left;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  font-size: 85%;
+}
+ 
+.cal .cal-nav-r {
+  float: right;
+}
+
+.cal .weekdays TD {
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  background: #1A404F;
+}
+
+.cal TD.cal-day {
+  height: 174px;
+}
+
+.cal TD.blank-start,
+.cal TD.blank-end {
+  border-left: 0;
+  border-right: 0;
+}
+
+.cal TD.blank-start:first-child {
+  border-left: 1px solid #1A404F;
+}
+
+.cal TD.blank-end:last-child {
+  border-right: 1px solid #1A404F;
+}
+
+.cal TD:first-child,
+.cal TD:last-child,
+.cal TD.blank-start:first-child,
+.cal TD.blank-end:last-child {
+  width: 4%;
+  color: #EAEAEA;
+}

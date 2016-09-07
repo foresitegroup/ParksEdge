@@ -1,18 +1,61 @@
     <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup" style="display: none;">
+    <div id="mailchimp" style="display: none;">
+      <script type="text/javascript">
+        $(document).ready(function() {
+          var form = $('#mailchimp-form');
+          var formMessages = $('#mailchimp-form-messages');
+          $(form).submit(function(event) {
+            event.preventDefault();
+            
+            function formValidation() {
+              if ($('#email').val() === '') { alert('Email address required.'); $('#email').focus(); return false; }
+              return true;
+            }
+            
+            if (formValidation()) {
+              var formData = $(form).serialize();
+              formData += '&src=ajax';
+
+              $.ajax({
+                type: 'POST',
+                url: $(form).attr('action'),
+                data: formData
+              })
+              .done(function(response) {
+                $(formMessages).html(response);
+                $('#email').val('');
+              })
+              .fail(function(data) {
+                if (data.responseText !== '') {
+                  $(formMessages).html(data.responseText);
+                } else {
+                  $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                }
+              });
+            }
+          });
+        });
+      </script>
+
+      <?php
+      // Settings for randomizing form field names
+      $ip = $_SERVER['REMOTE_ADDR'];
+      $timestamp = time();
+      $salt = "ParksEdgeMailchimpForm";
+      ?>
+
+      <div id="mailchimp-form-messages"><?php echo $mcfeedback; ?>Thank you for signing up for our newsletter!</div>
+
       Signup for our newsletter to receive news, events &amp; important dates.
 
-      <form action="//parksedgepreschool.us14.list-manage.com/subscribe/post?u=d258958818581feb40eda4843&amp;id=ebbe9285ac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <div class="mc-field-group">
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-            <input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="button">
-          </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d258958818581feb40eda4843_ebbe9285ac" tabindex="-1" value=""></div>
+      <form action="form-mailchimp.php" method="POST" id="mailchimp-form">
+        <div>
+          <input type="email" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="Email Address">
+          <input type="submit" name="submit" value="SUBMIT">
+
+          <input type="text" name="confirmationCAP" style="display: none;">
+          <input type="hidden" name="ip" value="<?php echo $ip; ?>">
+          <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
         </div>
       </form>
     </div>
@@ -36,11 +79,9 @@
         </div>
 
         <div class="one-fourth">
-          <script type="text/javascript" src="inc/jquery.modal.min.js"></script>
-
           <h2>STAY INFORMED</h2>
           with our Monthly Newsletter to recieve details on news, events and important dates.<br>
-          <a href="#mc_embed_signup" class="button-border" rel="modal:open">SIGN-UP!</a>
+          <a href="#mailchimp" class="button-border">SIGN-UP!</a>
         </div>
 
         <div class="one-fourth">
