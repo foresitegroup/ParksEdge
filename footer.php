@@ -44,7 +44,7 @@
       $salt = "ParksEdgeMailchimpForm";
       ?>
 
-      <div id="mailchimp-form-messages"><?php echo $mcfeedback; ?>Thank you for signing up for our newsletter!</div>
+      <div id="mailchimp-form-messages"></div>
 
       Signup for our newsletter to receive news, events &amp; important dates.
 

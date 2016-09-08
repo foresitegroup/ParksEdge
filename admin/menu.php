@@ -25,7 +25,9 @@ include "header.php";
 
       <input type="text" name="date" class="menudate" placeholder="Date" style="float: left; width: 15%;">
 
-      <input type="submit" name="submit" value="SUBMIT" style="float: right; width: 15%;">
+      <input type="hidden" name="page" value="<?php if (!empty($_SERVER['QUERY_STRING'])) echo $_SERVER['QUERY_STRING']; ?>">
+
+      <input type="submit" name="submit" value="SUBMIT" id="submit" style="float: right; width: 15%;">
 
       <div style="clear: both;"></div>
     </div>
@@ -36,25 +38,18 @@ include "header.php";
   <br>
 
   <?php
-  // $result = $mysqli->query("SELECT * FROM menu ORDER BY date ASC");
-  // while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-  //   echo date("n/j/y", $row['date']) . "<br>";
-  //   echo nl2br($row['lunch']) . "<br>";
-  //   echo nl2br($row['am_snack']) . "<br>";
-  //   echo nl2br($row['pm_snack']) . "<br>";
-  // }
-
-
   if (!empty($_SERVER['QUERY_STRING'])) {
     $date = mktime(0,0,0,substr($_SERVER['QUERY_STRING'],-2), 1, substr($_SERVER['QUERY_STRING'],0,4));
     $lastmonth = mktime(0,0,0,substr($_SERVER['QUERY_STRING'],-2)-1, 1, substr($_SERVER['QUERY_STRING'],0,4));
     $nextmonth = mktime(0,0,0,substr($_SERVER['QUERY_STRING'],-2)+1, 1, substr($_SERVER['QUERY_STRING'],0,4));
     $title = date("F Y",$date);
+    $loc = $_SERVER['QUERY_STRING'];
   } else {
     $date = time();
     $lastmonth = mktime(1, 1, 1, date('m')-1, 1, date('Y'));
     $nextmonth = mktime(1, 1, 1, date('m')+1, 1, date('Y'));
     $title = date("F Y");
+    $loc = "";
   }
 
   $first_day = strtotime("First day of " . $title . " 00:00");
@@ -65,12 +60,14 @@ include "header.php";
 
   <table class="cal">
     <tr class="cal-head">
-      <td colspan="7">
+      <td>&nbsp;</td>
+      <td colspan="5">
         <a href="menu.php?<?php echo date("Ym", $lastmonth); ?>" class="cal-nav-l">&lt;&lt; <?php echo date("F", $lastmonth); ?></a>
         <?php echo $title; ?>
         <a href="menu.php?<?php echo date("Ym", $nextmonth); ?>" class="cal-nav-r"><?php echo date("F", $nextmonth); ?> &gt;&gt;</a>
-      <div style="clear: both;"></div>
+        <div style="clear: both;"></div>
       </td>
+      <td>&nbsp;</td>
     </tr>
 
     <tr class="weekdays">
@@ -91,7 +88,7 @@ include "header.php";
       }
    
       // Get any shows for this month and put them in an array
-      $result = $mysqli->query("SELECT * FROM menu WHERE date >= '$first_day' AND date <= '$last_day' ORDER BY date ASC");
+      $result = $mysqli->query("SELECT * FROM menu WHERE date >= '$first_day' AND date < '$last_day' ORDER BY date ASC");
    
       $eventarr = array();
       while($row = $result->fetch_array(MYSQLI_BOTH)) {
@@ -114,6 +111,11 @@ include "header.php";
               if ($eventarr[$day_num][$key]['lunch'] != "") echo nl2br($eventarr[$day_num][$key]['lunch']);
               if ($eventarr[$day_num][$key]['am_snack'] != "") echo "<br><br><strong>AM SNACK</strong><br>" . nl2br($eventarr[$day_num][$key]['am_snack']);
               if ($eventarr[$day_num][$key]['pm_snack'] != "") echo "<br><br><strong>PM SNACK</strong><br>" . nl2br($eventarr[$day_num][$key]['pm_snack']);
+
+              echo "<div class=\"controls\">
+                <a href=\"menu-edit.php?id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" title=\"Edit\" class=\"c-edit\"><i class=\"fa fa-pencil\"></i></a>
+                <a href=\"menu-db.php?a=delete&id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" onClick=\"return(confirm('Are you sure you want to delete this record?'));\" title=\"Delete\" class=\"c-delete\"><i class=\"fa fa-trash\"></i></a>
+              </div>";
             }
           }
         echo "</td>\n";

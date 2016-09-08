@@ -1445,6 +1445,130 @@ INPUT[type="checkbox"]#c-subscribe:checked + LABEL:before {
 .gm-style img { max-width: none; }
 .gm-style label { width: auto; display: inline; }
 
+.parents-menu-header {
+  color: #ACACAC;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.parents-menu-header H1 {
+  margin: 0.2em 0 0;
+  color: #1A404F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+}
+
+.menu-schedule-header {
+  background: #F3F4F4;
+  color: #4FC3F1;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.45em 0;
+}
+
+A.msnav:link,
+A.msnav:visited {
+  color: #1A404F;
+  float: left;
+  font-size: 29px;
+}
+
+A.msnav .fa {
+  border: 2px solid #1A404F;
+  border-radius: 50%;
+  width: 1em;
+}
+
+A.msnav .fa:before {
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+
+A.msnav.nav-r {
+  float: right;
+}
+
+A.msnav.nav-r .fa:before {
+  left: 1px;
+}
+
+A.msnav:hover,
+A.msnav:active {
+  color: #4FC3F1;
+}
+
+A.msnav:hover .fa,
+A.msnav:active .fa {
+  border: 2px solid #4FC3F1;
+}
+
+.menu-schedule-content {
+  background: #112C37;
+  color: #4FC3F1;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.menu-schedule-content TABLE {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-schedule-content TABLE TD {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 2em 0 2.5em;
+  vertical-align: top;
+}
+
+.menu-schedule-content TABLE TD.mstoday {
+  background: #4FC3F1;
+  color: #112C37;
+}
+
+.menu-schedule-content .date-num {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 1em;
+  padding-bottom: 0.25em;
+}
+
+.menu-schedule-content .date-day {
+  color: #FFFFFF;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+  padding-bottom: 1.5em;
+  border-bottom: 6px solid #FFFFFF;
+  margin-bottom: 2em;
+}
+
+.menu-schedule-content TABLE TD.mstoday .date-num,
+.menu-schedule-content TABLE TD.mstoday .date-day {
+  color: #112C37;
+}
+
+.menu-schedule-content .mscontent {
+  padding: 0 1em;
+  min-height: 19em;
+}
+
+.menu-schedule-content .msheader {
+  margin-top: 2em;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
 
 /* BEGIN modal css */
 html {

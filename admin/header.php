@@ -35,6 +35,10 @@
         });
 
         $(".menudate").datepicker();
+        $("#submit").attr('disabled','disabled');
+        $(".menudate").change(function(){
+          if ($(".menudate").val().length !== 0) $("#submit").removeAttr('disabled');    
+        })
       });
     </script>
   </head>

@@ -13,6 +13,17 @@ TEXTAREA {
   margin-top: 0;
 }
 
+#submit:disabled {
+  background: #CCCCCC;
+  color: #AAAAAA;
+  cursor: default;
+}
+
+th.ui-datepicker-week-end,
+td.ui-datepicker-week-end {
+  display: none;
+}
+
 .cal {
   width: 100%;
   border-collapse: collapse;
@@ -20,13 +31,14 @@ TEXTAREA {
 
 .cal TD {
   border: 1px solid #1A404F;
-  width: 18.4%;
-  padding: 4px;
+  width: 20%;
+  padding: 0.75em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   vertical-align: top;
   line-height: 1.3em;
+  font-size: 14px;
 }
 
 .cal .cal-head TD {
@@ -34,7 +46,7 @@ TEXTAREA {
   text-align: center;
   color: #1A404F !important;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 20px;
 }
 
 .cal .cal-nav-l,
@@ -54,10 +66,48 @@ TEXTAREA {
   text-align: center;
   color: #FFFFFF;
   background: #1A404F;
+  font-size: 16px;
 }
 
 .cal TD.cal-day {
   height: 174px;
+  text-align: center;
+  position: relative;
+}
+
+.cal TD.cal-day .cal-date {
+  color: #1A404F;
+  font-size: 16px;
+  line-height: 1em;
+  text-align: left;
+  padding-bottom: 0.5em;
+}
+
+.cal TD.cal-day STRONG {
+  color: #4FC3F1;
+  text-decoration: underline;
+}
+
+.cal TD.cal-day .controls {
+  position: absolute;
+  top: 0.4em;
+  right: 0.75em;
+  text-align: right;
+  font-size: 18px;
+}
+
+A.c-edit:link, A.c-edit:visited {
+  color: #F9BF2C;
+  margin-right: 0.3em;
+}
+
+A.c-delete:link, A.c-delete:visited {
+  color: #6A6B6E;
+}
+
+A.c-edit:hover, A.c-edit:active,
+A.c-delete:hover, A.c-delete:active {
+  color: #1A404F;
 }
 
 .cal TD.blank-start,
@@ -66,11 +116,15 @@ TEXTAREA {
   border-right: 0;
 }
 
-.cal TD.blank-start:first-child {
+.cal TD.blank-start:first-child,
+.cal TD.blank-start:nth-of-type(2),
+.cal TD.blank-end:nth-of-type(2) {
   border-left: 1px solid #1A404F;
 }
 
-.cal TD.blank-end:last-child {
+.cal TD.blank-end:last-child,
+.cal TD.blank-end:nth-of-type(6),
+.cal TD.blank-start:nth-of-type(6) {
   border-right: 1px solid #1A404F;
 }
 
@@ -78,6 +132,5 @@ TEXTAREA {
 .cal TD:last-child,
 .cal TD.blank-start:first-child,
 .cal TD.blank-end:last-child {
-  width: 4%;
-  color: #EAEAEA;
+  display: none;
 }

@@ -1,10 +1,13 @@
 <?php
 include("../inc/dbconfig.php");
 
-$date = ($_POST['date'] != "") ? strtotime($_POST['date']) : "";
+$date = (isset($_POST['date'])) ? strtotime($_POST['date']) : "";
+$loc = "";
 
 switch ($_GET['a']) {
   case "add":
+    $loc = (isset($_POST['page'])) ? "?" . $_POST['page'] : "";
+
     $mysqli->query("INSERT INTO menu (
                   date,
                   lunch,
@@ -18,6 +21,8 @@ switch ($_GET['a']) {
                   )");
     break;
   case "edit":
+    $loc = (isset($_POST['loc'])) ? "?" . $_POST['loc'] : "";
+
     $mysqli->query("UPDATE menu SET
                   date = '" . $date . "',
                   lunch = '" . $_POST['lunch'] . "',
@@ -26,11 +31,13 @@ switch ($_GET['a']) {
                   WHERE id = '" . $_POST['id'] . "'");
     break;
   case "delete":
+    $loc = (isset($_GET['loc'])) ? "?" . $_GET['loc'] : "";
+
     $mysqli->query("DELETE FROM menu WHERE id = '" . $_GET['id'] . "'");
     break;
 }
 
 $mysqli->close();
 
-header( "Location: menu.php" );
+header( "Location: menu.php" . $loc );
 ?>
