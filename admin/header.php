@@ -34,11 +34,15 @@
           }
         });
 
-        $(".menudate").datepicker();
+        $(".startdate, .enddate").datepicker();
+        $(".menudate").datepicker({ beforeShowDay: $.datepicker.noWeekends });
         $("#submit").attr('disabled','disabled');
+        $(".startdate").change(function(){
+          if ($(".startdate").val().length !== 0) $("#submit").removeAttr('disabled');    
+        });
         $(".menudate").change(function(){
           if ($(".menudate").val().length !== 0) $("#submit").removeAttr('disabled');    
-        })
+        });
       });
     </script>
   </head>
@@ -57,7 +61,7 @@
           <?php if ($PageTitle != "Login") { ?>
           <ul>
             <li><a href="menu.php">Menu</a></li>
-            <li><a href="#">Calendar</a></li>
+            <li><a href="calendar.php">Calendar</a></li>
           </ul>
           <?php } ?>
         </div>

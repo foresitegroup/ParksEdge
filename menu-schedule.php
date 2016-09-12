@@ -52,8 +52,10 @@ $title .= (date("F", $monday) == date("F", $friday)) ? date("j", $friday) : date
           echo "<td";
           if ($theday == strtotime('today midnight')) echo " class=\"mstoday\"";
           echo ">";
-            echo "<div class=\"date-num\">" . date("j", $theday) . "</div>";
-            echo "<div class=\"date-day\">" . date("l", $theday) . "</div>";
+            echo "<div class=\"date-mobile\">";
+              echo "<div class=\"date-num\">" . date("j", $theday) . "</div>";
+              echo "<div class=\"date-day\">" . date("l", $theday) . "</div>";
+            echo "</div>";
             echo "<div class=\"mscontent\">";
               if (isset($array[$theday])) {
                 foreach($array[$theday] as $key => $value) {

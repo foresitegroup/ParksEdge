@@ -15,9 +15,9 @@ switch ($_GET['a']) {
                   pm_snack
                   ) VALUES(
                   '" . $date . "',
-                  '" . $_POST['lunch'] . "',
-                  '" . $_POST['am_snack'] . "',
-                  '" . $_POST['pm_snack'] . "'
+                  '" . $mysqli->real_escape_string($_POST['lunch']) . "',
+                  '" . $mysqli->real_escape_string($_POST['am_snack']) . "',
+                  '" . $mysqli->real_escape_string($_POST['pm_snack']) . "'
                   )");
     break;
   case "edit":
@@ -25,9 +25,9 @@ switch ($_GET['a']) {
 
     $mysqli->query("UPDATE menu SET
                   date = '" . $date . "',
-                  lunch = '" . $_POST['lunch'] . "',
-                  am_snack = '" . $_POST['am_snack'] . "',
-                  pm_snack = '" . $_POST['pm_snack'] . "'
+                  lunch = '" . $mysqli->real_escape_string($_POST['lunch']) . "',
+                  am_snack = '" . $mysqli->real_escape_string($_POST['am_snack']) . "',
+                  pm_snack = '" . $mysqli->real_escape_string($_POST['pm_snack']) . "'
                   WHERE id = '" . $_POST['id'] . "'");
     break;
   case "delete":

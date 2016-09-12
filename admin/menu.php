@@ -5,7 +5,7 @@ $PageTitle = "Menu";
 include "header.php";
 ?>
 
-<div class="site-width">
+<div class="site-width content menu">
   <h3>Add Menu Date</h3>
   <form action="menu-db.php?a=add" method="POST">
     <div>

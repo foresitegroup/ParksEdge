@@ -1,3 +1,7 @@
+.content {
+  padding: 3em 0;
+}
+
 A:link, A:visited {
   color: #4FC3F1;
   text-decoration: none;
@@ -19,10 +23,10 @@ TEXTAREA {
   cursor: default;
 }
 
-th.ui-datepicker-week-end,
-td.ui-datepicker-week-end {
+/*.menu th.ui-datepicker-week-end,
+.menu td.ui-datepicker-week-end {
   display: none;
-}
+}*/
 
 .cal {
   width: 100%;
@@ -41,6 +45,7 @@ td.ui-datepicker-week-end {
   font-size: 14px;
 }
 
+.cal.cal-head,
 .cal .cal-head TD {
   border: 0;
   text-align: center;
@@ -133,4 +138,27 @@ A.c-delete:hover, A.c-delete:active {
 .cal TD.blank-start:first-child,
 .cal TD.blank-end:last-child {
   display: none;
+}
+
+.cal-list {
+  width: 38%;
+  float: right;
+  line-height: 1.4em;
+}
+
+.cal-list .cal.cal-head {
+  padding-bottom: 1em;
+}
+
+.cal-list .controls {
+  font-size: 18px;
+}
+
+.cal-list .controls A {
+  margin-right: 0.6em;
+}
+
+.edit-cal FORM {
+  width: 50%;
+  margin: 0 auto;
 }

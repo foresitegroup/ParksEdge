@@ -1445,6 +1445,11 @@ INPUT[type="checkbox"]#c-subscribe:checked + LABEL:before {
 .gm-style img { max-width: none; }
 .gm-style label { width: auto; display: inline; }
 
+.banner .site-width.parents {
+  text-align: center;
+  line-height: 1em;
+}
+
 .parents-menu-header {
   color: #ACACAC;
   font-weight: 800;
@@ -1567,6 +1572,102 @@ A.msnav:active .fa {
   margin-top: 2em;
   color: #FFFFFF;
   text-decoration: underline;
+}
+
+.parents-download {
+  padding: 1.8em 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.parents-download .last {
+  text-align: right;
+}
+
+.parents-download A:link,
+.parents-download A:visited {
+  color: #1A404F;
+}
+
+.parents-download A .fa,
+.parents-download A:hover,
+.parents-download A:active {
+  color: #B7B7B7;
+}
+
+.parents-calendar {
+  padding: 4em 0;
+  background: #1A404F;
+  color: #FFFFFF;
+  line-height: 1.4em;
+}
+
+.parents-calendar H1 {
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 69px;
+  padding-bottom: 0.5em;
+  border-bottom: 6px solid #FFFFFF;
+  margin-bottom: 0.5em;
+}
+
+.parents-calendar A.download-cal:link,
+.parents-calendar A.download-cal:visited {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1em;
+  float: right;
+  margin-top: 0.5em;
+}
+
+.parents-calendar A .fa,
+.parents-calendar A.download-cal:hover,
+.parents-calendar A.download-cal:active {
+  color: #F98202;
+}
+
+.parents-calendar .date {
+  color: #4FC3F1;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 0.5em 0 0.2em;
+}
+
+.parents-newsletter {
+  position: relative;
+  padding: 4em 0 calc(4em + 20px);
+  font-size: 18px;
+  color: #4FC3F1;
+}
+
+.parents-newsletter H1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+}
+
+.parents-newsletter A:link,
+.parents-newsletter A:visited {
+  color: #1A404F;
+}
+
+.parents-newsletter A .fa,
+.parents-newsletter A:hover,
+.parents-newsletter A:active {
+  color: #B7B7B7;
+}
+
+.parents-newsletter A.newsletters {
+  margin-right: 3em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.parents-newsletter A.newsletters:last-of-type {
+  margin-right: 0;
 }
 
 
@@ -1851,6 +1952,10 @@ html {
     text-align: center;
     margin-bottom: 0;
   }
+
+  .parents-download .last {
+    text-align: left;
+  }
   
   #mailchimp INPUT[type="email"] { width: 75%; }
   #mailchimp INPUT[type="submit"] { width: 20%; }
@@ -1960,6 +2065,59 @@ html {
 
   #contact-form {
     width: 100%;
+  }
+
+  .menu-schedule-header {
+    font-size: 50px;
+  }
+
+  .menu-schedule-content .site-width {
+    width: 100%;
+  }
+
+  .menu-schedule-content TABLE TD {
+    display: block;
+    width: 100%;
+    padding: 0;
+    position: relative;
+  }
+
+  .menu-schedule-content TABLE TD:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .menu-schedule-content .date-mobile {
+    float: left;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-schedule-content .date-day {
+    border: 0;
+  }
+
+  .menu-schedule-content .mscontent {
+    float: right;
+    width: 60%;
+    border-left: 6px solid #FFFFFF;
+    padding: 2em 1em;
+    min-height: auto;
+    box-sizing: border-box;
+  }
+
+  .parents-calendar A.download-cal:link {
+    float: none;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .parents-newsletter A.newsletters {
+    display: block;
+    margin: 0;
   }
 }
 
@@ -2078,6 +2236,16 @@ html {
   .pricing .one-third {
     margin-bottom: 0;
   }
+  
+  .parents-menu-header H1,
+  .parents-calendar H1,
+  .parents-newsletter H1 {
+    font-size: 55px;
+  }
+
+  .menu-schedule-header {
+    font-size: 32px;
+  }
 
   #mailchimp INPUT[type="email"],
   #mailchimp INPUT[type="submit"] {
@@ -2147,5 +2315,20 @@ html {
   .contact-section,
   .home-contact {
     font-size: 200%;
+  }
+
+  .parents-menu-header H1,
+  .parents-calendar H1,
+  .parents-newsletter H1 {
+    font-size: 45px;
+  }
+
+  .menu-schedule-header {
+    font-size: 26px;
+  }
+
+  A.msnav:link,
+  A.msnav:visited {
+    font-size: 20px;
   }
 }
