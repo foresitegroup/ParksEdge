@@ -81,7 +81,7 @@
               </ul>
             </li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="#">Parents</a></li>
+            <li><a href="parents.php">Parents</a></li>
             <li class="donate"><a href="#">Donate</a></li>
           </ul>
         </div>

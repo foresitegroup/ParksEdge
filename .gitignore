@@ -1,4 +1,3 @@
-
 .DS_Store
-
 inc/dbconfig.php
+inc/dompdf/*

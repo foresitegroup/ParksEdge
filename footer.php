@@ -65,8 +65,8 @@
       <div class="site-width">
         <div class="one-fourth bigger">
           <h2>RESOURCES</h2>
-          <a href="#">CALENDARS</a><br>
-          <a href="#">LUNCH MENU</a><br>
+          <a href="parents.php#calendar">CALENDARS</a><br>
+          <a href="parents.php#menus">LUNCH MENU</a><br>
           <a href="#">FORMS</a><br>
           <a href="#">DONATE</a>
         </div>
@@ -89,7 +89,7 @@
           10627 W. Forest Home Avenue<br>
           Hales Corners, WI 53130<br>
           <strong style="display: block; margin: 0.5em 0;">(414) 427-9561</strong>
-          <a href="#">CONTACT US BY EMAIL</a>
+          <a href="contact.php">CONTACT US BY EMAIL</a>
         </div>
       </div>
 

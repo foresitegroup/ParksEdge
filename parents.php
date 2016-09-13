@@ -2,6 +2,7 @@
 $PageTitle = "Parents";
 include "header.php";
 
+date_default_timezone_set('America/Chicago');
 include_once "inc/dbconfig.php";
 ?>
 
@@ -11,7 +12,7 @@ include_once "inc/dbconfig.php";
   </div>
 </div>
 
-<div class="site-width parents-menu-header">
+<div class="site-width parents-menu-header" id="menus">
   TODDLER &amp; PRE-SCHOOL
   <h1>LUNCH &amp; SNACK MENU</h1>
 </div>
@@ -30,11 +31,11 @@ include_once "inc/dbconfig.php";
 
 <div class="site-width parents-download">
   <div class="one-third">
-    <a href="#">DOWNLOAD LUNCH MENU <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+    <a href="menu-pdf.php?lunch">DOWNLOAD LUNCH MENU <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
   </div>
 
   <div class="one-third">
-    <a href="#">DOWNLOAD SNACK MENU <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+    <a href="menu-pdf.php?snack">DOWNLOAD SNACK MENU <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
   </div>
 
   <div class="one-third last">
@@ -42,11 +43,11 @@ include_once "inc/dbconfig.php";
   </div>
 </div>
 
-<div class="parents-calendar">
+<div class="parents-calendar" id="calendar">
   <div class="site-width">
     <h1>IMPORTANT DATES</h1>
 
-    <a href="#" class="download-cal">DOWNLOAD CALENDAR <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+    <a href="calendar-pdf.php" class="download-cal">DOWNLOAD CALENDAR <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
 
     <?php
     $prevstartdate = "";

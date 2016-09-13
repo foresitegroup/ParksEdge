@@ -1,5 +1,6 @@
 <?php
-include_once "inc/dbconfig.php";
+date_default_timezone_set('America/Chicago');
+include "inc/dbconfig.php";
 
 if (!empty($_SERVER['QUERY_STRING'])) {
   $date = mktime(0,0,0,substr($_SERVER['QUERY_STRING'],-2), 1, substr($_SERVER['QUERY_STRING'],0,4));

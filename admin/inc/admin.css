@@ -23,11 +23,6 @@ TEXTAREA {
   cursor: default;
 }
 
-/*.menu th.ui-datepicker-week-end,
-.menu td.ui-datepicker-week-end {
-  display: none;
-}*/
-
 .cal {
   width: 100%;
   border-collapse: collapse;
