@@ -208,7 +208,7 @@ include "header.php";
     For enrollment or to learn more about Park's Edge Preschool email or give us a call at <strong class="orangetext">414-427-9561</strong><br>
     <br>
 
-    <a href="#" class="button">CONTACT BY EMAIL</a>
+    <a href="contact.php" class="button">CONTACT BY EMAIL</a>
   </div>
 
   <div class="torn-footer"></div>

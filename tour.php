@@ -105,7 +105,7 @@ include "header.php";
 
 <div class="tour-footer-banner">
   <div class="site-width">
-    We provide families with exceptional child care services in a safe &amp; loving learning environment. <a href="#">Learn More.</a>
+    We provide families with exceptional child care services in a safe &amp; loving learning environment. <a href="programs.php">Learn More.</a>
   </div>
 </div>
 

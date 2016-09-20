@@ -65,6 +65,7 @@
       <div class="site-width">
         <div class="one-fourth bigger">
           <h2>RESOURCES</h2>
+          <a href="https://parksedgepreschool.smugmug.com">GALLERY</a><br>
           <a href="parents.php#calendar">CALENDARS</a><br>
           <a href="parents.php#menus">LUNCH MENU</a><br>
           <a href="#">FORMS</a><br>

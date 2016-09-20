@@ -19,7 +19,12 @@ include_once "inc/dbconfig.php";
 
 <script>
   $(document).ready(function() {
-    $("#menu-schedule").load("menu-schedule.php");
+    var hash = window.location.hash;
+    if (hash == "#calendar") {
+      $("#menu-schedule").load("menu-schedule.php", function() { location.href = '#calendar'; });
+    } else {
+      $("#menu-schedule").load("menu-schedule.php");
+    }
 
     $("#menu-schedule").on("click", "a", function (e) {
       $("#menu-schedule").load($(this).attr("href"));

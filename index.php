@@ -7,7 +7,7 @@ include "header.php";
     <div class="site-width">
       <h1>Providing families with exceptional child care services in a safe &amp; loving learning environment.</h1>
 
-      <a href="#" class="button">LEARN MORE</a>
+      <a href="about.php" class="button">LEARN MORE</a>
       <a href="tour.php" class="button">TAKE THE TOUR</a>
     </div>
   </div>
@@ -81,7 +81,7 @@ include "header.php";
     For enrollment or to learn more about Park's Edge Preschool email or give us a call at <strong class="orangetext">414-427-9561</strong><br>
     <br>
 
-    <a href="#" class="button">CONTACT BY EMAIL</a>
+    <a href="contact.php" class="button">CONTACT BY EMAIL</a>
   </div>
 </div>
 
@@ -95,27 +95,27 @@ include "header.php";
     </div>
 
     <div>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut feugiat dolor. Sed ultrices orci dui, a tempus felis sodales ac. Aliquam dignissim tincidunt lectus, at iaculis risus tristique posuere. Mauris faucibus tellus eget sem maximus, ultrices dapibus ex egestas."<br>
+      "Park's Edge and its staff have impacted our hearts more than you will ever know. Thank you for all you do for our children."<br>
       <br>
-      <div class="attr">- PEP Parent</div>
+      <div class="attr">- PEP Family</div>
     </div>
 
     <div>
-      "Mauris pellentesque nisi nec augue vestibulum egestas. Quisque a cursus leo. Aliquam eleifend at sem eget volutpat. Vestibulum a malesuada diam. Phasellus pellentesque accumsan vestibulum. Integer fermentum lorem ac ullamcorper fermentum. Curabitur non lobortis leo. Suspendisse rutrum dapibus libero et lobortis. Mauris in mi risus."<br>
+      "We are truly blessed to have such wonderful people taking care of our 3 children. You have provided them with building blocks to be successful in elementary school."<br>
       <br>
-      <div class="attr">- PEP Parent</div>
+      <div class="attr">- PEP Parents</div>
     </div>
 
     <div>
-      "Ut faucibus sapien sed leo dictum, a auctor lorem euismod. Donec euismod sapien ipsum. Ut semper risus sit amet elit auctor dictum. Mauris dapibus consequat risus quis dapibus. Vestibulum posuere velit lacus, nec fringilla nulla sagittis vel. Curabitur ultrices nec quam et sodales. Pellentesque in gravida ante, a mollis quam."<br>
+      "We would like to thank everyone that helped to make the Mother's Day Breakfast so special-my mom was thrilled to visit PEP and meet my son's teachers and friends-thanks for all the extra effort."<br>
       <br>
-      <div class="attr">- PEP Parent</div>
+      <div class="attr">- PEP Family</div>
     </div>
-
+    
     <div>
-      "Fusce volutpat est sem, in feugiat odio scelerisque id. Donec elementum, urna nec tempor euismod, tortor neque consectetur ex, nec mattis quam justo nec est. Mauris elementum semper turpis, eu dictum tortor ultrices eget. Duis facilisis massa sem, a dapibus ante efficitur a."<br>
+      "Our family just wanted to send a huge thanks to the wonderful staff at Park's Edge. Our son has learned so much in such a short time. Thanks again.."<br>
       <br>
-      <div class="attr">- PEP Parent</div>
+      <div class="attr">- PEP Mother</div>
     </div>
   </div>
 </div>

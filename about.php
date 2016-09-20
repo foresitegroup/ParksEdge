@@ -12,7 +12,7 @@ include "header.php";
 </div>
 
 <div class="about site-width">
-  <div class="larger">As a non-profit organization at Park's Edge Preschool &amp; Child Care Center, we continually strive to be a valuable extension of the families that we serve. We seek to form a partnership with parents to create and maintain a superior learning environment for their Christian Values and traditions and invite you to come and see this "home away from home" for your children to learn about our special programs developed specifically to meet your families needs.<br>
+  <div class="larger">Park's Edge Preschool &amp; Child Care Center is a non-profit organization that was established in June of 1999 as an outreach program of the Emanuel United Lutheran Church, which has been serving the Hales Corners community for over 100 years. Together we continually strive to be a valuable extension of the families that we serve. We seek to form a partnership with parents to create and maintain a superior learning environment for their Christian Values and traditions and invite you to come and see this "home away from home" for your children to learn about our special programs developed specifically to meet your families needs.<br>
   <br>
 
   We employee a highly trained, diverse and enthusiastic staff around a 12-hour day at Park's Edge Preschool, scheduling staff in accordance with state licensing requirements. We offer a variety of programs that accommodate children from six weeks through twelve years of age. The Center is a special place distinctly designed with a number of features to promote an optimal atmosphere for the individual growth and development of your child.</div><br>
@@ -40,7 +40,7 @@ include "header.php";
   <div style="clear: both;"></div><br>
   <br>
   <br>
-  
+
   <script type="text/javascript">
     $(document).ready(function() {
       $('.team-link').on('touchstart touchend', function(e){
@@ -66,7 +66,7 @@ include "header.php";
     <div class="team" style="background-image: url(images/team-rhianna.jpg);">
       <a class="team-link">
         <div class="team-hover-content">
-          "Lorem ipsum tulaliloo po kass ti aamoo! Jeje tatata bala tu chasy tatata bala tu tank yuuu! Hahaha. Poopayee wiiiii po kass aaaaaah chasy hahaha."
+          "I have been working in the child care field since 2001, where I love feeling like I have a 'family' in Wisconsin and I absolutely love receiving hugs from the children daily!"
         </div>
       </a>
     </div>
@@ -79,7 +79,7 @@ include "header.php";
     <div class="team" style="background-image: url(images/team-melinda.jpg);">
       <a class="team-link">
         <div class="team-hover-content">
-          "Lorem ipsum potatoooo hana dul sae pepete jeje jeje poopayee jiji poulet tikka masala hana dul sae. Tatata bala tu poulet tikka masala."
+          "I have been a teacher at Park's Edge since September of 2005. I have my Associates Degree in Early Childhood from MATC which places me at Registry Level 12."
         </div>
       </a>
     </div>
@@ -111,7 +111,7 @@ include "header.php";
       <img src="images/logo-youngstar.png" alt="YoungStar"><br>
 
       <strong>5 Star YoungStar Rating! YoungStar</strong> is Wisconsin's child care quality rating and improvement system. We give parents the tools and information they need to raise happy, healthy kids. And, we help preschools, home-based programs, learning centers, and other child care providers give children safe, nurturing places to grow.<br>
-      
+
       <script src="inc/swipebox/jquery.swipebox.min.js"></script>
       <link rel="stylesheet" href="inc/swipebox/swipebox.css">
       <script type="text/javascript">

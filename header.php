@@ -70,16 +70,10 @@
                 <li><a href="programs.php#infant-toddler" onclick="location.reload();">Infant / Toddler</a></li>
                 <li><a href="programs.php#pre-school" onclick="location.reload();">Pre-School</a></li>
                 <li><a href="programs.php#school-age" onclick="location.reload();">School Age</a></li>
+                <li><a href="pricing.php">Pricing</a></li>
               </ul>
             </li>
-            <li>
-              <a href="tour.php">Tour</a>
-              <ul>
-                <li><a href="tour.php#infant-toddler">Infant / Toddler</a></li>
-                <li><a href="tour.php#pssa">Pre-School &amp; School Age</a></li>
-                <li><a href="tour.php#outdoor">Outdoor / Facility</a></li>
-              </ul>
-            </li>
+            <li><a href="tour.php">Tour</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="parents.php">Parents</a></li>
             <li class="donate"><a href="#">Donate</a></li>
