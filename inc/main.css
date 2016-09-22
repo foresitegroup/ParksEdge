@@ -179,8 +179,15 @@ A.button.orange:visited {
   background: #F98202;
 }
 
+A.button.blue:link,
+A.button.blue:visited {
+  background: #112C37;
+}
+
 A.button:hover,
-A.button:active {
+A.button:active,
+A.button.blue:hover,
+A.button.blue:active {
   background: #F98202;
 }
 
@@ -1636,6 +1643,61 @@ A.msnav:active .fa {
   padding: 0.5em 0 0.2em;
 }
 
+.parents-news {
+  background: #33CC33;
+  color: #112C37;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.9em;
+  padding: 5em 0;
+}
+
+.parents-news H1 {
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+  margin: 0 0 0.5em;
+}
+
+.parents-news .one-third:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.parents-news .blog-date {
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #2D7D2F;
+}
+
+.parents-news .blog-title {
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #112C37;
+  padding: 0.4em 0 0.3em;
+}
+
+.parents-news A.blog-link:link,
+.parents-news A.blog-link:visited {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.parents-news .button {
+
+}
+
+.parents-news A.blog-link:hover,
+.parents-news A.blog-link:active {
+  color: #112C37;
+}
+
 .parents-newsletter {
   position: relative;
   padding: 4em 0 calc(4em + 20px);
@@ -1668,6 +1730,162 @@ A.msnav:active .fa {
 
 .parents-newsletter A.newsletters:last-of-type {
   margin-right: 0;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.banner.no-tear.banner-blog-index,
+.banner.no-tear.banner-blog-single {
+  background-image: url(../images/banner-blog.jpg);
+  height: 296px;
+  position: relative;
+}
+
+.banner.no-tear.banner-blog-single {
+  height: 500px;
+}
+
+.banner.no-tear.banner-blog-index .site-width,
+.banner.no-tear.banner-blog-single .site-width {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.banner.no-tear.banner-blog-single .site-width {
+  font-size: 72px;
+  line-height: 1.2em;
+}
+
+.banner.no-tear.banner-blog-index .site-width A.archive:link,
+.banner.no-tear.banner-blog-index .site-width A.archive:visited {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1em;
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+.banner.no-tear.banner-blog-index .site-width A.archive:hover,
+.banner.no-tear.banner-blog-index .site-width A.archive:active {
+  color: #112C37;
+}
+
+.banner.no-tear.banner-blog-index .site-width .header-date,
+.banner.no-tear.banner-blog-single .site-width A.archive {
+  display: none;
+}
+
+.banner.no-tear.banner-blog-single .header-date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1em;
+  color: #4FC3F1;
+}
+
+.entry-content.site-width {
+  padding: 4em 0;
+  border-top: 1px solid #CCCCCC;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #7D7D7D;
+  text-align: center;
+}
+
+.entry-content.site-width:first-child {
+  border-top: 0;
+}
+
+.entry-content.site-width.single {
+  border-top: 0;
+  font-size: 21px;
+  text-align: left;
+}
+
+.entry-content .index-date {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.entry-content H2 {
+  margin: 0.7em 0 0.4em;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.entry-content A.readmore:link,
+.entry-content A.readmore:visited {
+  color: #4FC3F1;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.entry-content A.readmore:hover,
+.entry-content A.readmore:active {
+  color: #112C37;
+}
+
+.navigation {
+  border-top: 1px solid #CCCCCC;
+  padding: 2em 0;
+}
+
+.navigation H2 {
+  display: none;
+}
+
+.nav-links {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav-links A:link,
+.nav-links A:visited {
+  color: #B7B7B7;
+  padding: 0;
+}
+
+.nav-links .current,
+.nav-links A:hover,
+.nav-links A:active {
+  color: #1A404F;
+}
+
+.nav-links .prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.nav-links .next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.nav-links A.page-numbers,
+.nav-links .page-numbers {
+  padding: 0 0.1em;
+}
+
+.nav-links .page-numbers:first-child:before {
+  content: "PAGE: ";
+  color: #B7B7B7;
 }
 
 

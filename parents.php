@@ -78,6 +78,34 @@ include_once "inc/dbconfig.php";
   </div>
 </div>
 
+<div class="parents-news">
+  <div class="site-width">
+    <h1>RECENT NEWS</h1>
+
+    <?php
+    require('news/wp-blog-header.php');
+    $posts = get_posts('posts_per_page=3&order=DESC&orderby=date');
+    foreach ($posts as $post) :
+      setup_postdata( $post );
+      ?>
+      <div class="one-third">
+        <div class="blog-date"><?php the_date(); ?></div>
+        <div class="blog-title"><?php the_title(); ?></div>
+        <?php echo excerpt(24); ?><br>
+        <br>
+
+        <a href="<?php the_permalink(); ?>" class="blog-link">READ MORE</a>
+      </div>
+    <?php endforeach; ?>
+    
+    <div style="clear: both;"></div><br>
+    <br>
+    <br>
+
+    <a href="<?php the_permalink(); ?>" class="button blue">VIEW ALL POSTS</a>
+  </div>
+</div>
+
 <div class="parents-newsletter">
   <div class="site-width">
     <h1>NEWSLETTER</h1>

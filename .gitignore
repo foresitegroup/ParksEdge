@@ -1,3 +1,10 @@
 .DS_Store
 inc/dbconfig.php
 inc/dompdf/*
+news/*
+!news/wp-content/
+news/wp-content/*
+!news/wp-content/themes/
+news/wp-content/themes/*
+!news/wp-content/themes/parksedge
+news/wp-content/themes/parksedge/.DS_Store

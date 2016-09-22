@@ -33,9 +33,7 @@ include "header.php";
     </div>
   </form>
 
-  <br>
-  <hr><br>
-  <br>
+  <hr style="margin: 2em 0;">
 
   <?php
   if (!empty($_SERVER['QUERY_STRING'])) {
@@ -142,6 +140,8 @@ include "header.php";
       ?>
     </tr>
   </table>
+
+  <br>
 </div>
 
 <?php include "footer.php"; ?>

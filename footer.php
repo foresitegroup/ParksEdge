@@ -48,7 +48,7 @@
 
       Signup for our newsletter to receive news, events &amp; important dates.
 
-      <form action="form-mailchimp.php" method="POST" id="mailchimp-form">
+      <form action="<?php echo $TopDir; ?>form-mailchimp.php" method="POST" id="mailchimp-form">
         <div>
           <input type="email" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="Email Address">
           <input type="submit" name="submit" value="SUBMIT">
@@ -66,8 +66,7 @@
         <div class="one-fourth bigger">
           <h2>RESOURCES</h2>
           <a href="https://parksedgepreschool.smugmug.com">GALLERY</a><br>
-          <a href="parents.php#calendar">CALENDARS</a><br>
-          <a href="parents.php#menus">LUNCH MENU</a><br>
+          <a href="<?php echo $TopDir; ?>parents.php">MENU &amp; CALENDAR</a><br>
           <a href="#">FORMS</a><br>
           <a href="#">DONATE</a>
         </div>
@@ -76,7 +75,7 @@
           <h2>FOLLOW US</h2>
           <a href="#">FACEBOOK</a><br>
           <a href="#">YOUTUBE</a><br>
-          <a href="#">BLOG/NEWS</a>
+          <a href="<?php echo $TopDir; ?>news">NEWS</a>
         </div>
 
         <div class="one-fourth">
@@ -90,7 +89,7 @@
           10627 W. Forest Home Avenue<br>
           Hales Corners, WI 53130<br>
           <strong style="display: block; margin: 0.5em 0;">(414) 427-9561</strong>
-          <a href="contact.php">CONTACT US BY EMAIL</a>
+          <a href="<?php echo $TopDir; ?>contact.php">CONTACT US BY EMAIL</a>
         </div>
       </div>
 
