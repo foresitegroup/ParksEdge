@@ -20,8 +20,8 @@ include_once "inc/dbconfig.php";
 <script>
   $(document).ready(function() {
     var hash = window.location.hash;
-    if (hash == "#calendar") {
-      $("#menu-schedule").load("menu-schedule.php", function() { location.href = '#calendar'; });
+    if (hash != "") {
+      $("#menu-schedule").load("menu-schedule.php", function() { location.href = hash; })
     } else {
       $("#menu-schedule").load("menu-schedule.php");
     }
@@ -102,40 +102,50 @@ include_once "inc/dbconfig.php";
     <br>
     <br>
 
-    <a href="<?php the_permalink(); ?>" class="button blue">VIEW ALL POSTS</a>
+    <a href="news" class="button blue">VIEW ALL POSTS</a>
   </div>
 </div>
 
-<div class="parents-newsletter">
+<div class="parents-newsletter-forms">
   <div class="site-width">
-    <h1>NEWSLETTER</h1>
+    <div class="parents-newsletter cf">
+      <h1>NEWSLETTER</h1>
 
-    Read, Download and <a href="#mailchimp">Signup</a> to the Parks Edge Pre-School Newsletter to stay up to date on news, events &amp; important dates.<br>
-    <br>
-    <br>
+      Read, Download and <a href="#mailchimp">Signup</a> to the Parks Edge Preschool Newsletter to stay up to date on news, events &amp; important dates.<br>
 
-    <?php
-    $main_dir = "pdf/newsletters";
+      <?php
+      $main_dir = "pdf/newsletters";
 
-    $files = scandir($main_dir);
-    foreach($files as $file) {
-      // Ignore non-files
-      if ($file == "." || $file == "..") continue;
+      $files = scandir($main_dir);
+      foreach($files as $file) {
+        // Ignore non-files
+        if ($file == "." || $file == "..") continue;
 
-      // Put results into an array
-      $results[] = $main_dir . "/" . $file;
-    }
+        // Put results into an array
+        $results[] = $main_dir . "/" . $file;
+      }
 
-    natcasesort($results);
-    $results = array_reverse($results);
-    $results = array_slice($results, 0, 5);
+      natcasesort($results);
+      $results = array_reverse($results);
+      $results = array_slice($results, 0, 5);
 
-    foreach($results as $result) {
-      $filename = basename($result, ".pdf");
-      $pieces = explode("_", $filename);
-      echo "<a href=\"" . $result . "\" class=\"newsletters\"><i class=\"fa fa-arrow-circle-o-down\" aria-hidden=\"true\"></i> " . date("F Y", strtotime($pieces[2] . "/1/" . $pieces[1])) . "</a>";
-    }
-    ?>
+      foreach($results as $result) {
+        $filename = basename($result, ".pdf");
+        $pieces = explode("_", $filename);
+        echo "<div class=\"one-half\"><a href=\"" . $result . "\"><i class=\"fa fa-arrow-circle-o-down\" aria-hidden=\"true\"></i> " . date("F Y", strtotime($pieces[2] . "/1/" . $pieces[1])) . "</a></div>";
+      }
+      ?>
+    </div>
+
+    <div class="parents-forms" id="forms">
+      <h1>DOCUMENTS &amp; FORMS</h1>
+
+      <a href="#">Immunization Form</a><br>
+
+      <a href="#">Application Form</a><br>
+
+      <a href="#">Permission Slip</a>
+    </div>
   </div>
 
   <div class="torn-footer"></div>

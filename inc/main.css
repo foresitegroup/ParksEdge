@@ -708,6 +708,10 @@ A#return-to-top:active {
   color: #FFFFFF;
 }
 
+.contact-section.blue A {
+  color: #112C37;
+}
+
 .contact-section .orangetext A,
 .home-contact .orangetext A {
   color: #F98202;
@@ -716,11 +720,13 @@ A#return-to-top:active {
 .contact-section A.button:link,
 .contact-section A.button:visited {
   background: #112C37;
+  color: #FFFFFF;
 }
 
 .contact-section A.button:hover,
 .contact-section A.button:active {
   background: #F98202;
+  color: #FFFFFF;
 }
 
 .about-testimonials,
@@ -1689,26 +1695,40 @@ A.msnav:active .fa {
   font-size: 16px;
 }
 
-.parents-news .button {
-
-}
-
 .parents-news A.blog-link:hover,
 .parents-news A.blog-link:active {
   color: #112C37;
 }
 
-.parents-newsletter {
+.parents-newsletter-forms {
+  background: linear-gradient(90deg, #FFFFFF 50%, #4FC3F1 50%);
   position: relative;
-  padding: 4em 0 calc(4em + 20px);
-  font-size: 18px;
+}
+
+.parents-newsletter {
+  float: left;
+  width: 57%;
+  padding: 4em 10% calc(4em + 20px) 0;
+  box-sizing: border-box;
+  background: #FFFFFF;
   color: #4FC3F1;
+  font-size: 18px;
 }
 
 .parents-newsletter H1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 72px;
+}
+
+.parents-newsletter .one-half {
+  margin-top: 1em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.parents-newsletter .one-half:nth-child(even) {
+  margin-right: 0;
 }
 
 .parents-newsletter A:link,
@@ -1722,14 +1742,41 @@ A.msnav:active .fa {
   color: #B7B7B7;
 }
 
-.parents-newsletter A.newsletters {
-  margin-right: 3em;
+.parents-forms {
+  float: right;
+  width: 43%;
+  padding: 4em 0 calc(4em + 20px) 8.5%;
+  box-sizing: border-box;
+  background: #4FC3F1;
+  color: #1A404F;
   font-weight: 800;
-  text-transform: uppercase;
+  font-size: 18px;
 }
 
-.parents-newsletter A.newsletters:last-of-type {
-  margin-right: 0;
+.parents-forms H1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 52px;
+  color: #FFFFFF;
+  margin-bottom: 0.5em;
+}
+
+.parents-forms A:link,
+.parents-forms A:visited {
+  color: #1A404F;
+  display: inline-block;
+  margin-top: 0.8em;
+}
+
+.parents-forms A:hover,
+.parents-forms A:active {
+  color: #FFFFFF;
+}
+
+.parents-forms A:before {
+  font-family: FontAwesome;
+  content: "\f016";
+  padding-right: 0.5em; 
 }
 
 .overlay {
@@ -1822,6 +1869,14 @@ A.msnav:active .fa {
   text-transform: uppercase;
 }
 
+A:link, A:visited {
+  color: #4FC3F1;
+}
+
+A:hover, A:active {
+  color: #112C37;
+}
+
 .entry-content A.readmore:link,
 .entry-content A.readmore:visited {
   color: #4FC3F1;
@@ -1887,7 +1942,6 @@ A.msnav:active .fa {
   content: "PAGE: ";
   color: #B7B7B7;
 }
-
 
 /* BEGIN modal css */
 html {
@@ -2012,7 +2066,8 @@ html {
 
 @media only screen and (max-width: 1000px) {
   .site-width,
-  .programs-menu {
+  .programs-menu,
+  .nav-links {
     width: 96%;
   }
 
@@ -2174,6 +2229,19 @@ html {
   .parents-download .last {
     text-align: left;
   }
+
+  .parents-newsletter H1 {
+    font-size: 50px;
+  }
+
+  .parents-newsletter .one-half {
+    float: none;
+    width: 100%;
+  }
+
+  .parents-forms H1 {
+    font-size: 36px;
+  }
   
   #mailchimp INPUT[type="email"] { width: 75%; }
   #mailchimp INPUT[type="submit"] { width: 20%; }
@@ -2333,9 +2401,56 @@ html {
     margin-bottom: 1em;
   }
 
-  .parents-newsletter A.newsletters {
-    display: block;
-    margin: 0;
+  .parents-news .one-third {
+    float: none;
+    width: 100%;
+    padding: 1em 0;
+    border-top: 1px solid #2D7D2F;
+  }
+
+  .parents-news .one-third:first-of-type {
+    border-top: 0;
+  }
+
+  .parents-newsletter-forms {
+    background: transparent;
+  }
+
+  .parents-newsletter-forms .site-width {
+    width: 100%;
+  }
+
+  .parents-newsletter,
+  .parents-forms {
+    float: none;
+    width: 100%;
+  }
+
+  .parents-newsletter {
+    padding: 4em 2%;
+  }
+
+  .parents-newsletter H1 {
+    font-size: 72px;
+  }
+
+  .parents-newsletter .one-half {
+    float: left;
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .parents-forms {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .parents-forms H1 {
+    font-size: 52px;
+  }
+
+  .banner.no-tear.banner-blog-single .site-width {
+    font-size: 65px;
   }
 }
 
@@ -2465,6 +2580,31 @@ html {
     font-size: 32px;
   }
 
+  .parents-news .one-third {
+    margin-bottom: 0;
+  }
+
+  .parents-newsletter .one-half {
+    float: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .banner.no-tear.banner-blog-index .site-width {
+    font-size: 38px;
+  }
+
+  .entry-content H2,
+  .banner.no-tear.banner-blog-single .site-width {
+    font-size: 42px;
+  }
+
+  .nav-links .prev,
+  .nav-links .next {
+    position: static;
+    transform: none;
+  }
+
   #mailchimp INPUT[type="email"],
   #mailchimp INPUT[type="submit"] {
     float: none;
@@ -2537,7 +2677,8 @@ html {
 
   .parents-menu-header H1,
   .parents-calendar H1,
-  .parents-newsletter H1 {
+  .parents-newsletter H1,
+  .parents-forms H1 {
     font-size: 45px;
   }
 
@@ -2548,5 +2689,14 @@ html {
   A.msnav:link,
   A.msnav:visited {
     font-size: 20px;
+  }
+
+  .banner.no-tear.banner-blog-index .site-width {
+    font-size: 32px;
+  }
+
+  .entry-content H2,
+  .banner.no-tear.banner-blog-single .site-width {
+    font-size: 35px;
   }
 }

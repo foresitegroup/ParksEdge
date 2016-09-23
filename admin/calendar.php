@@ -5,12 +5,12 @@ $PageTitle = "Menu";
 include "header.php";
 ?>
 
-<div class="site-width content">
+<div class="site-width content admin-cal">
   <div class="one-half">
     <h3>Add Event</h3>
     <form action="calendar-db.php?a=add" method="POST">
       <div>
-        <input type="text" name="startdate" class="startdate" placeholder="Start Date">
+        <input type="text" name="startdate" class="startdate" placeholder="Start Date"">
 
         <input type="text" name="enddate" class="enddate" placeholder="End Date (optional)">
 

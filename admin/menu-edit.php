@@ -8,7 +8,7 @@ $result = $mysqli->query("SELECT * FROM menu WHERE id = '" . $_GET['id'] . "'");
 $row = $result->fetch_array(MYSQLI_ASSOC);
 ?>
 
-<div class="site-width content">
+<div class="site-width content admin-menu">
   <form action="menu-db.php?a=edit" method="POST">
     <div>
       <div class="one-third">
@@ -25,12 +25,12 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 
       <div style="clear: both;"></div>
 
-      <input type="text" name="date" class="startdate" placeholder="Date" style="float: left; width: 15%;" value="<?php if ($row['date'] != "") echo date("m/d/Y", $row['date']); ?>">
+      <input type="text" name="date" class="menudate" placeholder="Date" value="<?php if ($row['date'] != "") echo date("m/d/Y", $row['date']); ?>">
 
       <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
       <input type="hidden" name="loc" value="<?php echo $_GET['loc']; ?>">
 
-      <input type="submit" name="submit" value="UPDATE" style="float: right; width: 15%;">
+      <input type="submit" name="submit" value="UPDATE" class="submit">
 
       <div style="clear: both;"></div>
     </div>

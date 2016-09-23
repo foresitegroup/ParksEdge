@@ -17,6 +17,16 @@ TEXTAREA {
   margin-top: 0;
 }
 
+.admin-menu .menudate {
+  float: left;
+  width: 15%;
+}
+
+.admin-menu .submit {
+  float: right;
+  width: 15%;
+}
+
 #submit:disabled {
   background: #CCCCCC;
   color: #AAAAAA;
@@ -81,6 +91,10 @@ TEXTAREA {
   line-height: 1em;
   text-align: left;
   padding-bottom: 0.5em;
+}
+
+.cal TD.cal-day .cal-dayname {
+  display: none;
 }
 
 .cal TD.cal-day STRONG {
@@ -156,4 +170,99 @@ A.c-delete:hover, A.c-delete:active {
 .edit-cal FORM {
   width: 50%;
   margin: 0 auto;
+}
+
+.edit-cal .startdate {
+  float: left;
+  width: 48%;
+}
+
+.edit-cal .enddate {
+  float: right;
+  width: 48%;
+}
+
+
+@media only screen and (max-width: 800px) {
+  /* Small computer or landscape tablet */
+  .admin-menu .menudate,
+  .admin-menu .submit {
+    width: 22%;
+  }
+
+  .admin-cal .one-half {
+    float: none;
+    width: 100%;
+    margin: 0 0 3em;
+  }
+
+  .admin-cal .one-half .startdate {
+    float: left;
+    width: 48%;
+  }
+
+  .admin-cal .one-half .enddate {
+    float: right;
+    width: 48%;
+  }
+
+  .edit-cal FORM {
+    width: 67%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Small tablet */
+  .admin-menu .one-third {
+    float: none;
+    width: 100%;
+  }
+
+  .admin-menu .menudate,
+  .admin-menu .submit {
+    width: 27%;
+  }
+
+  .cal TD {
+    display: block;
+    width: 100%;
+  }
+
+  .cal TD.cal-day {
+    height: auto;
+    border-top: 0;
+  }
+
+  .cal .cal-head TD {
+    border-bottom: 1px solid #1A404F;
+  }
+
+  .cal .weekdays TD,
+  .cal TD.blank-start,
+  .cal TD.blank-end {
+    display: none;
+  }
+
+  .cal TD.cal-day .cal-dayname {
+    display: block;
+    color: #1A404F;
+    font-size: 16px;
+    line-height: 1em;
+    text-align: left;
+    position: absolute;
+    top: 0.65em;
+    left: 2.3em;
+  }
+
+  .edit-cal FORM {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Phone */
+  .admin-menu .menudate,
+  .admin-menu .submit {
+    width: 40%;
+  }
 }

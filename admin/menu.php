@@ -5,7 +5,7 @@ $PageTitle = "Menu";
 include "header.php";
 ?>
 
-<div class="site-width content menu">
+<div class="site-width content admin-menu">
   <h3>Add Menu Date</h3>
   <form action="menu-db.php?a=add" method="POST">
     <div>
@@ -23,11 +23,11 @@ include "header.php";
 
       <div style="clear: both;"></div>
 
-      <input type="text" name="date" class="menudate" placeholder="Date" style="float: left; width: 15%;">
+      <input type="text" name="date" class="menudate" placeholder="Date">
 
       <input type="hidden" name="page" value="<?php if (!empty($_SERVER['QUERY_STRING'])) echo $_SERVER['QUERY_STRING']; ?>">
 
-      <input type="submit" name="submit" value="SUBMIT" id="submit" style="float: right; width: 15%;">
+      <input type="submit" name="submit" value="SUBMIT" id="submit" class="submit">
 
       <div style="clear: both;"></div>
     </div>
@@ -94,6 +94,7 @@ include "header.php";
         $eventarr[$MyDay][] = $row;
       }
       $result->close();
+      // print_r($eventarr);
    
       $day_num = 1;
    
@@ -106,6 +107,8 @@ include "header.php";
           // This day has a menu so display it
           if (isset($eventarr[$day_num])) {
             foreach($eventarr[$day_num] as $key => $value) {
+              echo "<div class=\"cal-dayname\">" . date("l", $eventarr[$day_num][$key]['date']) . "</div>";
+
               if ($eventarr[$day_num][$key]['lunch'] != "") echo nl2br($eventarr[$day_num][$key]['lunch']);
               if ($eventarr[$day_num][$key]['am_snack'] != "") echo "<br><br><strong>AM SNACK</strong><br>" . nl2br($eventarr[$day_num][$key]['am_snack']);
               if ($eventarr[$day_num][$key]['pm_snack'] != "") echo "<br><br><strong>PM SNACK</strong><br>" . nl2br($eventarr[$day_num][$key]['pm_snack']);
