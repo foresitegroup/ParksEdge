@@ -21,8 +21,13 @@ include "header.php";
       <h1>OUR MISSION</h1>
       Park's Edge Preschool's mission is to provide an outstanding Christian environment that focuses on the development of each individual child; spiritually, morally, physically, mentally, socially and emotionally.<br>
       <br>
-
-      <a href="#" class="watch">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+      
+      <script src="inc/swipebox/jquery.swipebox.min.js"></script>
+      <link rel="stylesheet" href="inc/swipebox/swipebox.css">
+      <script type="text/javascript">
+        $(document).ready(function() { $('.swipebox').swipebox({autoplayVideos: true, hideBarsDelay : 0}); });
+      </script>
+      <a href="https://www.youtube.com/watch?v=bRXgiFHtiRc" class="watch swipebox" rel="mission">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
     </div>
 
     <div class="col2">
@@ -134,13 +139,8 @@ include "header.php";
     <div class="col2">
       <h1>YOUNGSTAR 5 STAR PROVIDER RATING</h1>
       <strong>YoungStar</strong> is Wisconsin's child care quality rating and improvement system. We give parents the tools and information they need to raise happy, healthy kids. And, we help preschools, home-based programs, learning centers, and other child care providers give children safe, nurturing places to grow.<br>
-      
-      <script src="inc/swipebox/jquery.swipebox.min.js"></script>
-      <link rel="stylesheet" href="inc/swipebox/swipebox.css">
-      <script type="text/javascript">
-        $(document).ready(function() { $('.swipebox').swipebox({autoplayVideos: true, hideBarsDelay : 0}); });
-      </script>
-      <a href="https://www.youtube.com/watch?v=T3s7bcOmHpg" class="swipebox">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
+
+      <a href="https://www.youtube.com/watch?v=T3s7bcOmHpg" class="swipebox" rel="acc">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a><br>
 
       <img src="images/logo-youngstar.png" alt="YoungStar">
     </div>
