@@ -1943,6 +1943,40 @@ A:hover, A:active {
   color: #B7B7B7;
 }
 
+.donate-left {
+  float: left;
+  width: 50%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+
+.donate-right {
+  float: right;
+  width: 50%;
+  padding-left: 10%;
+  box-sizing: border-box;
+  border-left: 1px solid black;
+}
+
+.donate H2 {
+  font-size: 37px;
+}
+
+.donate .one-fourth {
+  float: left;
+  width: 25%;
+}
+
+.donate-left #other-text,
+.donate-right #rec-other-text {
+  display: none;
+  margin: 0;
+}
+
+.donate INPUT[type="submit"] {
+  margin-top: 1.5em;
+}
+
 /* BEGIN modal css */
 html {
   overflow-y: scroll;

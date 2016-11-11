@@ -140,11 +140,11 @@ include_once "inc/dbconfig.php";
     <div class="parents-forms" id="forms">
       <h1>DOCUMENTS &amp; FORMS</h1>
 
-      <a href="#">Immunization Form</a><br>
+      <a href="pdf/Authorization_To_Administer_Medication.pdf">Authorization to Administer Medication</a><br>
 
-      <a href="#">Application Form</a><br>
+      <a href="pdf/Child_Health_Report.pdf">Child Health Report</a><br>
 
-      <a href="#">Permission Slip</a>
+      <a href="pdf/Health_History_and_Emergency_Care_Plan.pdf">Health History and Emergency Care Plan</a>
     </div>
   </div>
 

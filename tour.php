@@ -70,6 +70,14 @@ include "header.php";
     <a href="images/tour/pssa10.jpg" class="swipebox" style="background-image: url(images/tour/pssa10.jpg)" rel="pssa"></a>
     <a href="images/tour/pssa11.jpg" class="swipebox" style="background-image: url(images/tour/pssa11.jpg)" rel="pssa"></a>
     <a href="images/tour/pssa12.jpg" class="swipebox" style="background-image: url(images/tour/pssa12.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa13.jpg" class="swipebox" style="background-image: url(images/tour/pssa13.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa14.jpg" class="swipebox" style="background-image: url(images/tour/pssa14.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa15.jpg" class="swipebox" style="background-image: url(images/tour/pssa15.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa16.jpg" class="swipebox" style="background-image: url(images/tour/pssa16.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa17.jpg" class="swipebox" style="background-image: url(images/tour/pssa17.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa18.jpg" class="swipebox" style="background-image: url(images/tour/pssa18.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa19.jpg" class="swipebox" style="background-image: url(images/tour/pssa19.jpg)" rel="pssa"></a>
+    <a href="images/tour/pssa20.jpg" class="swipebox" style="background-image: url(images/tour/pssa20.jpg)" rel="pssa"></a>
 
     <div style="clear: both;"></div>
   </div>
@@ -93,6 +101,10 @@ include "header.php";
     <a href="images/tour/outdoor06.jpg" class="swipebox" style="background-image: url(images/tour/outdoor06.jpg)" rel="outdoor"></a>
     <a href="images/tour/outdoor07.jpg" class="swipebox" style="background-image: url(images/tour/outdoor07.jpg)" rel="outdoor"></a>
     <a href="images/tour/outdoor08.jpg" class="swipebox" style="background-image: url(images/tour/outdoor08.jpg)" rel="outdoor"></a>
+    <a href="images/tour/outdoor09.jpg" class="swipebox" style="background-image: url(images/tour/outdoor09.jpg)" rel="outdoor"></a>
+    <a href="images/tour/outdoor10.jpg" class="swipebox" style="background-image: url(images/tour/outdoor10.jpg)" rel="outdoor"></a>
+    <a href="images/tour/outdoor11.jpg" class="swipebox" style="background-image: url(images/tour/outdoor11.jpg)" rel="outdoor"></a>
+    <a href="images/tour/outdoor12.jpg" class="swipebox" style="background-image: url(images/tour/outdoor12.jpg)" rel="outdoor"></a>
 
     <div style="clear: both;"></div>
   </div>
