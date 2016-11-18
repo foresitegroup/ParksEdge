@@ -71,7 +71,7 @@ include "header.php";
       </a>
     </div>
 
-    <div class="team-name">Rhianna Corso</div>
+    <div class="team-name">Rhianna Reynolds</div>
     <div class="team-title">Curriculum Coordinator</div>
   </div>
 
@@ -84,8 +84,22 @@ include "header.php";
       </a>
     </div>
 
-    <div class="team-name">Melinda</div>
+    <div class="team-name">Melinda Antoniewizc</div>
     <div class="team-title">Safety Coordinator &amp; Toddler Teacher</div>
+  </div>
+
+  <div style="clear: both;"></div><br>
+  <br>
+  
+  <h1>PEP STAFF</h1>
+  <div class="one-third staff">
+    <a href="programs-it.php#staff">Infant/Toddler Staff</a>
+  </div>
+  <div class="one-third staff">
+    <a href="programs-ps.php#staff">Pre-School Staff</a>
+  </div>
+  <div class="one-third last staff">
+    <a href="programs-sa.php#staff">School Age Staff</a>
   </div>
 </div>
 

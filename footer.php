@@ -68,7 +68,7 @@
           <a href="https://parksedgepreschool.smugmug.com">GALLERY</a><br>
           <a href="<?php echo $TopDir; ?>parents.php">MENU &amp; CALENDAR</a><br>
           <a href="<?php echo $TopDir; ?>parents.php#forms">FORMS</a><br>
-          <a href="#">DONATE</a>
+          <a href="<?php echo $TopDir; ?>donate.php">DONATE</a>
         </div>
 
         <div class="one-fourth bigger">

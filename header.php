@@ -69,17 +69,17 @@ if (!isset($TopDir)) $TopDir = "";
             <li>
               <a href="<?php echo $TopDir; ?>programs.php">Programs</a>
               <ul>
-                <li><a href="<?php echo $TopDir; ?>programs.php" onclick="location.reload();">Christian</a></li>
-                <li><a href="<?php echo $TopDir; ?>programs.php#infant-toddler" onclick="location.reload();">Infant / Toddler</a></li>
-                <li><a href="<?php echo $TopDir; ?>programs.php#pre-school" onclick="location.reload();">Pre-School</a></li>
-                <li><a href="<?php echo $TopDir; ?>programs.php#school-age" onclick="location.reload();">School Age</a></li>
+                <li><a href="<?php echo $TopDir; ?>programs.php">Christian</a></li>
+                <li><a href="<?php echo $TopDir; ?>programs-it.php">Infant / Toddler</a></li>
+                <li><a href="<?php echo $TopDir; ?>programs-ps.php">Pre-School</a></li>
+                <li><a href="<?php echo $TopDir; ?>programs-sa.php">School Age</a></li>
                 <li><a href="<?php echo $TopDir; ?>pricing.php">Pricing</a></li>
               </ul>
             </li>
             <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
             <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
             <li><a href="<?php echo $TopDir; ?>parents.php">Parents</a></li>
-            <li class="donate"><a href="#">Donate</a></li>
+            <li class="donate"><a href="<?php echo $TopDir; ?>donate.php">Donate</a></li>
           </ul>
         </div>
       </div>

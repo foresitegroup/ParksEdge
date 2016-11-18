@@ -1,10 +1,18 @@
 <?php
-$PageTitle = "PayPal Test";
+$PageTitle = "Donate";
 include "header.php";
 ?>
 
-<div class="site-width" style="padding: 5em 0;">
-  We greatly appreciate your donation(s) to Park's Edge Preschool. Please select how you wish to give.<br>
+<div class="banner" style="background-image: url(images/banner-donate.jpg);">
+  <div class="site-width big">
+    We greatly appreciate your donation to Park's Edge Preschool.
+  </div>
+
+  <div class="torn-header-white"></div>
+</div>
+
+<div class="site-width donate-page">
+  <div class="centered">Please select how you wish to give.</div><br>
   <br>
 
   <script type="text/javascript">
@@ -33,7 +41,7 @@ include "header.php";
     });
   </script>
   
-  <div class="donate donate-left">
+  <div class="donate-left">
     <h2>ONE-TIME DONATION</h2>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <div>
@@ -55,7 +63,7 @@ include "header.php";
     </form>
   </div>
   
-  <div class="donate donate-right">
+  <div class="donate-right">
     <h2>MONTHLY DONATION</h2>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <div>
@@ -79,6 +87,17 @@ include "header.php";
       </div>
     </form>
   </div>
+</div>
+
+<div class="contact-section green">
+  <div class="site-width">
+    For enrollment or to learn more about Park's Edge Preschool email or give us a call at <strong class="darkbluetext">414-427-9561</strong><br>
+    <br>
+
+    <a href="contact.php" class="button">CONTACT BY EMAIL</a>
+  </div>
+
+  <div class="torn-footer"></div>
 </div>
 
 <?php include "footer.php"; ?>

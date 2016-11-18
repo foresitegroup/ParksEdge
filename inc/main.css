@@ -708,6 +708,12 @@ A#return-to-top:active {
   color: #FFFFFF;
 }
 
+.contact-section.green {
+  background: #33CC33;
+  color: #FFFFFF;
+}
+
+.contact-section.green A,
 .contact-section.blue A {
   color: #112C37;
 }
@@ -1036,6 +1042,12 @@ A.team-link.hover {
   color: #4FC3F1;
 }
 
+.about .staff {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+
 .testimonials {
   padding: 4.5em 0 6em;
   text-align: center;
@@ -1114,18 +1126,24 @@ A.team-link.hover {
 }
 
 .programs-menu LI {
-  display: inline-block;
+  float: left;
   width: 25%;
   text-align: center;
-  cursor: pointer;
+  /*cursor: pointer;*/
   font-weight: 800;
   font-size: 156.25%;
   line-height: 1em;
   color: #112C37;
 }
 
-.programs-menu LI.slick-active,
-.programs-menu LI:hover {
+.programs-menu LI A:link,
+.programs-menu LI A:visited {
+  color: #112C37;
+}
+
+.programs-menu LI A:hover,
+.programs-menu LI A:active,
+.programs-menu LI.activepage {
   color: #4FC3F1;
 }
 
@@ -1943,6 +1961,10 @@ A:hover, A:active {
   color: #B7B7B7;
 }
 
+.donate-page {
+  padding: 4em 0 6em;
+}
+
 .donate-left {
   float: left;
   width: 50%;
@@ -1958,11 +1980,11 @@ A:hover, A:active {
   border-left: 1px solid black;
 }
 
-.donate H2 {
+.donate-page H2 {
   font-size: 37px;
 }
 
-.donate .one-fourth {
+.donate-page .one-fourth {
   float: left;
   width: 25%;
 }
@@ -1973,7 +1995,7 @@ A:hover, A:active {
   margin: 0;
 }
 
-.donate INPUT[type="submit"] {
+.donate-page INPUT[type="submit"] {
   margin-top: 1.5em;
 }
 
@@ -2659,6 +2681,24 @@ html {
   .nav-links .next {
     position: static;
     transform: none;
+  }
+
+  .donate-left,
+  .donate-right {
+    float: none;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .donate-right {
+    margin-top: 2em;
+    border-left: 0;
+    border-top: 1px solid black;
+    padding-top: 2em;
+  }
+
+  .donate-page H2 {
+    font-size: 30px;
   }
 
   #mailchimp INPUT[type="email"],
