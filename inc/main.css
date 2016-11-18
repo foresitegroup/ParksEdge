@@ -2604,7 +2604,7 @@ html {
 
   .programs-menu LI:first-child {
     position: relative;
-    top: -0.5em;
+    top: 0.5em;
   }
 
   .program-content .links A.button {
