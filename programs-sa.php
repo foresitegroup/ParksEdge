@@ -60,11 +60,8 @@ include "header.php";
       </div>
 
       <div class="one-half last">
-        <span class="intro">Cooks</span><br>
-        <strong class="bluetext">MS. DORA</strong> has been the cook/food coordinator at Park's Edge Preschool since December 2012. "I have my Food Managers License that I maintain. My education also includes Early Childhood I and Early Childhood II which makes me qualified to be an Assistant Teacher too. I enjoy contributing to the Park's Edge Preschool program and serving the families here."<br>
-        <br>
-
-        <strong class="bluetext">MR. CODY</strong> "I have been washing dishes here since early August 2014.  As a child I attended Park's Edge Preschool. I am current if Food Service Certification.  My experience here has been beneficial to my character both as a child and as an employee."
+        <span class="intro">Cook</span><br>
+        <strong class="bluetext">MS. DORA</strong> has been the cook/food coordinator at Park's Edge Preschool since December 2012. "I have my Food Managers License that I maintain. My education also includes Early Childhood I and Early Childhood II which makes me qualified to be an Assistant Teacher too. I enjoy contributing to the Park's Edge Preschool program and serving the families here."
       </div>
 
       <div style="clear: both;"></div>

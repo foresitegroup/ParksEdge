@@ -25,10 +25,10 @@ include "header.php";
   <br><br>
 
   <h3 id="infant-toddler">INFANT AREA/TODDLER AREA</h3>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+  Our Infant/Toddler area was distinctively designed and newly remodeled with a number of features to promote an optimal atmosphere for the growth and development of your child. The classroom environment offers an open concept; effective in supporting the long term relationships between staff and families. We realize from the moment of birth children start to learn and discover the world around them and the infant/toddler area at Park's Edge Preschool has been designed to promote each child's unique individual development.<br>
   <br>
 
-  <div class="video" data-id="T3s7bcOmHpg"></div>
+  <div class="video" data-id="C8lL9w07ksU"></div>
 
   <div class="gallery">
     <a href="images/tour/infant-toddler01.jpg" class="swipebox" style="background-image: url(images/tour/infant-toddler01.jpg)" rel="it"></a>
@@ -46,16 +46,22 @@ include "header.php";
 
     <div style="clear: both;"></div>
   </div>
-  
+
   <br><br>
   <hr><br>
   <br><br>
 
   <h3 id="pssa">PRE-SCHOOL &amp; SCHOOL-AGE AREA</h3>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+  Our Preschool area is designed to promote children having fun while being enthusiastic about learning. We encourage children to be active and creative, while not afraid to figure out problems on their own. Age appropriate self help skills are encouraged to promote personal responsibility and autonomy.  Our preschool classrooms are designed to concentrate on all areas of development; spiritual, moral, physical, mental, social and emotional.<br>
   <br>
 
-  <div class="video" data-id="T3s7bcOmHpg"></div>
+  The daily schedule allows for a mixture of child initiated and teacher initiated activities, reflecting a balance of quiet and active times, large and small group activities, indoor and outdoor play. Children who are given plenty of time to play , learn to ask questions and figure out their own answers. They are responsible for their own learning and see themselves as explorers, problem solvers and inventors.<br>
+  <br>
+
+  Additional programs are available for school age children through the age of twelve. Our classrooms are designed to encourage a continued learning environment before and after school while allowing children the free time they need to explore and develop on their own.  Planned activities and secure, large play areas allow the children the time and space to learn, play and have fun.<br>
+  <br>
+
+  <div class="video" data-id="SudBtmw8yko"></div>
 
   <div class="gallery">
     <a href="images/tour/pssa01.jpg" class="swipebox" style="background-image: url(images/tour/pssa01.jpg)" rel="pssa"></a>
@@ -87,10 +93,10 @@ include "header.php";
   <br><br>
 
   <h3 id="outdoor">OUTDOOR AREA &amp; FACILITY</h3>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+  Gross motor skills are promoted through daily opportunities for physical activity for all children at Park's Edge Preschool.  Children have opportunities to participate in these activities according to their abilities. Our outdoor environment allows every child the opportunity to explore God's beautiful world around us.<br>
   <br>
 
-  <div class="video" data-id="T3s7bcOmHpg"></div>
+  <div class="video" data-id="EaboOtsN81I"></div>
 
   <div class="gallery">
     <a href="images/tour/outdoor01.jpg" class="swipebox" style="background-image: url(images/tour/outdoor01.jpg)" rel="outdoor"></a>
