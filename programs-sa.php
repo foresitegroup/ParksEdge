@@ -33,38 +33,6 @@ include "header.php";
 
       <strong class="bluetext">School Age Summer Program/Camp:</strong> We have a wonderful summer program for school aged children where children get to plan the curriculum based on their interests so we know we are offering activities that are exciting to the children. Children are included in planning summer events and field trips. They will be able to participate in special field trips, art projects, and water play, cooking experiences, outside activities, educational activities, special guests, and much more!<br>
       <br>
-
-      <span class="intro" id="staff">Slithering Snakes (School-Age)</span><br>
-      <div class="one-half">
-        <strong class="bluetext">MS. JENELE</strong> has been working at Park's Edge Preschool since May 2007.  "I have completed ECI &amp; ECII, School age, and I have my CDA.  Registry Level 10. I completed the Preschool Credential in the summer of 2013 and have continued towards my Early Childhood Education Associate Degree. I will graduate with my EC Associate's Degree in 2017.  I am truly blessed to be working at Park's Edge Preschool and I enjoy every moment of it. I wish you and your family a great day. Faith, Trust &amp; Pixie Dust."
-      </div>
-
-      <div class="one-half last">
-        <strong class="bluetext">MR. CODY</strong> "I started washing dishes here early August 2014 and in the summer of 2016 I became an assistant teacher with Ms. Jenele, my mentor. I am CPR, SIDS and SBS certified. I completed The Introduction to the Child Care Profession, Skills and Strategies for the Child Care Teacher, School Age Assistant Child Care Worker in addition to Food Service Certification. As a child I attended Park's Edge Preschool and my experience here has been beneficial to my character both as a child and as an employee."
-      </div>
-
-      <div style="clear: both;"><br></div>
-      <br>
-      <br>
-
-      <hr>
-      <br>
-      <br>
-
-      <div class="one-half">
-        <span class="intro">Bus Drivers</span><br>
-        <strong class="bluetext">MS. DEE</strong> has been working at Park's Edge since October 1996.   Ms. Dee opens our classrooms every morning with an energetic smile. "My childcare education consists of ECI &amp; ECII, Infant &amp; Toddler, School-Age and I have a CDA. In December 2009 I also obtained my CDL to drive the bus too. Dee transports our school age children to and from local elementary schools.  Registry Level 6.  In my spare time, I am an Instructor Trainee for Tae Kwon Do and have obtained my 2nd degree black belt."<br>
-        <br>
-
-        <strong class="bluetext">MS. MARIA</strong> has her CDL and is our back-up bus driver when Ms. Dee is not here. "I get great enjoyment being around children, watching them learn and grow."
-      </div>
-
-      <div class="one-half last">
-        <span class="intro">Cook</span><br>
-        <strong class="bluetext">MS. DORA</strong> has been the cook/food coordinator at Park's Edge Preschool since December 2012. "I have my Food Managers License that I maintain. My education also includes Early Childhood I and Early Childhood II which makes me qualified to be an Assistant Teacher too. I enjoy contributing to the Park's Edge Preschool program and serving the families here."
-      </div>
-
-      <div style="clear: both;"></div>
       <br>
 
       <div class="links">
@@ -84,6 +52,28 @@ include "header.php";
       <img src="images/programs-school-age-slider4.jpg" alt="">
       <img src="images/programs-school-age-slider5.jpg" alt="">
     </div>
+  </div>
+</div>
+
+<div class="staff">
+  <div class="site-width">
+    <h3>SCHOOL AGE STAFF</h3>
+
+    <h4>SLITHERING SNAKES (SCHOOL-AGE)</h4>
+    <strong>MS. JENELE</strong> has been working at Park's Edge Preschool since May 2007.  "I have completed ECI &amp; ECII, School age, and I have my CDA.  Registry Level 10. I completed the Preschool Credential in the summer of 2013 and have continued towards my Early Childhood Education Associate Degree. I will graduate with my EC Associate's Degree in 2017.  I am truly blessed to be working at Park's Edge Preschool and I enjoy every moment of it. I wish you and your family a great day. Faith, Trust &amp; Pixie Dust."<br>
+    <br>
+
+    <strong>MR. CODY</strong> "I started washing dishes here early August 2014 and in the summer of 2016 I became an assistant teacher with Ms. Jenele, my mentor. I am CPR, SIDS and SBS certified. I completed The Introduction to the Child Care Profession, Skills and Strategies for the Child Care Teacher, School Age Assistant Child Care Worker in addition to Food Service Certification. As a child I attended Park's Edge Preschool and my experience here has been beneficial to my character both as a child and as an employee."<br>
+    <br>
+
+    <h4>BUS DRIVERS &amp; COOKS</h4>
+    <strong>MS. DEE</strong> has been working at Park's Edge since October 1996.   Ms. Dee opens our classrooms every morning with an energetic smile. "My childcare education consists of ECI &amp; ECII, Infant &amp; Toddler, School-Age and I have a CDA. In December 2009 I also obtained my CDL to drive the bus too. Dee transports our school age children to and from local elementary schools.  Registry Level 6.  In my spare time, I am an Instructor Trainee for Tae Kwon Do and have obtained my 2nd degree black belt."<br>
+    <br>
+
+    <strong>MS. MARIA</strong> has her CDL and is our back-up bus driver when Ms. Dee is not here. "I get great enjoyment being around children, watching them learn and grow."<br>
+    <br>
+
+    <strong>MS. DORA</strong> has been the cook/food coordinator at Park's Edge Preschool since December 2012. "I have my Food Managers License that I maintain. My education also includes Early Childhood I and Early Childhood II which makes me qualified to be an Assistant Teacher too. I enjoy contributing to the Park's Edge Preschool program and serving the families here."
   </div>
 </div>
 

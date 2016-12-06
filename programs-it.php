@@ -44,72 +44,12 @@ include "header.php";
       <br>
       <br>
 
-      <div class="one-half" id="staff">
-        <span class="intro">Love Bugs (Infant I)</span><br>
-        <strong class="bluetext">MS. NICOLE</strong> has been working in the childcare field since 1999. "I graduated from MATC with my Associate Degree in Early Childhood. I have been working at Park's Edge since March of 2004. Registry Level 12.  I enjoy spending time with my children. I look forward to continuing the care for your children."<br>
-        <br>
-
-        <strong class="bluetext">MS. RUSLANA</strong> started working at Park's Edge Preschool in October 2007, took a leave of absence in 2012, and returned in January 2016. "In 2006 I completed an Associate's Degree in Early Childhood Education at Gateway Technical College. I then graduated with my Bachelor's Degree in Sociology in 2007. Registry level 14. During my years of work experience, I have found joy in working with children."
-      </div>
-
-      <div class="one-half last">
-        <span class="intro">Beautiful Butterflies (Infant II)</span><br>
-        <strong class="bluetext">MS. JULIE</strong> has been working at Park's Edge Preschool since April of 2005. "I received my Associate's Degree in Early Childhood in May of 1999. Registry level 12. I am also CPR, AED, SIDS and SBS certified. I feel blessed to have the opportunity to work with the children, staff and families here at Park's Edge and feel fortunate to teach the children about Jesus."<br>
-        <br>
-
-        <strong class="bluetext">MS. MARY</strong> has worked at Park's Edge Preschool since May 2016. "I have been working in the child care field since March 2007. My education includes CDA, EC1, EC2 CPR, First Aid, SIDS and Shaken Baby Syndrome. Registry level 9. I am also working on getting my bachelor's in Early Childhood Education."
-      </div>
-
-      <div style="clear: both;"></div>
-      <br>
-      <br>
-
       <hr>
       <br>
       <br>
 
       <strong class="bluetext">Toddler:</strong> years are marked by many important transitions that continue the lifelong task of learning to separate from home and connect to the larger world. As infants become toddlers, the number of separations and connections increase, requiring children to practice and perfect the important task of transitioning among and between many different settings, experiences, and interactions. Your toddler will follow a daily routine throughout the day, which will promote security in their environment. They will engage in an array of opportunities including circle time, dramatic play, sensory and art experiences, construction and building, small motor, games, outdoor activities, and very importantly, child initiated play. Children learn through play, and allowing them to explore their environment while offering developmentally appropriate activities will teach cooperation, socialization skills and will foster a positive self-image. The classroom will consistently have a theme-based weekly lesson plan posted so the parents are aware of the activities and can discuss them with their child. When children show their readiness, and both the parents and teachers agree it's time for potty training, we will incorporate it into our daily schedule. The parents and teachers will decide together on the steps that will be taken to help the children with this process.<br>
       <br>
-      <br>
-
-      <div class="one-half">
-        <span class="intro">Darling Dragonflies (Toddlers)</span><br>
-        <strong class="bluetext">MS. SANJA</strong> started working at Park's Edge Preschool May 2016. "I was born in Bosnia and moved to the United States when I was 15 years old. In May of 2014, I earned my Associate's Degree in Early Childhood Education from MATC. Registry level 12. Currently I am attending Lakeland College to obtain my Bachelor's Degree in Education."<br>
-        <br>
-
-        <strong class="bluetext">MS. JACOBA</strong> started working at Park's Edge Preschool in September 2006.  "I have ECI &amp; ECII, and Infant &amp; Toddler. Through the TEACH Scholarship I earned my Infant/Toddler Credential in 2008, Registry Level 9.  MS. JACOBA plans to work toward and Associate Degree in Early Childhood Education. I have always liked working with children and I am looking forward to taking care of yours."
-      </div>
-
-      <div class="one-half last">
-        <span class="intro">Busy Bees (Two's)</span><br>
-        <strong class="bluetext">MS. BETH</strong> has been working in early childcare for over 25 years and with Park's Edge since April of 2011.  "I have an Associate Degree in Child Care and Development from MATC.  Registry Level 12.  I look forward to meeting all of you and your children.  I consider it a privilege to care for your children."<br>
-        <br>
-
-        <strong class="bluetext">MS. EMILY</strong> has been working at Park's Edge Preschool since July 2013. "I had a positive experience in high school achieving my Assistant Childcare Teacher Certificate and I am looking forward to working with your family. I graduated from WCTC with an Associates Degree in Early Childhood in spring 2015. Registry Level 12.  I'm very excited to be working here and I really hope that I get to know each and every child."
-      </div>
-
-      <div style="clear: both;"></div>
-      <br>
-      <br>
-
-      <hr>
-      <br>
-      <br>
-
-      <div class="one-half">
-        <span class="intro">Bus Drivers</span><br>
-        <strong class="bluetext">MS. DEE</strong> has been working at Park's Edge since October 1996.   Ms. Dee opens our classrooms every morning with an energetic smile. "My childcare education consists of ECI &amp; ECII, Infant &amp; Toddler, School-Age and I have a CDA. In December 2009 I also obtained my CDL to drive the bus too. Dee transports our school age children to and from local elementary schools.  Registry Level 6.  In my spare time, I am an Instructor Trainee for Tae Kwon Do and have obtained my 2nd degree black belt."<br>
-        <br>
-
-        <strong class="bluetext">MS. MARIA</strong> has her CDL and is our back-up bus driver when Ms. Dee is not here. "I get great enjoyment being around children, watching them learn and grow."
-      </div>
-
-      <div class="one-half last">
-        <span class="intro">Cook</span><br>
-        <strong class="bluetext">MS. DORA</strong> has been the cook/food coordinator at Park's Edge Preschool since December 2012. "I have my Food Managers License that I maintain. My education also includes Early Childhood I and Early Childhood II which makes me qualified to be an Assistant Teacher too. I enjoy contributing to the Park's Edge Preschool program and serving the families here."
-      </div>
-
-      <div style="clear: both;"></div>
       <br>
 
       <div class="links">
@@ -128,6 +68,49 @@ include "header.php";
       <img src="images/programs-infant-toddler-slider3.jpg" alt="">
       <img src="images/programs-infant-toddler-slider4.jpg" alt="">
     </div>
+  </div>
+</div>
+
+<div class="staff">
+  <div class="site-width">
+    <h3>INFANT/TODDLER STAFF</h3>
+
+    <h4>LOVE BUGS (INFANT I)</h4>
+    <strong>MS. NICOLE</strong> has been working in the childcare field since 1999. "I graduated from MATC with my Associate Degree in Early Childhood. I have been working at Park's Edge since March of 2004. Registry Level 12.  I enjoy spending time with my children. I look forward to continuing the care for your children."<br>
+    <br>
+
+    <strong>MS. RUSLANA</strong> started working at Park's Edge Preschool in October 2007, took a leave of absence in 2012, and returned in January 2016. "In 2006 I completed an Associate's Degree in Early Childhood Education at Gateway Technical College. I then graduated with my Bachelor's Degree in Sociology in 2007. Registry level 14. During my years of work experience, I have found joy in working with children."<br>
+    <br>
+
+    <h4>BEAUTIFUL BUTTERFLIES (INFANT II)</h4>
+    <strong>MS. JULIE</strong> has been working at Park's Edge Preschool since April of 2005. "I received my Associate's Degree in Early Childhood in May of 1999. Registry level 12. I am also CPR, AED, SIDS and SBS certified. I feel blessed to have the opportunity to work with the children, staff and families here at Park's Edge and feel fortunate to teach the children about Jesus."<br>
+    <br>
+
+    <strong>MS. MARY</strong> has worked at Park's Edge Preschool since May 2016. "I have been working in the child care field since March 2007. My education includes CDA, EC1, EC2 CPR, First Aid, SIDS and Shaken Baby Syndrome. Registry level 9. I am also working on getting my bachelor's in Early Childhood Education."<br>
+    <br>
+
+    <h4>DARLING DRAGONFLIES (TODDLERS)</h4>
+    <strong>MS. SANJA</strong> started working at Park's Edge Preschool May 2016. "I was born in Bosnia and moved to the United States when I was 15 years old. In May of 2014, I earned my Associate's Degree in Early Childhood Education from MATC. Registry level 12. Currently I am attending Lakeland College to obtain my Bachelor's Degree in Education."<br>
+    <br>
+
+    <strong>MS. JACOBA</strong> started working at Park's Edge Preschool in September 2006.  "I have ECI &amp; ECII, and Infant &amp; Toddler. Through the TEACH Scholarship I earned my Infant/Toddler Credential in 2008, Registry Level 9.  MS. JACOBA plans to work toward and Associate Degree in Early Childhood Education. I have always liked working with children and I am looking forward to taking care of yours."<br>
+    <br>
+
+    <h4>BUSY BEES (TWOS)</h4>
+    <strong>MS. BETH</strong> has been working in early childcare for over 25 years and with Park's Edge since April of 2011.  "I have an Associate Degree in Child Care and Development from MATC.  Registry Level 12.  I look forward to meeting all of you and your children.  I consider it a privilege to care for your children."<br>
+    <br>
+
+    <strong>MS. EMILY</strong> has been working at Park's Edge Preschool since July 2013. "I had a positive experience in high school achieving my Assistant Childcare Teacher Certificate and I am looking forward to working with your family. I graduated from WCTC with an Associates Degree in Early Childhood in spring 2015. Registry Level 12.  I'm very excited to be working here and I really hope that I get to know each and every child."<br>
+    <br>
+
+    <h4>BUS DRIVERS &amp; COOKS</h4>
+    <strong>MS. DEE</strong> has been working at Park's Edge since October 1996.   Ms. Dee opens our classrooms every morning with an energetic smile. "My childcare education consists of ECI &amp; ECII, Infant &amp; Toddler, School-Age and I have a CDA. In December 2009 I also obtained my CDL to drive the bus too. Dee transports our school age children to and from local elementary schools.  Registry Level 6.  In my spare time, I am an Instructor Trainee for Tae Kwon Do and have obtained my 2nd degree black belt."<br>
+    <br>
+
+    <strong>MS. MARIA</strong> has her CDL and is our back-up bus driver when Ms. Dee is not here. "I get great enjoyment being around children, watching them learn and grow."<br>
+    <br>
+
+    <strong>MS. DORA</strong> has been the cook/food coordinator at Park's Edge Preschool since December 2012. "I have my Food Managers License that I maintain. My education also includes Early Childhood I and Early Childhood II which makes me qualified to be an Assistant Teacher too. I enjoy contributing to the Park's Edge Preschool program and serving the families here."
   </div>
 </div>
 

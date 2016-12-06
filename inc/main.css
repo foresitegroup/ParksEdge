@@ -1042,12 +1042,6 @@ A.team-link.hover {
   color: #4FC3F1;
 }
 
-.about .staff {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: left;
-}
-
 .testimonials {
   padding: 4.5em 0 6em;
   text-align: center;
@@ -1185,6 +1179,27 @@ A.team-link.hover {
 
 .program-content .links A.pricing:hover,
 .program-content .links A.pricing:active {
+  color: #4FC3F1;
+}
+
+.staff {
+  background: #112C37;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 4em 0 7em;
+}
+
+.staff H3 {
+  margin: 0 0 1.5em;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.staff H4 {
+  margin: 0 0 1.2em;
+  font-weight: 800;
+  font-size: 16px;
   color: #4FC3F1;
 }
 
