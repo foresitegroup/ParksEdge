@@ -50,12 +50,14 @@ include "header.php";
   <br>
 
   <div class="one-half">
+    <img src="images/testimonials5.jpg" alt=""><br>
     "I'd like to take this opportunity to thank the entire Park's Edge Team for all the care and education provided to my daughter. She has learned a lot of good life values through the program."  
 
     <div class="attr">- PEP Family</div>
   </div>
 
   <div class="one-half last">
+    <img src="images/testimonials6.jpg" alt=""><br>
     "We would like to thank everyone that helped to make the Mother's Day Breakfast so special-my mom was thrilled to visit PEP and meet my son's teachers and friends-thanks for all the extra effort."
 
     <div class="attr">- PEP Family</div>

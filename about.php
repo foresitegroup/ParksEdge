@@ -12,7 +12,7 @@ include "header.php";
 </div>
 
 <div class="about site-width">
-  <div class="larger">Park's Edge Preschool &amp; Child Care Center is a non-profit organization that was established in June of 1999 as an outreach program of the Emanuel United Lutheran Church, which has been serving the Hales Corners community for over 100 years. Together we continually strive to be a valuable extension of the families that we serve. We seek to form a partnership with parents to create and maintain a superior learning environment for their Christian Values and traditions and invite you to come and see this "home away from home" for your children to learn about our special programs developed specifically to meet your families needs.<br>
+  <div class="larger">Park's Edge Preschool &amp; Child Care Center is a non-profit organization that was established in June of 1999 as an outreach program of the <a href="http://www.emanuel-ucc.org">Emanuel United Church of Christ</a>, which has been serving the Hales Corners community for over 100 years. Together we continually strive to be a valuable extension of the families that we serve. We seek to form a partnership with parents to create and maintain a superior learning environment for their Christian Values and traditions and invite you to come and see this "home away from home" for your children to learn about our special programs developed specifically to meet your families needs.<br>
   <br>
 
   We employ a highly trained, diverse and enthusiastic staff around a 12-hour day at Park's Edge Preschool. We schedule our staff in accordance with state licensing requirements. We offer a variety of programs that accommodate children from six weeks through twelve years of age. The Center is a special place distinctly designed with a number of features to promote an optimal atmosphere for the individual growth and development of your child.</div><br>
@@ -85,7 +85,7 @@ include "header.php";
     </div>
 
     <div class="team-name">Melinda Antoniewizc</div>
-    <div class="team-title">Safety Coordinator &amp; Toddler Teacher</div>
+    <div class="team-title">Safety Coordinator &amp; Preschool Teacher</div>
   </div>
 
   <div style="clear: both;"></div>

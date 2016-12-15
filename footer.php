@@ -73,8 +73,8 @@
 
         <div class="one-fourth bigger">
           <h2>FOLLOW US</h2>
-          <a href="#">FACEBOOK</a><br>
-          <a href="#">YOUTUBE</a><br>
+          <a href="https://www.facebook.com/parksedgepreschool">FACEBOOK</a><br>
+          <a href="https://www.youtube.com/channel/UCBdhjK84FV-T78vQiQa-4Hw">YOUTUBE</a><br>
           <a href="<?php echo $TopDir; ?>news">NEWS</a>
         </div>
 

@@ -1,7 +1,7 @@
 <?php
 include "login.php";
 
-$PageTitle = "Menu";
+$PageTitle = "Calendar";
 include "header.php";
 ?>
 

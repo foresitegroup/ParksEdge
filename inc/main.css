@@ -1082,6 +1082,11 @@ A.team-link.hover {
   font-size: 85%;
 }
 
+.testimonials .one-half IMG {
+  max-width: 100%;
+  height: auto;
+}
+
 .testimonial-image {
   background-position: center center;
   background-size: cover;

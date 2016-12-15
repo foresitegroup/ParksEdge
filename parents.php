@@ -85,8 +85,10 @@ include_once "inc/dbconfig.php";
     <?php
     require('news/wp-blog-header.php');
     $posts = get_posts('posts_per_page=3&order=DESC&orderby=date');
+
     foreach ($posts as $post) :
       setup_postdata( $post );
+      
       ?>
       <div class="one-third">
         <div class="blog-date"><?php the_date(); ?></div>

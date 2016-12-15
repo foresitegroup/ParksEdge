@@ -43,7 +43,7 @@ include "header.php";
       We stress the importance of play for every child. Although we have structured programs and adhere to a daily schedule we also recognize the utmost importance of free choice play. The learning that is derived from play for the young child is an important element in meeting the needs that make up the whole child by encouraging them to reach their full potential.<br>
       <br>
 
-      <strong class="bluetext">Parent Involvement:</strong> We know that families are the strongest influence on young children and when early childhood educators partner with parents, children excel. Parent input is a key compinent to the program, so we ask our parents to evaluate our program several times a year. Also, parents are strongly encouraged to participate by: volunteering in their child's classroom, chaperoning field trips, participating in center activities and opportunities, annual celebrations (Mother's &amp; Father's Day Breakfast, P.E.P.'s Family Picnic, Open House, Parent-Teacher Conferences, and more).<br>
+      <strong class="bluetext">Parent Involvement:</strong> We know that families are the strongest influence on young children and when early childhood educators partner with parents, children excel. Parent input is a key component to the program, so we ask our parents to evaluate our program several times a year. Also, parents are strongly encouraged to participate by: volunteering in their child's classroom, chaperoning field trips, participating in center activities and opportunities, annual celebrations (Mother's &amp; Father's Day Breakfast, AugustFest, Open House, Parent-Teacher Conferences, Parent Advisory Council, and more).<br>
       <br>
 
       <div class="links">

@@ -21,7 +21,7 @@ include "header.php";
       <h1>OUR MISSION</h1>
       Park's Edge Preschool's mission is to provide an outstanding Christian environment that focuses on the development of each individual child; spiritually, morally, physically, mentally, socially and emotionally.<br>
       <br>
-      
+
       <script src="inc/swipebox/jquery.swipebox.min.js"></script>
       <link rel="stylesheet" href="inc/swipebox/swipebox.css">
       <script type="text/javascript">
@@ -40,7 +40,7 @@ include "header.php";
   <div class="site-width">
     <div class="col1">
       <h1>OUR CHILD CARE PROGRAMS</h1>
-      The core of our desire to provide the best possible care for your child special programs developed specifically to meet your families need. We realize that from the moment of birth, children start to learn and discover the world around them. We offer a series of programs for children age 6 weeks through pre-kindergarten who benefit from the use of a well-defined age appropriate daily curriculum to direct their learning experience.
+      We have developed programs specifically to meet your family's need. We realize that from the moment of birth, children start to learn and discover the world around them. We offer a series of programs for children age 6 weeks through pre-kindergarten who benefit from the use of a well-defined age appropriate daily curriculum to direct their learning experience.
     </div>
 
     <div class="col2">
@@ -116,7 +116,7 @@ include "header.php";
       <br>
       <div class="attr">- PEP Family</div>
     </div>
-    
+
     <div>
       "Our family just wanted to send a huge thanks to the wonderful staff at Park's Edge. Our son has learned so much in such a short time. Thanks again.."<br>
       <br>
