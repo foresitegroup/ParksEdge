@@ -27,7 +27,7 @@ include "header.php";
       <script type="text/javascript">
         $(document).ready(function() { $('.swipebox').swipebox({autoplayVideos: true, hideBarsDelay : 0}); });
       </script>
-      <a href="https://www.youtube.com/watch?v=bRXgiFHtiRc" class="watch swipebox" rel="mission">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/watch?v=X_TOEGSVyyI" class="watch swipebox" rel="mission">WATCH VIDEO <i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
     </div>
 
     <div class="col2">

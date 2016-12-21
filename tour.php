@@ -28,7 +28,7 @@ include "header.php";
   Our Infant/Toddler area was distinctively designed and newly remodeled with a number of features to promote an optimal atmosphere for the growth and development of your child. The classroom environment offers an open concept; effective in supporting the long term relationships between staff and families. We realize from the moment of birth children start to learn and discover the world around them and the infant/toddler area at Park's Edge Preschool has been designed to promote each child's unique individual development.<br>
   <br>
 
-  <div class="video" data-id="C8lL9w07ksU"></div>
+  <div class="video" data-id="XbW4egtYzRs"></div>
 
   <div class="gallery">
     <a href="images/tour/infant-toddler01.jpg" class="swipebox" style="background-image: url(images/tour/infant-toddler01.jpg)" rel="it"></a>
@@ -61,7 +61,7 @@ include "header.php";
   Additional programs are available for school age children through the age of twelve. Our classrooms are designed to encourage a continued learning environment before and after school while allowing children the free time they need to explore and develop on their own.  Planned activities and secure, large play areas allow the children the time and space to learn, play and have fun.<br>
   <br>
 
-  <div class="video" data-id="SudBtmw8yko"></div>
+  <div class="video" data-id="N1J91Gl6-pI"></div>
 
   <div class="gallery">
     <a href="images/tour/pssa01.jpg" class="swipebox" style="background-image: url(images/tour/pssa01.jpg)" rel="pssa"></a>
@@ -96,7 +96,7 @@ include "header.php";
   Gross motor skills are promoted through daily opportunities for physical activity for all children at Park's Edge Preschool.  Children have opportunities to participate in these activities according to their abilities. Our outdoor environment allows every child the opportunity to explore God's beautiful world around us.<br>
   <br>
 
-  <div class="video" data-id="EaboOtsN81I"></div>
+  <div class="video" data-id="I3AhSKFigqY"></div>
 
   <div class="gallery">
     <a href="images/tour/outdoor01.jpg" class="swipebox" style="background-image: url(images/tour/outdoor01.jpg)" rel="outdoor"></a>
