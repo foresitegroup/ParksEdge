@@ -60,7 +60,7 @@ if (!isset($TopDir)) $TopDir = "";
 
     <div class="pe-header">
       <div class="site-width">
-        <a href="." id="logo"><img src="<?php echo $TopDir; ?>images/logo.png" alt="Park's Edge Preschool"></a>
+        <a href="<?php echo $TopDir; ?>." id="logo"><img src="<?php echo $TopDir; ?>images/logo.png" alt="Park's Edge Preschool"></a>
         <div class="arrow-right"></div>
 
         <input type="checkbox" id="show-menu" role="button">
