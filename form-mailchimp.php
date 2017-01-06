@@ -1,32 +1,32 @@
 <?php
+include_once "inc/dbconfig.php";
 $salt = "ParksEdgeMailchimpForm";
 
 if ($_POST['confirmationCAP'] == "") {
   if ($_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "") {
     $mcfeedback = "Thank you for signing up for our newsletter!";
   
-    $data = [
+    $data = array(
       'email'  => $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])],
       'status' => 'subscribed'
-    ];
+    );
     
     function syncMailchimp($data) {
-      $apiKey = 'dfa660346d0fe7d3e3315ed2414181ac-us14';
-      $listId = 'ebbe9285ac';
+      global $apiKey, $listId;
 
       $memberId = md5(strtolower($data['email']));
       $dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
       $url = 'https://' . $dataCenter . '.api.mailchimp.com/3.0/lists/' . $listId . '/members/' . $memberId;
 
-      $json = json_encode([
+      $json = json_encode(array(
         'email_address' => $data['email'],
         'status'        => $data['status']
-      ]);
+      ));
 
       $ch = curl_init($url);
 
       curl_setopt($ch, CURLOPT_USERPWD, 'user:' . $apiKey);
-      curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+      curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       curl_setopt($ch, CURLOPT_TIMEOUT, 10);
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');

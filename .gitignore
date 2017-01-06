@@ -8,3 +8,4 @@ news/wp-content/*
 news/wp-content/themes/*
 !news/wp-content/themes/parksedge
 news/wp-content/themes/parksedge/.DS_Store
+pdf/newsletters
