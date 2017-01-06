@@ -91,6 +91,13 @@ TEXTAREA {
   margin-top: 1.5em;
 }
 
+INPUT:-webkit-autofill,
+TEXTAREA:-webkit-autofill,
+SELECT:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #1A404F inset;
+  -webkit-text-fill-color: #FFFFFF;
+}
+
 INPUT[type="text"]:focus,
 INPUT[type="email"]:focus,
 INPUT[type="password"]:focus,
