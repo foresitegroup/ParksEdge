@@ -59,9 +59,9 @@ $title .= (date("F", $monday) == date("F", $friday)) ? date("j", $friday) : date
             echo "<div class=\"mscontent\">";
               if (isset($array[$theday])) {
                 foreach($array[$theday] as $key => $value) {
-                  if ($array[$theday][$key]['lunch'] != "") echo nl2br($array[$theday][$key]['lunch']);
-                  if ($array[$theday][$key]['am_snack'] != "") echo "<div class=\"msheader\">SNACK AM</div>" . nl2br($array[$theday][$key]['am_snack']);
-                  if ($array[$theday][$key]['pm_snack'] != "") echo "<div class=\"msheader\">SNACK PM</div>" . nl2br($array[$theday][$key]['pm_snack']);
+                  if ($array[$theday][$key]['lunch'] != "") echo nl2br(stripslashes($array[$theday][$key]['lunch']));
+                  if ($array[$theday][$key]['am_snack'] != "") echo "<div class=\"msheader\">SNACK AM</div>" . nl2br(stripslashes($array[$theday][$key]['am_snack']));
+                  if ($array[$theday][$key]['pm_snack'] != "") echo "<div class=\"msheader\">SNACK PM</div>" . nl2br(stripslashes($array[$theday][$key]['pm_snack']));
                 }
               }
             echo "</div>";

@@ -109,9 +109,9 @@ include "header.php";
             foreach($eventarr[$day_num] as $key => $value) {
               echo "<div class=\"cal-dayname\">" . date("l", $eventarr[$day_num][$key]['date']) . "</div>";
 
-              if ($eventarr[$day_num][$key]['lunch'] != "") echo nl2br($eventarr[$day_num][$key]['lunch']);
-              if ($eventarr[$day_num][$key]['am_snack'] != "") echo "<br><br><strong>AM SNACK</strong><br>" . nl2br($eventarr[$day_num][$key]['am_snack']);
-              if ($eventarr[$day_num][$key]['pm_snack'] != "") echo "<br><br><strong>PM SNACK</strong><br>" . nl2br($eventarr[$day_num][$key]['pm_snack']);
+              if ($eventarr[$day_num][$key]['lunch'] != "") echo nl2br(stripslashes($eventarr[$day_num][$key]['lunch']));
+              if ($eventarr[$day_num][$key]['am_snack'] != "") echo "<br><br><strong>AM SNACK</strong><br>" . nl2br(stripslashes($eventarr[$day_num][$key]['am_snack']));
+              if ($eventarr[$day_num][$key]['pm_snack'] != "") echo "<br><br><strong>PM SNACK</strong><br>" . nl2br(stripslashes($eventarr[$day_num][$key]['pm_snack']));
 
               echo "<div class=\"controls\">
                 <a href=\"menu-edit.php?id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" title=\"Edit\" class=\"c-edit\"><i class=\"fa fa-pencil\"></i></a>

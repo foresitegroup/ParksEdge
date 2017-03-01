@@ -12,15 +12,15 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
   <form action="menu-db.php?a=edit" method="POST">
     <div>
       <div class="one-third">
-        <textarea name="lunch" placeholder="Lunch"><?php if ($row['lunch'] != "") echo $row['lunch']; ?></textarea>
+        <textarea name="lunch" placeholder="Lunch"><?php if ($row['lunch'] != "") echo stripslashes($row['lunch']); ?></textarea>
       </div>
 
       <div class="one-third">
-        <textarea name="am_snack" placeholder="AM Snack"><?php if ($row['am_snack'] != "") echo $row['am_snack']; ?></textarea>
+        <textarea name="am_snack" placeholder="AM Snack"><?php if ($row['am_snack'] != "") echo stripslashes($row['am_snack']); ?></textarea>
       </div>
 
       <div class="one-third last">
-        <textarea name="pm_snack" placeholder="PM Snack"><?php if ($row['pm_snack'] != "") echo $row['pm_snack']; ?></textarea>
+        <textarea name="pm_snack" placeholder="PM Snack"><?php if ($row['pm_snack'] != "") echo stripslashes($row['pm_snack']); ?></textarea>
       </div>
 
       <div style="clear: both;"></div>
