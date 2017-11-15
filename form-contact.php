@@ -13,7 +13,8 @@ if ($_POST['confirmationCAP'] == "") {
      )
   {
     $Subject = "Contact From Park's Edge Preschool Website";
-    $SendTo = "info@parksedgepreschool.com";
+    // $SendTo = "info@parksedgepreschool.com";
+    $SendTo = "rhianna@parksedgepreschool.com,kristin@parksedgepreschool.com,ellen@parksedgepreschool.com";
     $Headers = "From: Contact Form <parksedgepreschool@gmail.com>\r\n";
     $Headers .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
     $Headers .= "Bcc: mark@foresitegrp.com\r\n";
