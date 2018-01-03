@@ -2,21 +2,20 @@
 include "inc/dbconfig.php";
 
 if (!empty($_SERVER['QUERY_STRING'])) {
-  $date = mktime(0,0,0,substr($_SERVER['QUERY_STRING'],-2), 1, substr($_SERVER['QUERY_STRING'],0,4));
-  $year = substr($_SERVER['QUERY_STRING'],0,4);
-  $week = substr($_SERVER['QUERY_STRING'],-2);
+  $date = strtotime(substr($_SERVER['QUERY_STRING'],0,4) . "W" . substr($_SERVER['QUERY_STRING'],-2));
 } else {
   $date = time();
   
   // If it's the weekend, show next week's schedule
   if (date("w", $date) == 0 || date("w", $date) == 6) $date = $date+(86400*2);
-
-  $year = date("Y", $date);
-  $week = date("W", $date);
 }
 
-$lastweek = ($week-1 <= 0) ? $year-1 . idate('W', mktime(0, 0, 0, 12, 31, $year-1)) : $year . $week-1;
-$nextweek = ($week+1 > idate('W', mktime(0, 0, 0, 12, 31, $year))) ? $year+1 . "01" : $year . $week+1;
+$year = date("o", $date);
+$week = date("W", $date);
+
+$lastweek = date("oW", strtotime($year . "W" . $week . " -7 day"));
+$nextweek = date("oW", strtotime($year . "W" . $week . " +7 day"));
+
 $monday = strtotime($year . "W" . $week);
 $friday = $monday + (86400*4);
 
