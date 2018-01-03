@@ -5,12 +5,18 @@ include "header.php";
 
 <div class="banner no-tear" style="background-image: url(images/banner-pricing.jpg);">
   <div class="site-width centered">
-    2017 PEP Rates
+    2018 PEP Rates
   </div>
 </div>
 
 <div class="site-width pricing-intro">
-  <span class="bluetext">Tuition Payments:</span> are due the first enrollment day of the week and are considered past due if not received by Wednesday at 9:00 a.m. <span class="bluetext">Registration Fee:</span> $75.00 one child / $100.00 family&mdash;non-refundable annual fee. Upon registration, one week of tuition will be collected and applied to your child's first week. Your child's enrollment is reserved, therefore we can add days but are not able to switch days.
+  <span class="bluetext">Tuition Payments:</span> All tuition payments are due the first enrollment day of the week and are considered past due if not received by Wednesday at 9:00 a.m. A $25.00 late fee will be assessed at that time on a weekly basis. Children are required to be enrolled at least 2 days a week. Your child's enrollment is reserved. We can usually add days but are not able to switch days.<br>
+  <br>
+
+  Be sure to complete a Tuition Express Automatic Payment Processing form for secure, convenient and easy electronic funds transfer authorization or credit card-monthly or weekly. (Please note a $5.00 fee applied to all Credit/Debit Card transactions.)<br>
+  <br>
+
+  <span class="bluetext">Registration Fee:</span> $75.00 one child/ $100.00 family&mdash;non-refundable annual fee. Upon registration, one week of tuition will be collected and applied to your child's first week. For continued enrollment the registration fee is applied to the family's account annually September 1st.
 </div>
 
 <div class="gray-section">
@@ -27,23 +33,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days (Infant 1):</td>
-        <td>$295.00</td>
-        <td>$59.00</td>
+        <td>$300.00</td>
+        <td>$60.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$260.00</td>
-        <td>$65.00</td>
+        <td>$264.00</td>
+        <td>$66.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$210.00</td>
-        <td>$70.00</td>
+        <td>$213.00</td>
+        <td>$71.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$148.00</td>
-        <td>$74.00</td>
+        <td>$150.00</td>
+        <td>$75.00</td>
       </tr>
     </table>
   </div>
@@ -63,23 +69,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$265.00</td>
-        <td>$53.00</td>
+        <td>$270.00</td>
+        <td>$54.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$232.00</td>
-        <td>$58.00</td>
-      </tr>
-      <tr>
-        <td>Three Days:</td>
-        <td>$177.00</td>
+        <td>$236.00</td>
         <td>$59.00</td>
       </tr>
       <tr>
+        <td>Three Days:</td>
+        <td>$180.00</td>
+        <td>$60.00</td>
+      </tr>
+      <tr>
         <td>Two Days:</td>
-        <td>$128.00</td>
-        <td>$64.00</td>
+        <td>$130.00</td>
+        <td>$65.00</td>
       </tr>
     </table>
   </div>
@@ -99,29 +105,29 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$240 / $48</td>
-        <td>$185 / $37</td>
+        <td>$245 / $49</td>
+        <td>$190 / $38</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$208 / $52</td>
-        <td>$168 / $42</td>
+        <td>$212 / $53</td>
+        <td>$172 / $43</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$162 / $54</td>
-        <td>$141 / $47</td>
+        <td>$165 / $55</td>
+        <td>$144 / $48</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$114 / $57</td>
-        <td>$96 / $48</td>
+        <td>$116 / $58</td>
+        <td>$98 / $49</td>
       </tr>
     </table><br>
     <br>
 
-    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $33.00/day.<br>
-    * Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
+    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $34.00/day.<br>
+    * Daily rates are based on 10 hours or less; more than 10 hours a day a $5.00 fee will be charged per family. Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
   </div>
 </div>
 
@@ -139,23 +145,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$75 / $15</td>
-        <td>$120 / $24</td>
+        <td>$80 / $16</td>
+        <td>$125 / $25</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$72 / $18</td>
-        <td>$108 / $27</td>
+        <td>$76 / $19</td>
+        <td>$112 / $28</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$60 / $20</td>
-        <td>$88.50 / $29.50</td>
+        <td>$63 / $21</td>
+        <td>$90 / $30</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$46 / $23</td>
-        <td>$66 / $33</td>
+        <td>$48 / $24</td>
+        <td>$68 / $34</td>
       </tr>
     </table>
   </div>
@@ -172,28 +178,46 @@ include "header.php";
   <br>
   <br>
 
-  <h3>DISCOUNTS</h3>
+  <h3>DISCOUNTS / EXTRA CHARGES</h3>
 
   <div class="one-third">
-    <h4>Family Multiple Child:</h4> Two children in attendance at PEP from the same family will receive a <strong>10% discount</strong> on the oldest child. Three children in attendance from the same family will receive a <strong>15% discount</strong> on the oldest child in addition a <strong>10% discount</strong> on the second oldest child.
+    <h4>Family Multiple Child</h4> Two children in attendance at PEP from the same family will receive a <strong>10% discount</strong> on the oldest child. Three children in attendance from the same family will receive a <strong>15% discount</strong> on the oldest child in addition a <strong>10% discount</strong> on the second oldest child.
   </div>
 
   <div class="one-third">
-    <h4>Active/Participating Members:</h4> of Emanuel United Church of Christ of Hales Corners receive a <strong>10% discount</strong> on weekly tuition.
+    <h4>Active/Participating Members</h4> of Emanuel United Church of Christ of Hales Corners receive a <strong>10% discount</strong> on weekly tuition.
   </div>
 
   <div class="one-third last">
-    <h4>Military Discount:</h4> children with active or veteran parent receive a <strong>10% discount</strong> on weekly tuition.
+    <h4>Military Discount</h4> Children with active or veteran parent receive a <strong>10% discount</strong> on weekly tuition.
   </div>
 
   <div class="spacer"></div>
 
   <div class="one-third">
-    <h4>Family Referral:</h4> PEP offers <strong>$100.00 bonus referral fee</strong> towards tuition to families that refer another family to our center. A referral bonus is applied to referring family’s account after referred family is enrolled 90 days.
+    <h4>Family Referral</h4> PEP offers <strong>$100.00 bonus referral fee</strong> towards tuition to families that refer another family to our center. A referral bonus is applied to referring family's account after referred family is enrolled 90 days.
   </div>
 
   <div class="one-third">
-    <h4>Credits:</h4> You will receive tuition vouchers to be used for vacation, holidays, or illness related absences. Each child will receive 1 full week of the amount of days of their regular weekly attendance at PEP. See parent handbook.
+    <h4>Credits</h4> You will receive tuition vouchers to be used for vacation, holidays, or illness related absences. Each child will receive 1 full week of the amount of days of their regular weekly attendance at PEP. See parent handbook.
+  </div>
+
+  <div class="one-third last">
+    <h4>Additional Charges with advance notification</h4> Special events, programs, field trips, photographs, etc. may require additional fees.
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="one-third">
+    <h4>Finder's Fee</h4> Parents must notify PEP of a school-age child's absence at least one hour prior to their scheduled school pick up time or a <strong>$5 "finder's fee"</strong> will be assessed per incident. It delays our scheduled bus route as we try to locate the missing child and could jeopardize the safety of other children. Policy also applies to late arrivals after 8:10am for PEP's morning bus transportation.
+  </div>
+
+  <div class="one-third">
+    <h4>Early Drop-off</h4> 15 minutes or earlier than regular scheduled drop off time will be charged a <strong>$5.00 fee</strong> without a two-week advance written notice. (Unscheduled early drop off jeopardizes staff/child ratios.)
+  </div>
+
+  <div class="one-third last">
+    <h4>Late Pick-up Policy &amp; Fee</h4> Park's Edge Preschool closes at 6:00pm. All children must be picked up by 6:00pm or a late fee will be applied: <strong>$15.00/5-15 minutes late; $20.00/15-30 minutes late; $25.00/30-45 minutes late.</strong>
   </div>
 </div>
 

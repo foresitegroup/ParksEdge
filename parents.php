@@ -147,6 +147,8 @@ include_once "inc/dbconfig.php";
       <a href="pdf/Child_Health_Report.pdf">Child Health Report</a><br>
 
       <a href="pdf/Health_History_and_Emergency_Care_Plan.pdf">Health History and Emergency Care Plan</a>
+
+      <a href="pdf/schedule_change_notice.pdf">Schedule Change Notice</a>
     </div>
   </div>
 
