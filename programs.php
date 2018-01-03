@@ -3,9 +3,9 @@ $PageTitle = "Programs";
 include "header.php";
 ?>
 
-<link rel="stylesheet" href="inc/jquery.smoothState.programs.css">
+<!-- <link rel="stylesheet" href="inc/jquery.smoothState.programs.css">
 <script type="text/javascript" src="inc/jquery.smoothState.min.js"></script>
-<script type="text/javascript" src="inc/jquery.smoothState.programs.js"></script>
+<script type="text/javascript" src="inc/jquery.smoothState.programs.js"></script> -->
 
 <div id="main" class="m-scene">
   <div class="programs-slider scene-main scene-main--fadein">
@@ -52,17 +52,20 @@ include "header.php";
       </div>
     </div>
     
-    <link rel="stylesheet" href="inc/slick/slick.css">
-    <script type="text/javascript" src="inc/slick/slick.min.js"></script>
-    <script type="text/javascript" src="inc/slick/slick.init.slider.js"></script>
+    <script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="inc/jquery.cycle2.carousel.min.js"></script>
+    <script type="text/javascript" src="inc/jquery.cycle2.slider.js"></script>
 
-    <div class="image-slider">
+    <div class="img-slider">
       <img src="images/programs-christian-slider1.jpg" alt="">
       <img src="images/programs-christian-slider2.jpg" alt="">
       <img src="images/programs-christian-slider3.jpg" alt="">
       <img src="images/programs-christian-slider4.jpg" alt="">
       <img src="images/programs-christian-slider5.jpg" alt="">
       <img src="images/programs-christian-slider6.jpg" alt="">
+
+      <a href="#" id="prev"><i class="fa fa-play-circle-o fa-rotate-180" aria-hidden="true"></i></a>
+      <a href="#" id="next"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
