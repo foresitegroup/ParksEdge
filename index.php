@@ -67,10 +67,11 @@ include "header.php";
   </div>
 </div>
 
-<link rel="stylesheet" href="inc/slick/slick.css">
-<script type="text/javascript" src="inc/slick/slick.min.js"></script>
-<script type="text/javascript" src="inc/slick/slick.init.slider.js"></script>
-<div class="image-slider">
+<script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="inc/jquery.cycle2.carousel.min.js"></script>
+<script type="text/javascript" src="inc/jquery.cycle2.slider.js"></script>
+
+<div class="img-slider">
   <img src="images/home-slider1.jpg" alt="">
   <img src="images/home-slider2.jpg" alt="">
   <img src="images/home-slider3.jpg" alt="">
@@ -79,6 +80,9 @@ include "header.php";
   <img src="images/home-slider6.jpg" alt="">
   <img src="images/home-slider7.jpg" alt="">
   <img src="images/home-slider8.jpg" alt="">
+
+  <a href="#" id="prev"><i class="fa fa-play-circle-o fa-rotate-180" aria-hidden="true"></i></a>
+  <a href="#" id="next"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
 </div>
 
 <div class="home-contact">
@@ -90,9 +94,10 @@ include "header.php";
   </div>
 </div>
 
-<script type="text/javascript" src="inc/slick/slick.init.testimonials.js"></script>
 <div class="home-testimonials">
-  <div class="site-width">
+  <div class="cycle-slideshow site-width" data-cycle-timeout="8000" data-cycle-slides="> div" data-cycle-pager-template="<a href=#></a>">
+    <p class="cycle-pager"></p>
+
     <div>
       "Thank you for all you do to keep us parents organized and on track. We barely arrive in the morning with our wits - let alone the kids. It's great to be met by smiling faces who know each and every child by name. Thanks!"<br>
       <br>
