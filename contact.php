@@ -90,6 +90,10 @@ include "header.php";
 
       <input type="checkbox" name="subscribe" value="yes" id="c-subscribe" checked> <label for="c-subscribe"><span></span>Subscribe to our newsletter</label><br>
       <br>
+
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <div class="g-recaptcha" data-sitekey="6LeKcGMUAAAAALyjirxPVQl8OdEF1xyHNRexIQhp"></div>
+      <br>
       <br>
 
       <input type="hidden" name="referrer" value="contact.php">
