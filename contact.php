@@ -120,7 +120,7 @@ include "header.php";
 </div>
 
 <div class="contact-map">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTbHAsLFN-nVXXIDAZiynPZT1DfoDyNwE"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7SqJJrR758kSg2iEyOi3SiXCBc_HiJ8U"></script>
   <script>
     function ViewLargerMap(VLMa, map) {
       var VLMui = document.createElement('a');

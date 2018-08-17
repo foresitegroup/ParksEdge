@@ -13,6 +13,7 @@ $TopDir = substr( home_url(), 0, strrpos( home_url(), '/')+1);
 
 if ( !is_single() ) :
   $HeaderClass = "banner-blog-index";
+  $HeaderBackground = "";
   $PageTitle = (is_home()) ? "News & Announcements" : get_the_title();
   $Description = "";
   $Keywords = "";
