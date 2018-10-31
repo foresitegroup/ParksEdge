@@ -18,11 +18,22 @@ if ($_POST['confirmationCAP'] == "") {
         $_POST[md5('message' . $_POST['ip'] . $salt . $_POST['timestamp'])] != ""
        )
     {
-      $Subject = "Contact From Park's Edge Preschool Website";
-      $SendTo = "rhianna@parksedgepreschool.com,kristin@parksedgepreschool.com,ellen@parksedgepreschool.com";
-      $Headers = "From: Contact Form <parksedgepreschool@gmail.com>\r\n";
-      $Headers .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
-      $Headers .= "Bcc: mark@foresitegrp.com\r\n";
+      require_once "inc/swiftmailer/swift_required.php";
+      $sm = Swift_Message::newInstance();
+      // $sm->setTo(array("rhianna@parksedgepreschool.com", "kristin@parksedgepreschool.com", "ellen@parksedgepreschool.com"));
+      $sm->setTo(array("patmccurdymusic@gmail.com"));
+      $sm->setBcc(array("mark@foresitegrp.com"));
+      $sm->setFrom(array("parksedgepreschool@gmail.com" => "Contact Form"));
+      $sm->setReplyTo($_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])]);
+      $sm->setSubject("Contact From Park's Edge Preschool Website");
+
+      // $Subject = "Contact From Park's Edge Preschool Website";
+      // $SendTo = "rhianna@parksedgepreschool.com,kristin@parksedgepreschool.com,ellen@parksedgepreschool.com";
+      // $SendTo = "patmccurdymusic@gmail.com";
+      // $Headers = "From: Contact Form <parksedgepreschool@gmail.com>\r\n";
+      // $Headers .= "Reply-To: " . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . "\r\n";
+      // $Headers .= "Bcc: mark@foresitegrp.com\r\n";
+      // $Headers .= "Bcc: lippert@gmail.com\r\n";
 
       $Message = "Message from " . $_POST[md5('name' . $_POST['ip'] . $salt . $_POST['timestamp'])] . " (" . $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] . ")";
 
@@ -32,7 +43,12 @@ if ($_POST['confirmationCAP'] == "") {
 
       $Message = stripslashes($Message);
     
-      mail($SendTo, $Subject, $Message, $Headers);
+      // mail($SendTo, $Subject, $Message, $Headers);
+
+      $sm->setBody($Message);
+      $transport = Swift_MailTransport::newInstance();
+      $mailer = Swift_Mailer::newInstance($transport);
+      $result = $mailer->send($sm);
       
       $feedback = "<strong>Your message has been sent!</strong> Thank you for your interest. You will be contacted shortly.";
       
