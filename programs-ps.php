@@ -71,7 +71,7 @@ include "header.php";
     <h3>PRE-SCHOOL STAFF</h3>
 
     <h4>SUNSHINE ROOM (3-K)</h4>
-    <strong>MS. JENELE</strong> has been working at Park's Edge Preschool since May 2007.  "I have completed ECI &amp; ECII, School age, and I have my CDA.  Registry Level 12. I completed the Preschool Credential in the summer of 2013 and have continued towards my Early Childhood Education Associate Degree. I graduated with my EC Associate's Degree in 2017.  I am truly blessed to be working at Park's Edge Preschool and I enjoy every moment of it. I wish you and your family a great day. Faith, Trust &amp; Pixie Dust."<br>
+    <strong>MS. JENELE</strong> has been working at Park's Edge Preschool since May 2007.  "I have completed ECI &amp; ECII, School age, and I have my CDA.  Registry Level 13. I completed the Preschool Credential in the summer of 2013 and have continued towards my Early Childhood Education Associate Degree. I graduated with my EC Associate's Degree in 2017.  I am truly blessed to be working at Park's Edge Preschool and I enjoy every moment of it. I wish you and your family a great day. Faith, Trust &amp; Pixie Dust."<br>
     <br>
 
     <strong>MS. SANDRA</strong> has been working at Park's Edge Preschool since October 2002, Registry Level 10. "In 2004, I was awarded an Apprenticeship Program Scholarship through Wisconsin's T.E.A.C.H. Early Childhood Program.  "I completed the requirements at MATC and was presented a Child Care Development Specialist Diploma in 2006, Registry Level 10."  I someday plan to return to MATC to obtain an Early Childhood Associates Degree.  I thank God for all he has done for me. I truly enjoy working at Park's Edge and feel very blessed to be a part of a great organization."<br>
