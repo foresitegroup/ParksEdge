@@ -63,15 +63,15 @@ include "header.php";
   </div>
 
   <div class="one-third">
-    <div class="team" style="background-image: url(images/team-rhianna.jpg);">
+    <div class="team" style="background-image: url(images/team-jenele.jpg);">
       <a class="team-link">
         <div class="team-hover-content">
-          "I have been working in the child care field since 2001, where I love feeling like I have a 'family' in Wisconsin and I absolutely love receiving hugs from the children daily!"
+          "I have been working at PEP since 2007 and graduated with my EC Associate's Degree in 2017. I am truly blessed to be working at Park's Edge Preschool."
         </div>
       </a>
     </div>
 
-    <div class="team-name">Rhianna Reynolds</div>
+    <div class="team-name">Jenele Baldwin</div>
     <div class="team-title">Curriculum Coordinator</div>
   </div>
 
