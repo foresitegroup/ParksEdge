@@ -1,6 +1,19 @@
 <?php
 include("../inc/dbconfig.php");
 
+function stripslashes_nested($v) {
+  if (is_array($v)) {
+    return array_map('stripslashes_nested', $v);
+  } else {
+    return stripslashes($v);
+  }
+}
+if (get_magic_quotes_gpc()) {
+  $_GET = stripslashes_nested($_GET);
+  $_POST = stripslashes_nested($_POST);
+  $_COOKIES = stripslashes_nested($_COOKIES);
+}
+
 $date = (isset($_POST['date'])) ? strtotime($_POST['date']) : "";
 $loc = "";
 
