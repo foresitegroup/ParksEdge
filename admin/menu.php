@@ -23,7 +23,7 @@ include "header.php";
 
       <div style="clear: both;"></div>
 
-      <input type="text" name="date" class="menudate" placeholder="Date">
+      <input type="text" name="date" class="menudate" placeholder="Date" autocomplete="off">
 
       <input type="hidden" name="page" value="<?php if (!empty($_SERVER['QUERY_STRING'])) echo $_SERVER['QUERY_STRING']; ?>">
 

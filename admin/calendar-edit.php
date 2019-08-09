@@ -11,9 +11,9 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 <div class="site-width content edit-cal">
   <form action="calendar-db.php?a=edit" method="POST">
     <div>
-      <input type="text" name="startdate" class="startdate" placeholder="Start Date" value="<?php echo date("m/d/Y", $row['startdate']); ?>">
+      <input type="text" name="startdate" class="startdate" placeholder="Start Date" value="<?php echo date("m/d/Y", $row['startdate']); ?>" autocomplete="off">
 
-      <input type="text" name="enddate" class="enddate" placeholder="End Date (optional)" value="<?php if ($row['enddate'] != $row['startdate']) echo date("m/d/Y", $row['enddate']); ?>">
+      <input type="text" name="enddate" class="enddate" placeholder="End Date (optional)" value="<?php if ($row['enddate'] != $row['startdate']) echo date("m/d/Y", $row['enddate']); ?>" autocomplete="off">
 
       <textarea name="event" placeholder="Event"><?php if ($row['event'] != "") echo $row['event']; ?></textarea>
 

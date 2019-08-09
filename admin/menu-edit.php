@@ -25,7 +25,7 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 
       <div style="clear: both;"></div>
 
-      <input type="text" name="date" class="menudate" placeholder="Date" value="<?php if ($row['date'] != "") echo date("m/d/Y", $row['date']); ?>">
+      <input type="text" name="date" class="menudate" placeholder="Date" value="<?php if ($row['date'] != "") echo date("m/d/Y", $row['date']); ?>" autocomplete="off">
 
       <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
       <input type="hidden" name="loc" value="<?php echo $_GET['loc']; ?>">

@@ -10,9 +10,9 @@ include "header.php";
     <h3>Add Event</h3>
     <form action="calendar-db.php?a=add" method="POST">
       <div>
-        <input type="text" name="startdate" class="startdate" placeholder="Start Date"">
+        <input type="text" name="startdate" class="startdate" placeholder="Start Date" autocomplete="off">
 
-        <input type="text" name="enddate" class="enddate" placeholder="End Date (optional)">
+        <input type="text" name="enddate" class="enddate" placeholder="End Date (optional)" autocomplete="off">
 
         <textarea name="event" placeholder="Event"></textarea>
 
