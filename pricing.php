@@ -5,7 +5,7 @@ include "header.php";
 
 <div class="banner no-tear" style="background-image: url(images/banner-pricing.jpg);">
   <div class="site-width centered">
-    2018 PEP Rates
+    2019 PEP Rates
   </div>
 </div>
 
@@ -33,23 +33,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days (Infant 1):</td>
-        <td>$300.00</td>
-        <td>$60.00</td>
+        <td>$305.00</td>
+        <td>$61.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$264.00</td>
-        <td>$66.00</td>
+        <td>$268.00</td>
+        <td>$67.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$213.00</td>
-        <td>$71.00</td>
+        <td>$216.00</td>
+        <td>$72.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$150.00</td>
-        <td>$75.00</td>
+        <td>$152.00</td>
+        <td>$76.00</td>
       </tr>
     </table>
   </div>
@@ -69,23 +69,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$270.00</td>
-        <td>$54.00</td>
+        <td>$275.00</td>
+        <td>$55.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$236.00</td>
-        <td>$59.00</td>
-      </tr>
-      <tr>
-        <td>Three Days:</td>
-        <td>$180.00</td>
+        <td>$240.00</td>
         <td>$60.00</td>
       </tr>
       <tr>
+        <td>Three Days:</td>
+        <td>$183.00</td>
+        <td>$61.00</td>
+      </tr>
+      <tr>
         <td>Two Days:</td>
-        <td>$130.00</td>
-        <td>$65.00</td>
+        <td>$132.00</td>
+        <td>$66.00</td>
       </tr>
     </table>
   </div>
@@ -105,28 +105,28 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$245 / $49</td>
-        <td>$190 / $38</td>
+        <td>$250 / $50</td>
+        <td>$195 / $39</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$212 / $53</td>
-        <td>$172 / $43</td>
+        <td>$216 / $54</td>
+        <td>$176 / $44</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$165 / $55</td>
-        <td>$144 / $48</td>
+        <td>$168 / $56</td>
+        <td>$147 / $49</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$116 / $58</td>
-        <td>$98 / $49</td>
+        <td>$118 / $59</td>
+        <td>$100 / $50</td>
       </tr>
     </table><br>
     <br>
 
-    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $34.00/day.<br>
+    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $35.00/day.<br>
     * Daily rates are based on 10 hours or less; more than 10 hours a day a $5.00 fee will be charged per family. Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
   </div>
 </div>
