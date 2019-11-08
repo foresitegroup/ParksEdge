@@ -34,7 +34,7 @@ include "header.php";
   </div>
 
   <div class="one-third last">
-    <div class="team" style="background-image: url(images/team-ellen.jpg);"></div>
+    <div class="team" style="background-image: url(images/team-ellen.jpg<?php echo "?".filemtime('images/team-ellen.jpg'); ?>);"></div>
   </div>
 
   <div style="clear: both;"></div><br>
