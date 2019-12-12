@@ -463,7 +463,7 @@ A#return-to-top:active {
   height: 695px;
   padding-bottom: 30px;
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.55);
   -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.55);
@@ -528,9 +528,26 @@ A#return-to-top:active {
   margin: 0 0 3em;
 }
 
+.home-banner .home-banner-slide.xmas-slide .site-width H1 { visibility: hidden; margin-bottom: 23vw; }
+
 .home-banner A.button {
   margin: 0 2%;
 }
+
+.xmas-slide { position: relative; }
+
+.home-banner A.santa {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  width: 162px;
+  box-sizing: border-box;
+  background: #F43B3A;
+  text-align: center;
+}
+.home-banner A.santa:hover { background: #33CC33; }
 
 .banner A:link, .banner A:visited {
   color: #4FC3F1;
@@ -2144,6 +2161,10 @@ html {
   }
 }
 
+@media only screen and (max-width: 1030px) {
+  .menu UL LI.donate { right: 2%; }
+}
+
 @media only screen and (max-width: 1000px) {
   .site-width,
   .programs-menu,
@@ -2154,6 +2175,21 @@ html {
   #mailchimp {
     width: 94%;
     padding: 3.2em 2.5em 3.5em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-banner .home-banner-slide.xmas-slide { height: 75vw; }
+  .home-banner .home-banner-slide.xmas-slide .site-width H1 { margin-bottom: 30vw; font-size: 4.7vw; }
+
+  .home-banner A.santa {
+    top: auto;
+    bottom: 5.5vw;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    white-space: nowrap;
   }
 }
 
@@ -2597,6 +2633,13 @@ html {
 
   .home-banner A.button {
     margin: 0.5em 0;
+  }
+
+  .home-banner A.santa {
+    top: 100%;
+    bottom: auto;
+    z-index: 99;
+    font-size: 5vw;
   }
 
   .banner .site-width {

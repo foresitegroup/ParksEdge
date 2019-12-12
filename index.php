@@ -3,13 +3,15 @@ include "header.php";
 ?>
 
 <div class="home-banner">
-  <div class="home-banner-slide" style="background-image: url(images/home-banner.jpg);">
+  <div class="home-banner-slide xmas-slide" style="background-image: url(images/home-banner-xmas.jpg);">
     <div class="site-width">
       <h1>Providing families with exceptional child care services in a safe &amp; loving learning environment.</h1>
 
       <a href="about.php" class="button">LEARN MORE</a>
       <a href="tour.php" class="button">TAKE THE TOUR</a>
     </div>
+
+    <a href="pdf/Santa's_Workshop_Signup.pdf" class="button santa">SANTA'S WORKSHOP SIGNUP</a>
   </div>
 
   <div class="torn-header"></div>
