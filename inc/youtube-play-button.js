@@ -9,7 +9,7 @@
 })();
  
 function labnolThumb(id) {
-  return '<img class="video-thumb" src="//i.ytimg.com/vi/' + id + '/maxresdefault.jpg"><div class="video-overlay"></div><i class="video-play fa fa-play-circle-o" aria-hidden="true"></i>';
+  return '<img class="video-thumb" src="//i.ytimg.com/vi/' + id + '/0.jpg"><div class="video-overlay"></div><i class="video-play fa fa-play-circle-o" aria-hidden="true"></i>';
 }
  
 function labnolIframe() {
