@@ -114,7 +114,7 @@ include "header.php";
               if ($eventarr[$day_num][$key]['pm_snack'] != "") echo "<br><br><strong>PM SNACK</strong><br>" . nl2br(stripslashes($eventarr[$day_num][$key]['pm_snack']));
 
               echo "<div class=\"controls\">
-                <a href=\"menu-edit.php?id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" title=\"Edit\" class=\"c-edit\"><i class=\"fa fa-pencil\"></i></a>
+                <a href=\"menu-edit.php?a=edit&id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" title=\"Edit\" class=\"c-edit\"><i class=\"fa fa-pencil\"></i></a>
                 <a href=\"menu-db.php?a=delete&id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" onClick=\"return(confirm('Are you sure you want to delete this record?'));\" title=\"Delete\" class=\"c-delete\"><i class=\"fa fa-trash\"></i></a>
               </div>";
             }
