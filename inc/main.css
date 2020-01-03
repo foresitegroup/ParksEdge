@@ -1357,17 +1357,17 @@ A.team-link.hover {
   line-height: 1em;
   font-weight: bold;
   padding: 0.5em 0;
+  width: 61%;
 }
 
 .pricing-rates TH:nth-of-type(2),
 .pricing-rates TD:nth-of-type(2) {
-  width: 1%;
-  padding-right: 13%;
+  width: 26%;
 }
 
 .pricing-rates TH:last-child,
 .pricing-rates TD:last-child {
-  width: 1%;
+  width: 13%;
 }
 
 .pricing-rates TH > DIV {
