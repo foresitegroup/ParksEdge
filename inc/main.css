@@ -318,6 +318,23 @@ A#return-to-top:active {
   border-color: #4FC3F1;
 }
 
+#notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2%;
+  background: red;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+}
+
+#notice A { color: #FFFFFF; }
+#notice A:hover { color: #112C37; }
+
 .pe-header {
   background: linear-gradient(90deg, #FFFFFF 50%, #4FC3F1 50%);
   line-height: 1em;
@@ -390,6 +407,8 @@ A#return-to-top:active {
   padding-left: 1em;
 }
 
+#notice ~ .pe-header .menu UL LI.donate { top: 30px; }
+
 .menu UL LI A:link,
 .menu UL LI A:visited {
   font-weight: 700;
@@ -435,6 +454,8 @@ A#return-to-top:active {
   -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.55);
   box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.55);
 }
+
+#notice ~ .pe-header .menu UL LI:hover UL { top: 136px; }
 
 .menu UL LI UL LI,
 .menu UL LI UL LI:first-child {
@@ -2141,6 +2162,25 @@ html {
   width: 100%;
   line-height: 1.3em;
 }
+
+#lesson-plans {
+  padding: 4em 0;
+  background: #1A404F;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+#lesson-plans H2 {
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#lesson-plans A:hover { color: #FFFFFF; }
+
+#lesson-plans A .fa { color: #B7B7B7; }
 
 
 @media only screen and (min-width: 1600px) {

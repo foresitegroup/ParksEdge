@@ -58,6 +58,10 @@ if (!isset($TopDir)) $TopDir = "";
 
     <a href="#" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
 
+    <div id="notice">
+      <a href="<?php echo $TopDir; ?>news/covid-19-updates/">IMPORTANT COVID-19 UPDATES FROM PEP</a>
+    </div>
+
     <div class="pe-header">
       <div class="site-width">
         <a href="<?php echo $TopDir; ?>." id="logo"><img src="<?php echo $TopDir; ?>images/logo.png" alt="Park's Edge Preschool"></a>
@@ -88,7 +92,12 @@ if (!isset($TopDir)) $TopDir = "";
             </li>
             <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
             <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
-            <li><a href="<?php echo $TopDir; ?>parents.php">Parents</a></li>
+            <li>
+              <a href="<?php echo $TopDir; ?>parents.php">Parents</a>
+              <ul>
+                <li><a href="<?php echo $TopDir; ?>parents.php#lesson-plans">Lesson Plans</a></li>
+              </ul>
+            </li>
             <li class="donate"><a href="<?php echo $TopDir; ?>donate.php">Donate</a></li>
           </ul>
         </div>

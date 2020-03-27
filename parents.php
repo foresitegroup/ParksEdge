@@ -108,6 +108,36 @@ include_once "inc/dbconfig.php";
   </div>
 </div>
 
+<div id="lesson-plans">
+  <div class="site-width">
+    <h2>Lesson Plans</h2>
+
+    <?php
+    $lesson_plans = "pdf/lessonplans";
+
+    $lpfiles = scandir($lesson_plans);
+    foreach($lpfiles as $lpfile) {
+      // Ignore non-files
+      if ($lpfile == "." || $lpfile == "..") continue;
+
+      // Put results into an array
+      $lpresults[] = $lesson_plans . "/" . $lpfile;
+    }
+
+    natcasesort($lpresults);
+    $lpresults = array_reverse($lpresults);
+    $lpresults = array_slice($lpresults, 0, 5);
+
+    foreach($lpresults as $lpresult) {
+      $lpfilename = basename($lpresult, ".pdf");
+      $lppieces = explode("_", $lpfilename);
+      $week = explode("-", $lppieces[2]);
+      echo '<a href="'.$lpresult.'"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> Lesson Plans for '.$week[0]."/".$week[1]." - ".$week[2]."/".$week[3]."</a><br>\n";
+    }
+    ?>
+  </div>
+</div>
+
 <div class="parents-newsletter-forms">
   <div class="site-width">
     <div class="parents-newsletter cf">

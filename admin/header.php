@@ -63,6 +63,7 @@
             <li><a href="menu.php">Menu</a></li>
             <li><a href="calendar.php">Calendar</a></li>
             <li><a href="newsletter.php">Newsletter</a></li>
+            <li><a href="lesson-plans.php">Lesson Plans</a></li>
             <li><a href="../news/wp-admin">News</a></li>
           </ul>
           <?php } ?>
