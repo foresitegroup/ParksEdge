@@ -179,6 +179,8 @@ include_once "inc/dbconfig.php";
       <a href="pdf/Health_History_and_Emergency_Care_Plan.pdf">Health History and Emergency Care Plan</a>
 
       <a href="pdf/schedule_change_notice.pdf">Schedule Change Notice</a>
+
+      <a href="pdf/PEP_Summer_Program_2020.pdf">2020 Summer Program</a>
     </div>
   </div>
 
