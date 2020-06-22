@@ -181,6 +181,8 @@ include_once "inc/dbconfig.php";
       <a href="pdf/schedule_change_notice.pdf">Schedule Change Notice</a>
 
       <a href="pdf/PEP_Summer_Program_2020.pdf">2020 Summer Program</a>
+
+      <a href="pdf/Summer_Outdoor_Schedule-2020.pdf">Summer Outdoor Schedule 2020</a>
     </div>
   </div>
 
