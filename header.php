@@ -58,9 +58,9 @@ if (!isset($TopDir)) $TopDir = "";
 
     <a href="#" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
 
-    <div id="notice">
-      <a href="<?php echo $TopDir; ?>news/covid-19-updates/">IMPORTANT COVID-19 UPDATES FROM PEP</a>
-    </div>
+    <!-- <div id="notice">
+      <a href="<?php //echo $TopDir; ?>news/covid-19-updates/">IMPORTANT COVID-19 UPDATES FROM PEP</a>
+    </div> -->
 
     <div class="pe-header">
       <div class="site-width">
