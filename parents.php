@@ -182,7 +182,9 @@ include_once "inc/dbconfig.php";
 
       <a href="pdf/PEP_Summer_Program_2020.pdf">2020 Summer Program</a>
 
-      <a href="pdf/Summer_Outdoor_Schedule-2020.pdf">Summer Outdoor Schedule 2020</a>
+      <a href="pdf/Summer_Outdoor_Schedule-2020.pdf">2020 Summer Outdoor Schedule</a>
+
+      <a href="pdf/2020_PEP_NAC_Questionnaire.pdf">2020 PEP NAC Questionnaire</a>
     </div>
   </div>
 
