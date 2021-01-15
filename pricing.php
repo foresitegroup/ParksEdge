@@ -5,7 +5,7 @@ include "header.php";
 
 <div class="banner no-tear" style="background-image: url(images/banner-pricing.jpg);">
   <div class="site-width centered">
-    2020 PEP Rates
+    2021 PEP Rates
   </div>
 </div>
 
@@ -32,24 +32,24 @@ include "header.php";
         <th><span>DAILY</span></th>
       </tr>
       <tr>
-        <td>Five Days (Infant 1):</td>
-        <td>$310.00</td>
-        <td>$62.00</td>
+        <td>Five Days (Infants 1 & 2 / full-time only):</td>
+        <td>$320.00</td>
+        <td>$64.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$272.00</td>
-        <td>$68.00</td>
+        <td>$280.00</td>
+        <td>$70.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$219.00</td>
-        <td>$73.00</td>
+        <td>$225.00</td>
+        <td>$75.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$154.00</td>
-        <td>$77.00</td>
+        <td>$160.00</td>
+        <td>$80.00</td>
       </tr>
     </table>
   </div>
@@ -69,23 +69,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$280.00</td>
-        <td>$56.00</td>
+        <td>$290.00</td>
+        <td>$58.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$244.00</td>
-        <td>$61.00</td>
+        <td>$252.00</td>
+        <td>$63.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$186.00</td>
-        <td>$62.00</td>
+        <td>$192.00</td>
+        <td>$64.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$134.00</td>
-        <td>$67.00</td>
+        <td>$140.00</td>
+        <td>$70.00</td>
       </tr>
     </table>
   </div>
@@ -105,28 +105,28 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$255 / $51</td>
-        <td>$200 / $40</td>
+        <td>$265 / $53</td>
+        <td>$210 / $42</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$220 / $55</td>
-        <td>$180 / $45</td>
+        <td>$228 / $57</td>
+        <td>$188 / $47</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$171 / $57</td>
-        <td>$150 / $50</td>
+        <td>$177 / $59</td>
+        <td>$156 / $52</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$120 / $60</td>
-        <td>$102 / $51</td>
+        <td>$126 / $63</td>
+        <td>$106 / $53</td>
       </tr>
     </table><br>
     <br>
 
-    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $36.00/day.<br>
+    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $38.00/day.<br>
     * Daily rates are based on 10 hours or less; more than 10 hours a day a $5.00 fee will be charged per family. Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
   </div>
 </div>
@@ -145,26 +145,26 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$80 / $16</td>
-        <td>$125 / $25</td>
+        <td>$90 / $18</td>
+        <td>$135 / $27</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$76 / $19</td>
-        <td>$112 / $28</td>
+        <td>$84 / $21</td>
+        <td>$120 / $30</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$63 / $21</td>
-        <td>$90 / $30</td>
+        <td>$69 / $23</td>
+        <td>$96 / $32</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$48 / $24</td>
-        <td>$68 / $34</td>
+        <td>$52 / $26</td>
+        <td>$72 / $36</td>
       </tr>
     </table>
-    
+
     <br><br><br><br><br>
     <h2>SCHOOL AGERS <span>(SUMMER)</span></h2>
 
@@ -178,36 +178,36 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$250 / $50</td>
-        <td>$195 / $39</td>
+        <td>$260 / $52</td>
+        <td>$205 / $41</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$216 / $54</td>
-        <td>$176 / $44</td>
+        <td>$224 / $56</td>
+        <td>$184 / $46</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$168 / $56</td>
-        <td>$147 / $49</td>
+        <td>$174 / $58</td>
+        <td>$153 / $51</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$118 / $59</td>
-        <td>$100 / $50</td>
+        <td>$124 / $62</td>
+        <td>$104 / $52</td>
       </tr>
     </table>
   </div>
 </div>
 
 <div class="site-width pricing">
-  <em>* Daily rates are based on ten hours or less. Some additional fees may apply, ask PEP for details.</em><br>
+  <em>* Daily rates are based on ten hours or less. 'More than 10 hours a day' fee charges: $5 per family.</em><br>
   <br>
 
-  <strong>Days Off &amp; Early Release Days during the School Year:</strong> In the event your child is in attendance at P.E.P. on an early release day or a day off of school the above rates apply. Additional Fees: $15 early release day (after lunch) and $20.00 (before lunch) and $25.00 for a day off of school will be added (with regular school year attendance).<br>
+  <strong>Days Off &amp; Early Release Days during the School Year:</strong> If your child attends P.E.P. on an early release day or a day off from school the above rates apply with additional fees: $20 early release day and $25.00 for a day off from school will be added (with regular school year attendance).<br>
   <br>
 
-  <strong>School-age drop off rates:</strong> an advance notice of 2 weeks minimum is requested to reserve space for a school-age child not in regular attendance during the school year. $60.00/ full daily.<br>
+  <strong>School-age drop off rates:</strong> a 2-week minimum notice is required to reserve space for a school-age child not in regular attendance during the school year. $60.00/ full daily<br>
   <br>
   <br>
 
@@ -242,7 +242,7 @@ include "header.php";
   <div class="spacer"></div>
 
   <div class="one-third">
-    <h4>Finder's Fee</h4> Parents must notify PEP of a school-age child's absence at least one hour prior to their scheduled school pick up time or a <strong>$5 "finder's fee"</strong> will be assessed per incident. It delays our scheduled bus route as we try to locate the missing child and could jeopardize the safety of other children. Policy also applies to late arrivals after 8:10am for PEP's morning bus transportation.
+    <h4>Finder's Fee</h4> Parents must notify Park's Edge Preschool's office at least one hour prior to their child's scheduled school pick up time or a <strong>$5 "finder's fee"</strong> will be assessed per incident; notify us a.s.a.p. A "finder's fee" is applied in the event Park's Edge Preschool is not notified of a school-age child's absence. It delays our scheduled bus route as we try to locate the missing child and could jeopardize the safety of other children. Safety first at Park's Edge Preschool! Policy also applies to late arrivals after 8:10 am for PEP's a.m. bus transportation.
   </div>
 
   <div class="one-third">
