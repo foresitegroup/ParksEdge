@@ -16,7 +16,7 @@ include "header.php";
   Be sure to complete a Tuition Express Automatic Payment Processing form for secure, convenient and easy electronic funds transfer authorization or credit card-monthly or weekly. (Please note a $5.00 fee applied to all Credit/Debit Card transactions.)<br>
   <br>
 
-  <span class="bluetext">Registration Fee:</span> $75.00 one child/ $100.00 family&mdash;non-refundable annual fee. Upon registration, one week of tuition will be collected and applied to your child's first week. For continued enrollment the registration fee is applied to the family's account annually September 1st.
+  <span class="bluetext">Registration Fee:</span> $100.00 one child/ $150.00 family&mdash;non-refundable annual fee. Upon registration, one week of tuition will be collected and applied to your child's first week. For continued enrollment the registration fee is applied to the family's account annually September 1st.
 </div>
 
 <div class="gray-section">
@@ -33,23 +33,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days (Infants 1 & 2 / full-time only):</td>
-        <td>$320.00</td>
-        <td>$64.00</td>
+        <td>$330.00</td>
+        <td>$66.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$280.00</td>
-        <td>$70.00</td>
+        <td>$288.00</td>
+        <td>$72.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$225.00</td>
-        <td>$75.00</td>
+        <td>$231.00</td>
+        <td>$77.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$160.00</td>
-        <td>$80.00</td>
+        <td>$164.00</td>
+        <td>$82.00</td>
       </tr>
     </table>
   </div>
@@ -69,23 +69,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$290.00</td>
-        <td>$58.00</td>
+        <td>$300.00</td>
+        <td>$60.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$252.00</td>
-        <td>$63.00</td>
+        <td>$260.00</td>
+        <td>$65.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$192.00</td>
-        <td>$64.00</td>
+        <td>$198.00</td>
+        <td>$66.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$140.00</td>
-        <td>$70.00</td>
+        <td>$144.00</td>
+        <td>$72.00</td>
       </tr>
     </table>
   </div>
@@ -105,28 +105,28 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$265 / $53</td>
-        <td>$210 / $42</td>
+        <td>$275 / $55</td>
+        <td>$220 / $44</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$228 / $57</td>
-        <td>$188 / $47</td>
+        <td>$236 / $59</td>
+        <td>$196 / $49</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$177 / $59</td>
-        <td>$156 / $52</td>
+        <td>$183 / $61</td>
+        <td>$162 / $54</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$126 / $63</td>
-        <td>$106 / $53</td>
+        <td>$130 / $65</td>
+        <td>$110 / $55</td>
       </tr>
     </table><br>
     <br>
 
-    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $38.00/day.<br>
+    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $40.00/day.<br>
     * Daily rates are based on 10 hours or less; more than 10 hours a day a $5.00 fee will be charged per family. Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
   </div>
 </div>
@@ -145,23 +145,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$90 / $18</td>
-        <td>$135 / $27</td>
+        <td>$100 / $20</td>
+        <td>$145 / $29</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$84 / $21</td>
-        <td>$120 / $30</td>
+        <td>$92 / $23</td>
+        <td>$128 / $32</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$69 / $23</td>
-        <td>$96 / $32</td>
+        <td>$75 / $25</td>
+        <td>$102 / $34</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$52 / $26</td>
-        <td>$72 / $36</td>
+        <td>$56 / $28</td>
+        <td>$76 / $38</td>
       </tr>
     </table>
 
@@ -178,23 +178,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$260 / $52</td>
-        <td>$205 / $41</td>
+        <td>$275 / $55</td>
+        <td>$220 / $44</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$224 / $56</td>
-        <td>$184 / $46</td>
+        <td>$236 / $59</td>
+        <td>$196 / $49</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$174 / $58</td>
-        <td>$153 / $51</td>
+        <td>$183 / $61</td>
+        <td>$162 / $54</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$124 / $62</td>
-        <td>$104 / $52</td>
+        <td>$130 / $65</td>
+        <td>$110 / $55</td>
       </tr>
     </table>
   </div>
