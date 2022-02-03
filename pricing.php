@@ -5,7 +5,7 @@ include "header.php";
 
 <div class="banner no-tear" style="background-image: url(images/banner-pricing.jpg);">
   <div class="site-width centered">
-    2021 PEP Rates
+    2022 PEP Rates
   </div>
 </div>
 
