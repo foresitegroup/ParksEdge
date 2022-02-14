@@ -1,6 +1,7 @@
 .DS_Store
 inc/dbconfig.php
 inc/dompdf/*
+inc/swiftmailer/*
 news/*
 !news/wp-content/
 news/wp-content/*

@@ -64,6 +64,7 @@ UL, OL {
 
 INPUT[type="text"],
 INPUT[type="email"],
+INPUT[type="tel"],
 INPUT[type="password"],
 TEXTAREA {
   border: 0;
@@ -737,6 +738,8 @@ A#return-to-top:active {
   position: relative;
   padding-bottom: calc(2.2em + 20px);
 }
+
+.contact-section.blank { padding: 2rem 0 0; }
 
 .contact-section.blue {
   background: #4FC3F1;
@@ -2183,6 +2186,289 @@ html {
 #lesson-plans A .fa { color: #B7B7B7; }
 
 
+/* EMPLOYMENT */
+#careers {
+  display: block;
+  padding: 2rem 0;
+  background: #112C37;
+  color: #FFFFFF;
+  font-size: 21px;
+  text-align: center;
+}
+
+#careers H2 {
+  margin: 0 0 0.5em;
+  padding: 0 2%;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#careers > DIV { width: 590px; margin: 0 auto; }
+
+.careers { width: 1100px; margin: 0 auto; padding: 3rem 0; }
+
+.careers H2 {
+  margin: 0 0 2em;
+  color: #3C3C3C;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.careers .positions { display: flex; justify-content: center; }
+
+.careers .positions > DIV {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40.5123%;
+  margin: 0 4.7438% 3rem;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.16);
+  box-sizing: border-box;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.careers .positions > DIV H3 {
+  margin: 0 0 0.5em;
+  color: #3C3C3C;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  min-height: 2em;
+}
+
+.careers .positions > DIV .apply {
+  margin-top: 1.5em;
+  padding: 0.6em 1.6em;
+  background: #50C3F1;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.careers .positions > DIV .apply:hover { background: #309692; }
+
+
+
+
+
+
+.application { padding: 2em 0; }
+
+.application .center { width: 80%; margin: 0 auto; text-align: center; }
+
+.application FORM { margin-top: 4em; }
+
+.application .upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0.5em;
+}
+
+.application .upload INPUT[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.application .upload BUTTON {
+  margin: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0.8em 2.5em;
+  background: #309692;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+}
+
+.application .upload BUTTON SPAN { font-size: 70%; }
+
+.application .upload INPUT[type="file"]:hover + BUTTON { background: #50C3F1; }
+
+.application .upload + SPAN { display: inline-block; padding-left: 0.5em; transform: translateY(25%); }
+
+.application H2 {
+  margin-bottom: 0.5em;
+  color: #3C3C3C;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.application LABEL, .application .radio {
+  color: #3C3C3C;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.application .required { color: #BA051C; }
+
+.application INPUT[type="text"],
+.application INPUT[type="email"],
+.application INPUT[type="tel"],
+.application TEXTAREA,
+.application SELECT {
+  width: 100%;
+  margin-bottom: 2em;
+  border: 1px solid #309692;
+  border-radius: 0;
+  padding: 0.4em 0.6em;
+  background: transparent;
+  color: #3C3C3C;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.application TEXTAREA { height: 7em; padding: 0.6em; }
+
+.application SELECT {
+  cursor: pointer;
+  padding: 0.4 em 2.6em 0.4em 0.6em;
+  background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23309692' d='M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z'/%3E%3C/svg%3E") no-repeat right 0.5em center;
+  background-size: auto 60%;
+  height: 45.5px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.application INPUT[type="radio"] { display: none; }
+
+.application INPUT[type="radio"] + LABEL {
+  display: inline-block;
+  width: auto;
+  padding-left: 22px;
+  line-height: 1;
+  position: relative;
+}
+
+.application INPUT[type="radio"] + LABEL:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #309692;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.application INPUT[type="radio"]:checked + LABEL:after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #309692;
+  width: 9px;
+  height: 9px;
+}
+
+.application .radio .note {
+  min-height: 1em;
+  padding-bottom: 0.8em;
+  color: #309692;
+  font-size: 60%;
+  line-height: 1;
+}
+
+.application LABEL INPUT,
+.application LABEL TEXTAREA,
+.application LABEL SELECT { margin-top: 0.5em; }
+
+.application .flex { display: flex; align-items: flex-start; }
+
+.application .radio { margin-bottom: 2em; }
+
+.application .flex LABEL, .application .radio { margin-right: 2%; width: 50%; }
+.application .flex LABEL:last-of-type,
+.application .radio:last-of-type { margin-right: 0; }
+
+.application .pi.name .mi { width: 75px; }
+
+.application .pi.address .state { width: 145px; }
+.application .pi.address .zip { width: 195px; }
+
+.application .pi.contact .phone { width: 20%; }
+.application .pi.contact .email { width: 40%; margin-right: 2%; }
+.application .pi.contact .age { margin-left: auto; width: auto; }
+
+.application .flex .from, .application .flex .to,
+.application .flex .empfrom, .application .flex .empto { width: 195px; }
+.application .flex .graduate { margin-left: 4%; }
+
+.application .flex .empsalary { width: 35%; }
+
+.application .flex .refphone { width: 30%; }
+.application .flex H2 { white-space: nowrap; margin-left: 2%; align-self: center; }
+
+.application INPUT[type="submit"] {
+  display: inline-block;
+  width: auto;
+  box-sizing: border-box;
+  margin: 1em 0 0;
+  padding: 0.6em 1.6em;
+  background: #50C3F1;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.application INPUT[type="submit"]:hover { background: #309692; }
+
+.application INPUT.alert, .application TEXTAREA.alert { border-color: #BA051C; }
+.application INPUT.alert:-ms-input-placeholder { color: #BA051C; } /* IE11 */
+.application TEXTAREA.alert:-ms-input-placeholder { color: #BA051C; } /* IE11 */
+.application INPUT.alert::placeholder, .application TEXTAREA.alert::placeholder { color: #BA051C; opacity: 1; }
+.application INPUT.alert:focus::placeholder, .application TEXTAREA.alert:focus::placeholder { color: transparent; }
+
+.application .radio.alert { outline: 1px solid #BA051C; }
+
+
+
+
+
+
 @media only screen and (min-width: 1600px) {
   #map-canvas { background-size: cover; }
 }
@@ -2199,6 +2485,10 @@ html {
   .menu UL LI.donate A {
     font-size: 70%;
   }
+}
+
+@media only screen and (max-width: 1100px) {
+  .careers { width: 96%; }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -2425,6 +2715,23 @@ html {
   #mailchimp INPUT[type="submit"] { width: 20%; }
 }
 
+@media only screen and (max-width: 750px) {
+  .careers .positions { flex-direction: column; }
+  .careers .positions > DIV { width: 100%; margin: 0 0 3rem; }
+  .careers .positions > DIV H3 { min-height: 0; }
+
+  .application .flex { flex-direction: column; }
+
+  .application .flex LABEL, .application .radio,
+  .application .pi.contact .phone, .application .pi.contact .email,
+  .application .flex .empsalary, .application .flex .refphone { margin-right: 0; width: 100%; }
+
+  .application .pi.contact .age,
+  .application .flex .graduate { margin-left: 0; width: 100%; }
+
+  .application .flex H2 { white-space: normal; margin-left: 0; align-self: flex-start; }
+}
+
 @media only screen and (max-width: 650px) {
   .contact-section.contact A {
     overflow-wrap: break-word;
@@ -2644,6 +2951,8 @@ html {
   }
 
   #map-canvas { background-size: cover; }
+
+  #careers > DIV { width: 96%; }
 }
 
 @media only screen and (max-width: 480px) {
