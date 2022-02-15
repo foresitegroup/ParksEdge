@@ -12,23 +12,40 @@ include "header.php";
 </div>
 
 <div class="careers">
+  <div class="intro">
+    <img src="images/home-slider1.jpg" alt="">
+
+    <div>
+      Park's Edge Preschool and Child Care Center strives to be a valuable extension of the families that we serve. Our goal is to offer exciting educational experiences and help children develop special interests and discover their own unique talents. Park's Edge Preschool exemplifies excellence in the care of young children.<br>
+      <br>
+
+      <div>Park's Edge Preschool is an Equal Opportunity Employer</div>
+    </div>
+  </div>
+
+  <br><br><br>
+
   <h2>Open Positions</h2>
 
   <div class="positions">
     <div>
-      <h3>Food Prep</h3>
       <div>
-        Wanted: An energetic, interactive individual willing to make a commitment to children and a difference in this world! We are looking to fill a Lead Teacher position in a NAC Accredited, Five-Star quality rated center with an excellent benefit package. An Associate Degree in Early Childhood is preferred.
+        <h3>Food Prep</h3>
+
+        Fully qualified cook hired to fill the position, may be eligible for a $500 hiring incentive!
       </div>
-      <a href="application.php" class="apply">Apply Now</a>
+
+      <a href="career-food-prep.php" class="apply">Learn More</a>
     </div>
 
     <div>
-      <h3>Early Childhood Teacher</h3>
       <div>
-        Wanted: An energetic, interactive individual willing to make a commitment to children and a difference in this world! We are looking to fill a Lead Teacher position in a NAC Accredited, Five-Star quality rated center with an excellent benefit package. An Associate Degree in Early Childhood is preferred.
+        <h3>Early Childhood Teacher</h3>
+
+        Fully qualified teacher hired for a full-time position may be eligible for $1,000 hiring incentive!
       </div>
-      <a href="application.php" class="apply">Apply Now</a>
+
+      <a href="career-early-childhood-teacher.php" class="apply">Learn More</a>
     </div>
   </div>
 </div> <!-- /.site-width.application -->

@@ -2208,10 +2208,22 @@ html {
 
 #careers > DIV { width: 590px; margin: 0 auto; }
 
-.careers { width: 1100px; margin: 0 auto; padding: 3rem 0; }
+.careers .intro {
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+
+.careers .intro IMG { max-width: 40%; height: auto; margin-right: 5%; }
+
+.careers .intro > DIV > DIV {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.careers { width: 1000px; margin: 0 auto; padding: 3rem 0; }
 
 .careers H2 {
-  margin: 0 0 2em;
+  margin: 0 0 1em;
   color: #3C3C3C;
   font-weight: 400;
   font-size: 40px;
@@ -2220,47 +2232,53 @@ html {
   text-transform: uppercase;
 }
 
-.careers .positions { display: flex; justify-content: center; }
+.careers.single H2 { margin: 0; font-weight: 700; font-size: 30px; text-align: left; }
 
 .careers .positions > DIV {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 40.5123%;
-  margin: 0 4.7438% 3rem;
+  margin: 2rem 0;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.16);
   box-sizing: border-box;
-  padding: 50px 40px;
-  text-align: center;
+  padding: 33px 50px;
+  background: #FAFBFD;
 }
 
-.careers .positions > DIV H3 {
-  margin: 0 0 0.5em;
+.careers .positions > DIV > DIV { width: 50%; }
+
+.careers .positions > DIV H3, .careers.single H3 {
+  margin: 0 0 0.25em;
   color: #3C3C3C;
   font-weight: 400;
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
-  min-height: 2em;
 }
 
-.careers .positions > DIV .apply {
-  margin-top: 1.5em;
-  padding: 0.6em 1.6em;
+.careers .positions > DIV .apply, .careers.single .apply {
+  padding: 0.75em 1.8em;
   background: #50C3F1;
   color: #FFFFFF;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
   border: 0;
   border-radius: 2px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.careers .positions > DIV .apply:hover { background: #309692; }
+.careers .positions > DIV .apply:hover,
+.careers.single .apply:hover { background: #309692; }
+
+
+
+
+
+
 
 
 
@@ -2272,6 +2290,29 @@ html {
 .application .center { width: 80%; margin: 0 auto; text-align: center; }
 
 .application FORM { margin-top: 4em; }
+
+#application .hidden { display: none; }
+
+#application .nav { text-align: center; text-transform: uppercase; }
+
+#application .pager { display: flex; justify-content: center; }
+
+#application .pager SPAN,
+#application .pager A {
+  margin: 0 0.4em;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 50%;
+  background: #309692;
+  opacity: 0.25;
+}
+
+#application .pager A { background: #309692; opacity: 1; }
+
+#application .pager SPAN.active,
+#application .pager A.active { background: #309692; opacity: 1; }
+
+#application .pager A:hover { background: #50C3F1; opacity: 1; }
 
 .application .upload {
   position: relative;
@@ -2323,7 +2364,6 @@ html {
 .application LABEL, .application .radio {
   color: #3C3C3C;
   font-weight: 400;
-  font-size: 20px;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -2339,12 +2379,12 @@ html {
   margin-bottom: 2em;
   border: 1px solid #309692;
   border-radius: 0;
-  padding: 0.4em 0.6em;
+  padding: 0.53em;
   background: transparent;
   color: #3C3C3C;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -2355,14 +2395,15 @@ html {
   padding: 0.4 em 2.6em 0.4em 0.6em;
   background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23309692' d='M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z'/%3E%3C/svg%3E") no-repeat right 0.5em center;
   background-size: auto 60%;
-  height: 45.5px;
+  height: 41.5px;
   -webkit-appearance: none;
   appearance: none;
 }
 
-.application INPUT[type="radio"] { display: none; }
+.application INPUT[type="radio"], .application INPUT[type="checkbox"] { display: none; }
 
-.application INPUT[type="radio"] + LABEL {
+.application INPUT[type="radio"] + LABEL ,
+.application INPUT[type="checkbox"] + LABEL {
   display: inline-block;
   width: auto;
   padding-left: 22px;
@@ -2370,7 +2411,8 @@ html {
   position: relative;
 }
 
-.application INPUT[type="radio"] + LABEL:before {
+.application INPUT[type="radio"] + LABEL:before,
+.application INPUT[type="checkbox"] + LABEL:before {
   content: "";
   position: absolute;
   left: 0;
@@ -2383,7 +2425,14 @@ html {
   cursor: pointer;
 }
 
-.application INPUT[type="radio"]:checked + LABEL:after {
+.application INPUT[type="checkbox"] + LABEL:before {
+  top: 0;
+  transform: none;
+  border-radius: 0;
+}
+
+.application INPUT[type="radio"]:checked + LABEL:after,
+.application INPUT[type="checkbox"]:checked + LABEL:after {
   content: "";
   position: absolute;
   left: 4px;
@@ -2395,11 +2444,17 @@ html {
   height: 9px;
 }
 
+.application INPUT[type="checkbox"]:checked + LABEL:after {
+  top: 4px;
+  transform: none;
+  border-radius: 0;
+}
+
 .application .radio .note {
   min-height: 1em;
   padding-bottom: 0.8em;
   color: #309692;
-  font-size: 60%;
+  font-size: 70%;
   line-height: 1;
 }
 
@@ -2414,6 +2469,8 @@ html {
 .application .flex LABEL, .application .radio { margin-right: 2%; width: 50%; }
 .application .flex LABEL:last-of-type,
 .application .radio:last-of-type { margin-right: 0; }
+
+.application .radio.fullwidth { margin-right: 0; width: 100%; }
 
 .application .pi.name .mi { width: 75px; }
 
@@ -2433,11 +2490,20 @@ html {
 .application .flex .refphone { width: 30%; }
 .application .flex H2 { white-space: nowrap; margin-left: 2%; align-self: center; }
 
+#wiregistryylevel { width: 245px; }
+
+#appcheckboxesnote { font-weight: 400; font-size: 110%; text-transform: uppercase; }
+
+#appcheckboxes { display: flex; justify-content: space-between; }
+
+#appcheckboxes > DIV { width: 30.5%; padding-bottom: 1.7em; }
+
+#application .submit,
 .application INPUT[type="submit"] {
   display: inline-block;
   width: auto;
   box-sizing: border-box;
-  margin: 1em 0 0;
+  margin: 1em 0;
   padding: 0.6em 1.6em;
   background: #50C3F1;
   color: #FFFFFF;
@@ -2454,6 +2520,7 @@ html {
   appearance: none;
 }
 
+#application .submit:hover,
 .application INPUT[type="submit"]:hover { background: #309692; }
 
 .application INPUT.alert, .application TEXTAREA.alert { border-color: #BA051C; }
@@ -2462,7 +2529,10 @@ html {
 .application INPUT.alert::placeholder, .application TEXTAREA.alert::placeholder { color: #BA051C; opacity: 1; }
 .application INPUT.alert:focus::placeholder, .application TEXTAREA.alert:focus::placeholder { color: transparent; }
 
-.application .radio.alert { outline: 1px solid #BA051C; }
+.application .radio.alert,
+.application #education.alert { outline: 1px solid #BA051C; }
+
+.application INPUT[type="checkbox"].alert + LABEL { outline: 1px solid #BA051C; }
 
 
 
@@ -2716,9 +2786,9 @@ html {
 }
 
 @media only screen and (max-width: 750px) {
-  .careers .positions { flex-direction: column; }
-  .careers .positions > DIV { width: 100%; margin: 0 0 3rem; }
-  .careers .positions > DIV H3 { min-height: 0; }
+  .careers .positions > DIV { flex-direction: column; align-items: flex-start; }
+  .careers .positions > DIV > DIV { width: 100%; }
+  .careers .positions > DIV .apply { margin-top: 1em; }
 
   .application .flex { flex-direction: column; }
 
@@ -2730,6 +2800,9 @@ html {
   .application .flex .graduate { margin-left: 0; width: 100%; }
 
   .application .flex H2 { white-space: normal; margin-left: 0; align-self: flex-start; }
+
+  #appcheckboxes { flex-direction: column; }
+  #appcheckboxes > DIV { width: 100%; }
 }
 
 @media only screen and (max-width: 650px) {
@@ -2953,6 +3026,9 @@ html {
   #map-canvas { background-size: cover; }
 
   #careers > DIV { width: 96%; }
+
+  .careers .intro { flex-direction: column-reverse; }
+  .careers .intro IMG { max-width: 100%; height: auto; margin: 2em 0 0; }
 }
 
 @media only screen and (max-width: 480px) {
