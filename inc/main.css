@@ -2256,7 +2256,11 @@ html {
   text-transform: uppercase;
 }
 
-.careers .positions > DIV .apply, .careers.single .apply {
+.careers .center { margin-top: 5em; text-align: center; }
+
+.careers .positions > DIV .apply,
+.careers .center .apply,
+.careers.single .apply {
   padding: 0.75em 1.8em;
   background: #50C3F1;
   color: #FFFFFF;
@@ -2272,18 +2276,8 @@ html {
 }
 
 .careers .positions > DIV .apply:hover,
+.careers .center .apply:hover,
 .careers.single .apply:hover { background: #309692; }
-
-
-
-
-
-
-
-
-
-
-
 
 .application { padding: 2em 0; }
 

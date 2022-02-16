@@ -48,6 +48,10 @@ include "header.php";
       <a href="career-early-childhood-teacher.php" class="apply">Learn More</a>
     </div>
   </div>
+
+  <div class="center">
+    <a href="application.php" class="apply">Apply Now</a>
+  </div>
 </div> <!-- /.site-width.application -->
 
 <div class="contact-section blank">
