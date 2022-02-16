@@ -91,7 +91,12 @@ if (!isset($TopDir)) $TopDir = "";
               </ul>
             </li>
             <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
-            <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
+            <li>
+              <a href="<?php echo $TopDir; ?>contact.php">Contact</a>
+              <ul>
+                <li><a href="<?php echo $TopDir; ?>careers.php">Careers</a></li>
+              </ul>
+            </li>
             <li>
               <a href="<?php echo $TopDir; ?>parents.php">Parents</a>
               <ul>

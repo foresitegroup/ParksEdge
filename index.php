@@ -36,12 +36,12 @@ include "header.php";
   </div>
 </div>
 
-<!-- <a href="careers.php" id="careers">
+<a href="careers.php" id="careers">
   <h2>Join our team at Park's Edge!</h2>
   <div>
     Park's Edge Preschool and Child Care Center strives to be a valuable extension of the families that we serve.
   </div>
-</a> -->
+</a>
 
 <div class="home-programs">
   <div class="site-width">
