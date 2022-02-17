@@ -163,7 +163,7 @@
   require_once "inc/swiftmailer/swift_required.php";
 
   $sm = Swift_Message::newInstance();
-  $sm->setTo(array("lippert@gmail.com"));
+  $sm->setTo(array("hello@parksedgepreschool.com"));
   $sm->setBcc(array("foresitegroupllc@gmail.com"));
   $sm->setFrom(array("donotreply@parksedgepreschool.com" => "Application Form"));
   $sm->setReplyTo($_POST['email']);
