@@ -74,6 +74,7 @@ if (!isset($TopDir)) $TopDir = "";
             <li>
               <a href="<?php echo $TopDir; ?>about.php">Park's Edge</a>
               <ul>
+                <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
                 <li><a href="<?php echo $TopDir; ?>about.php">Mission &amp; Vision</a></li>
                 <li><a href="<?php echo $TopDir; ?>about.php#leadership">Leadership &amp; Staff</a></li>
                 <li><a href="<?php echo $TopDir; ?>testimonials.php">Testimonials</a></li>
@@ -90,13 +91,13 @@ if (!isset($TopDir)) $TopDir = "";
                 <li><a href="<?php echo $TopDir; ?>pricing.php">Pricing</a></li>
               </ul>
             </li>
-            <li><a href="<?php echo $TopDir; ?>tour.php">Tour</a></li>
             <li>
-              <a href="<?php echo $TopDir; ?>contact.php">Contact</a>
+              <a href="<?php echo $TopDir; ?>careers.php">Careers</a>
               <ul>
-                <li><a href="<?php echo $TopDir; ?>careers.php">Careers</a></li>
+                <li><a href="<?php echo $TopDir; ?>application.php">Job Application</a></li>
               </ul>
             </li>
+            <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
             <li>
               <a href="<?php echo $TopDir; ?>parents.php">Parents</a>
               <ul>
