@@ -30,16 +30,6 @@ include "header.php";
   <div class="positions">
     <div>
       <div>
-        <h3>Food Prep</h3>
-
-        Fully qualified cook hired to fill the position, may be eligible for a $500 hiring incentive!
-      </div>
-
-      <a href="career-food-prep.php" class="apply">Learn More</a>
-    </div>
-
-    <div>
-      <div>
         <h3>Early Childhood Teacher</h3>
 
         Fully qualified teacher hired for a full-time position may be eligible for $1,000 hiring incentive!
