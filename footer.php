@@ -94,7 +94,10 @@
         </div>
       </div>
 
-      <div class="copyright">&copy; <?php echo date("Y"); ?> Park's Edge Preschool, Inc.</div>
+      <div class="copyright">
+        &copy; <?php echo date("Y"); ?> Park's Edge Preschool, Inc.<br>
+        <a href="https://foresitegrp.com" style="font-size: 0.6875rem; color: #1A404F;">WEBSITE BY FORESITE</a>
+      </div>
     </div>
 
   </body>
