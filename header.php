@@ -109,9 +109,9 @@ if (!isset($TopDir)) $TopDir = "";
             <li><a href="<?php echo $TopDir; ?>contact.php">Contact</a></li>
             <li>
               <a href="<?php echo $TopDir; ?>parents.php">Parents</a>
-              <ul>
-                <li><a href="<?php echo $TopDir; ?>parents.php#lesson-plans">Lesson Plans</a></li>
-              </ul>
+              <!-- <ul>
+                <li><a href="<?php //echo $TopDir; ?>parents.php#lesson-plans">Lesson Plans</a></li>
+              </ul> -->
             </li>
             <li class="donate"><a href="<?php echo $TopDir; ?>donate.php">Donate</a></li>
           </ul>

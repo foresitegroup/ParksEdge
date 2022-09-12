@@ -48,35 +48,35 @@ include_once "inc/dbconfig.php";
   </div>
 </div>
 
-<div class="parents-calendar" id="calendar">
+<!-- <div class="parents-calendar" id="calendar">
   <div class="site-width">
     <h1>IMPORTANT DATES</h1>
 
     <a href="calendar-pdf.php" class="download-cal">DOWNLOAD CALENDAR <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
 
     <?php
-    $prevstartdate = "";
-    $today = strtotime("Today 00:00");
+    // $prevstartdate = "";
+    // $today = strtotime("Today 00:00");
 
-    $result = $mysqli->query("SELECT * FROM calendar WHERE enddate >= $today ORDER BY startdate ASC");
+    // $result = $mysqli->query("SELECT * FROM calendar WHERE enddate >= $today ORDER BY startdate ASC");
 
-    while($row = $result->fetch_array(MYSQLI_ASSOC)) {
-      if ($row['startdate'] != $prevstartdate) {
-        echo "<div class=\"date\">" . date("F j", $row['startdate']);
-        if ($row['startdate'] != $row['enddate']) {
-          echo ($row['enddate'] - $row['startdate'] == 86400) ? " & " : "-";
-          echo (date("F", $row['startdate']) == date("F", $row['enddate'])) ? date("j", $row['enddate']) : date("F j", $row['enddate']);
-        }
-        echo "</div>";
-      }
+    // while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+    //   if ($row['startdate'] != $prevstartdate) {
+    //     echo "<div class=\"date\">" . date("F j", $row['startdate']);
+    //     if ($row['startdate'] != $row['enddate']) {
+    //       echo ($row['enddate'] - $row['startdate'] == 86400) ? " & " : "-";
+    //       echo (date("F", $row['startdate']) == date("F", $row['enddate'])) ? date("j", $row['enddate']) : date("F j", $row['enddate']);
+    //     }
+    //     echo "</div>";
+    //   }
 
-      echo nl2br($row['event']) . "<br><br>";
+    //   echo nl2br($row['event']) . "<br><br>";
 
-      $prevstartdate = $row['startdate'];
-    }
+    //   $prevstartdate = $row['startdate'];
+    // }
     ?>
   </div>
-</div>
+</div> -->
 
 <div class="parents-news">
   <div class="site-width">
@@ -108,35 +108,35 @@ include_once "inc/dbconfig.php";
   </div>
 </div>
 
-<div id="lesson-plans">
+<!-- <div id="lesson-plans">
   <div class="site-width">
     <h2>Lesson Plans</h2>
 
     <?php
-    $lesson_plans = "pdf/lessonplans";
+    // $lesson_plans = "pdf/lessonplans";
 
-    $lpfiles = scandir($lesson_plans);
-    foreach($lpfiles as $lpfile) {
-      // Ignore non-files
-      if ($lpfile == "." || $lpfile == "..") continue;
+    // $lpfiles = scandir($lesson_plans);
+    // foreach($lpfiles as $lpfile) {
+    //   // Ignore non-files
+    //   if ($lpfile == "." || $lpfile == "..") continue;
 
-      // Put results into an array
-      $lpresults[] = $lesson_plans . "/" . $lpfile;
-    }
+    //   // Put results into an array
+    //   $lpresults[] = $lesson_plans . "/" . $lpfile;
+    // }
 
-    natcasesort($lpresults);
-    $lpresults = array_reverse($lpresults);
-    $lpresults = array_slice($lpresults, 0, 5);
+    // natcasesort($lpresults);
+    // $lpresults = array_reverse($lpresults);
+    // $lpresults = array_slice($lpresults, 0, 5);
 
-    foreach($lpresults as $lpresult) {
-      $lpfilename = basename($lpresult, ".pdf");
-      $lppieces = explode("_", $lpfilename);
-      $week = explode("-", $lppieces[2]);
-      echo '<a href="'.$lpresult.'"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> Lesson Plans for '.$week[0]."/".$week[1]." - ".$week[2]."/".$week[3]."</a><br>\n";
-    }
+    // foreach($lpresults as $lpresult) {
+    //   $lpfilename = basename($lpresult, ".pdf");
+    //   $lppieces = explode("_", $lpfilename);
+    //   $week = explode("-", $lppieces[2]);
+    //   echo '<a href="'.$lpresult.'"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> Lesson Plans for '.$week[0]."/".$week[1]." - ".$week[2]."/".$week[3]."</a><br>\n";
+    // }
     ?>
   </div>
-</div>
+</div> -->
 
 <div class="parents-newsletter-forms">
   <div class="site-width">
