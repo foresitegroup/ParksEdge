@@ -33,23 +33,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days (Infants 1 & 2 / full-time only):</td>
-        <td>$330.00</td>
-        <td>$66.00</td>
+        <td>$340.00</td>
+        <td>$68.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$288.00</td>
-        <td>$72.00</td>
+        <td>$296.00</td>
+        <td>$74.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$231.00</td>
-        <td>$77.00</td>
+        <td>$237.00</td>
+        <td>$79.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$164.00</td>
-        <td>$82.00</td>
+        <td>$168.00</td>
+        <td>$84.00</td>
       </tr>
     </table>
   </div>
@@ -69,23 +69,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$300.00</td>
-        <td>$60.00</td>
+        <td>$310.00</td>
+        <td>$62.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$260.00</td>
-        <td>$65.00</td>
+        <td>$268.00</td>
+        <td>$67.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$198.00</td>
-        <td>$66.00</td>
+        <td>$204.00</td>
+        <td>$68.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$144.00</td>
-        <td>$72.00</td>
+        <td>$148.00</td>
+        <td>$74.00</td>
       </tr>
     </table>
   </div>
@@ -105,28 +105,28 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$275 / $55</td>
-        <td>$220 / $44</td>
+        <td>$285 / $57</td>
+        <td>$230 / $46</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$236 / $59</td>
-        <td>$196 / $49</td>
+        <td>$244 / $61</td>
+        <td>$204 / $51</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$183 / $61</td>
-        <td>$162 / $54</td>
+        <td>$189 / $63</td>
+        <td>$168 / $56</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$130 / $65</td>
-        <td>$110 / $55</td>
+        <td>$134 / $67</td>
+        <td>$114 / $57</td>
       </tr>
     </table><br>
     <br>
 
-    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $40.00/day.<br>
+    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $42.00/day.<br>
     * Daily rates are based on 10 hours or less; more than 10 hours a day a $5.00 fee will be charged per family. Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
   </div>
 </div>
@@ -145,23 +145,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$100 / $20</td>
-        <td>$145 / $29</td>
+        <td>$110 / $22</td>
+        <td>$155 / $31</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$92 / $23</td>
-        <td>$128 / $32</td>
+        <td>$100 / $25</td>
+        <td>$136 / $34</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$75 / $25</td>
-        <td>$102 / $34</td>
+        <td>$81 / $27</td>
+        <td>$108 / $36</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$56 / $28</td>
-        <td>$76 / $38</td>
+        <td>$60 / $30</td>
+        <td>$80 / $40</td>
       </tr>
     </table>
 
@@ -178,23 +178,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$275 / $55</td>
-        <td>$220 / $44</td>
+        <td>$285 / $57</td>
+        <td>$230 / $46</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$236 / $59</td>
-        <td>$196 / $49</td>
+        <td>$244 / $61</td>
+        <td>$204 / $51</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$183 / $61</td>
-        <td>$162 / $54</td>
+        <td>$189/ $63</td>
+        <td>$168 / $56</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$130 / $65</td>
-        <td>$110 / $55</td>
+        <td>$134 / $67</td>
+        <td>$114 / $57</td>
       </tr>
     </table>
   </div>
