@@ -8,10 +8,11 @@ $blanks = date("w", $first_day);
  
 $title = ($_SERVER['QUERY_STRING'] == "lunch") ? "Lunch" : "Snack";
 $metatitle = $title . " Menu " . date("F Y");
-$headertitle = $title . " - " . date("F Y");
+$headertitle = $title . " Menu - " . date("F Y");
 $filename = $title . "_Menu_" . date("F_Y");
 
 $html = '<style>
+* { font-family: Helvetica, sans-serif; }
 .cal {
   width: 100%;
   border-collapse: collapse;
@@ -160,7 +161,7 @@ $html = '<style>
     }
 
   $html .= "</tr>
-  <tr><td colspan=\"5\" style=\"text-align: right; border: 0;\">note: fresh fruit and veggies are subject to occasional change based on availability</td></tr>
+  <tr><td colspan=\"5\" style=\"text-align: right; border-right: 0; border-bottom: 0; border-left: 0;\">note: fresh fruit and veggies are subject to occasional change based on availability</td></tr>
 </table>";
 
 require_once 'inc/dompdf/autoload.inc.php';
@@ -170,7 +171,10 @@ use Dompdf\Dompdf;
 
 // instantiate and use the dompdf class
 $dompdf = new Dompdf();
-$dompdf->set_option('defaultFont', 'Helvetica');
+$options = $dompdf->getOptions();
+$options->setDefaultFont('Helvetica');
+$dompdf->setOptions($options);
+// $dompdf->set_option('defaultFont', 'Helvetica');
 
 $dompdf->loadHtml($html);
 
