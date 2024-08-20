@@ -1,104 +1,147 @@
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mailchimp" style="display: none;">
-      <script type="text/javascript">
-        $(document).ready(function() {
-          var form = $('#mailchimp-form');
-          var formMessages = $('#mailchimp-form-messages');
-          $(form).submit(function(event) {
-            event.preventDefault();
-            
-            function formValidation() {
-              if ($('#email').val() === '') { alert('Email address required.'); $('#email').focus(); return false; }
-              return true;
-            }
-            
-            if (formValidation()) {
-              var formData = $(form).serialize();
-              formData += '&src=ajax';
-
-              $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-              })
-              .done(function(response) {
-                $(formMessages).html(response);
-                $('#email').val('');
-              })
-              .fail(function(data) {
-                if (data.responseText !== '') {
-                  $(formMessages).html(data.responseText);
-                } else {
-                  $(formMessages).text('Oops! An error occured and your message could not be sent.');
-                }
-              });
-            }
-          });
-        });
-      </script>
-
-      <?php
-      // Settings for randomizing form field names
-      $ip = $_SERVER['REMOTE_ADDR'];
-      $timestamp = time();
-      $salt = "ParksEdgeMailchimpForm";
-      ?>
-
-      <div id="mailchimp-form-messages"></div>
-
-      Signup for our newsletter to receive news, events &amp; important dates.
-
-      <form action="<?php echo $TopDir; ?>form-mailchimp.php" method="POST" id="mailchimp-form">
-        <div>
-          <input type="email" name="<?php echo md5("email" . $ip . $salt . $timestamp); ?>" id="email" placeholder="Email Address">
-          <input type="submit" name="submit" value="SUBMIT">
-
-          <input type="text" name="confirmationCAP" style="display: none;">
-          <input type="hidden" name="ip" value="<?php echo $ip; ?>">
-          <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
-        </div>
-      </form>
-    </div>
-    <!--End MailChimp Signup Form -->
-
-    <div class="pe-footer">
+    <footer>
       <div class="site-width">
-        <div class="one-fourth bigger">
-          <h2>RESOURCES</h2>
-          <a href="https://parksedgepreschool.smugmug.com">GALLERY</a><br>
-          <a href="<?php echo $TopDir; ?>parents.php">MENU &amp; CALENDAR</a><br>
-          <!-- <a href="<?php //echo $TopDir; ?>parents.php#lesson-plans">LESSON PLANS</a><br> -->
-          <a href="<?php echo $TopDir; ?>parents.php#forms">FORMS</a><br>
-          <a href="<?php echo $TopDir; ?>donate.php">DONATE</a>
+        <div>
+          <h2>Resources</h2>
+          <a href="https://parksedgepreschool.smugmug.com">Gallery</a><br>
+          <a href="<?php echo $TopDir; ?>parents.php">Menu &amp; Calendar</a><br>
+          <a href="<?php echo $TopDir; ?>parents.php#forms">Forms</a><br>
+          <a href="<?php echo $TopDir; ?>donate.php">Donate</a>
         </div>
 
-        <div class="one-fourth bigger">
-          <h2>FOLLOW US</h2>
-          <a href="https://www.facebook.com/parksedgepreschool">FACEBOOK</a><br>
-          <a href="https://www.youtube.com/channel/UCBdhjK84FV-T78vQiQa-4Hw">YOUTUBE</a><br>
-          <a href="<?php echo $TopDir; ?>news">NEWS</a>
+        <div>
+          <h2>Follow Us</h2>
+          <a href="https://www.facebook.com/parksedgepreschool">Facebook</a><br>
+          <a href="https://www.youtube.com/channel/UCBdhjK84FV-T78vQiQa-4Hw">YouTube</a><br>
+          <a href="<?php echo $TopDir; ?>news">News</a>
         </div>
 
-        <div class="one-fourth">
-          <h2>STAY INFORMED</h2>
+        <div>
+          <h2>Stay Informed</h2>
           with our Monthly Newsletter to recieve details on news, events and important dates.<br>
-          <a href="#mailchimp" class="button-border">SIGN-UP!</a>
+          <button id="mcbutton">Sign-Up!</button>
         </div>
 
-        <div class="one-fourth">
-          <h2>LOCATION</h2>
+        <div>
+          <h2>Location</h2>
           10627 W. Forest Home Avenue<br>
           Hales Corners, WI 53130<br>
           <strong style="display: block; margin: 0.5em 0;">(414) 427-9561</strong>
-          <a href="<?php echo $TopDir; ?>contact.php">CONTACT US BY EMAIL</a>
+          <a href="<?php echo $TopDir; ?>contact.php">Contact Us By Email</a>
+        </div>
+      </div> <!-- /.site-width -->
+
+      <div id="copyright">
+        &copy; <?php echo date("Y"); ?> Park's Edge Preschool, Inc.<br>
+        <a href="https://foresitegrp.com">Website By Foresite</a>
+      </div>
+    </footer>
+
+    <button id="return-to-top" aria-label="Return to top"></button>
+    
+    <div id="mc-modal">
+      <div class="modal-box">
+        <div id="mc-modal-button"></div>
+        <div class="modal-content">
+          Signup for our newsletter to receive news, events &amp; important dates.
+
+          <form action="<?php echo $TopDir; ?>form-mailchimp.php" method="POST" id="mailchimp-form" novalidate>
+            <div>
+              <input type="text" name="username" tabindex="-1" aria-hidden="true" autocomplete="new-password">
+              <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Email Address">
+              <button type="submit" name="mcsubmit" id="mcsubmit" aria-label="Submit">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
-
-      <div class="copyright">
-        &copy; <?php echo date("Y"); ?> Park's Edge Preschool, Inc.<br>
-        <a href="https://foresitegrp.com" style="font-size: 0.6875rem; color: #1A404F;">WEBSITE BY FORESITE</a>
+    </div>
+    
+    <div id="modal">
+      <div class="modal-box">
+        <div id="modal-button"></div>
+        <div id="modal-content" class="modal-content"></div>
       </div>
     </div>
+
+    <script>
+      // Open external links and PDFs in new tab
+      [...document.links].forEach(link => {
+        if (link.hostname != window.location.hostname || link.href.split('.').pop() == "pdf") {
+          link.target = '_blank'; link.rel = 'noopener';
+        }
+      });
+      
+      // Show main menu submenus on tap
+      const menus = document.querySelectorAll('#main-menu UL LI');
+      menus.forEach((menu) => {
+        menu.addEventListener('touchstart', () => { menu.classList.add('hover'); });
+      });
+      
+      // Display return to top button on scroll
+      var rtt = document.getElementById('return-to-top');
+      rtt.style.opacity = 0;
+
+      window.onscroll = function() {
+        if (document.documentElement.scrollTop > 200) {
+          rtt.style.opacity = 1;
+        } else {
+          rtt.style.opacity = 0;
+        }
+      };
+      
+      // Return to top when button is clicked
+      rtt.addEventListener('click', function() {
+        window.scroll({ top: 0, behavior: "smooth" });
+      });
+      
+      // BEGIN Mailchimp form submit
+      const mcform = document.getElementById('mailchimp-form');
+      mcform.addEventListener('submit', submitMCForm);
+
+      function submitMCForm(mce) {
+        mce.preventDefault();
+
+        document.getElementById("mcsubmit").classList.add("loader");
+
+        const data = new FormData(mcform);
+
+        fetch(mcform.action, {
+          method: 'POST',
+          body: data
+        })
+        .then((response) => response.text())
+        .then((result) => {
+          // Data sent, so display success message in modal
+          // and clear all the form fields
+          document.getElementById('modal-content').innerHTML = result;
+          modal.style.display = "block";
+          mcform.reset();
+
+          document.getElementById("mcsubmit").classList.remove("loader");
+          mcmodal.style.display = "none";
+        });
+      } // END submitMCForm
+
+      const modal = document.getElementById("modal");
+      const modalbutton = document.getElementById("modal-button");
+      const mcmodal = document.getElementById("mc-modal");
+      const mcmodalbutton = document.getElementById("mc-modal-button");
+      
+      // Open Mailchimp modal
+      document.getElementById('mcbutton').addEventListener('click', function(mcevent) {
+        mcevent.preventDefault();
+        mcmodal.style.display = 'block';
+      });
+
+      // Close modals by background click
+      window.onclick = function(event) {
+        if (event.target == modal) modal.style.display = "none";
+        if (event.target == mcmodal) mcmodal.style.display = "none";
+      }
+
+      // Close modals by button click
+      modalbutton.onclick = function() { modal.style.display = "none"; }
+      mcmodalbutton.onclick = function() { mcmodal.style.display = "none"; }
+    </script>
 
   </body>
 </html>

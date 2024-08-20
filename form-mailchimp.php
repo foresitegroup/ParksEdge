@@ -1,13 +1,10 @@
 <?php
 include_once "inc/dbconfig.php";
-$salt = "ParksEdgeMailchimpForm";
 
-if ($_POST['confirmationCAP'] == "") {
-  if ($_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])] != "") {
-    $mcfeedback = "Thank you for signing up for our newsletter!";
-  
+if ($_POST['email'] != "") {
+  if ($_POST['username'] == "") {
     $data = array(
-      'email'  => $_POST[md5('email' . $_POST['ip'] . $salt . $_POST['timestamp'])],
+      'email'  => $_POST['email'],
       'status' => 'subscribed'
     );
     
@@ -42,17 +39,11 @@ if ($_POST['confirmationCAP'] == "") {
 
     syncMailchimp($data);
 
-    if (!empty($_REQUEST['src'])) {
-      header("HTTP/1.0 200 OK");
-      echo $mcfeedback;
-    }
-  } else {
-    $mcfeedback = "<strong>Some required information is missing! Please go back and make sure all required fields are filled.</strong>";
+    $mcfeedback = "Thank you for signing up for our newsletter!";
+  } // Honeypot
+} else {
+  $mcfeedback = "Some required information is missing! Please make sure all fields are filled.";
+} // Required fields
 
-    if (!empty($_REQUEST['src'])) {
-      header("HTTP/1.0 500 Internal Server Error");
-      echo $mcfeedback;
-    }
-  }
-}
+echo $mcfeedback;
 ?>
