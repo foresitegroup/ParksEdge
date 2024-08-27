@@ -20,9 +20,9 @@ $next = $date+604800;
 
 <div id="menu-schedule-header">
   <div class="site-width">
-    <button id="prev" data-date="<?php echo $prev; ?>"></button>
+    <button id="prev" data-date="<?php echo $prev; ?>" aria-label="Previous week"></button>
     <div id="ms-title"></div>
-    <button id="next" data-date="<?php echo $next; ?>"></button>
+    <button id="next" data-date="<?php echo $next; ?>" aria-label="Next week"></button>
   </div> <!-- /.site-width -->
 </div> <!-- /#menu-schedule-header -->
 
@@ -41,21 +41,25 @@ $next = $date+604800;
     <h2>Recent News</h2>
 
     <?php
-    require('news/wp-blog-header.php');
-    $posts = get_posts('posts_per_page=3&order=DESC&orderby=date');
+    if (file_exists('news/wp-blog-header.php')) {
+      require('news/wp-blog-header.php');
+      $posts = get_posts('posts_per_page=3&order=DESC&orderby=date');
 
-    foreach ($posts as $post) :
-      setup_postdata( $post );
-      ?>
-      <div>
-        <div class="date"><?php the_date(); ?></div>
-        <h3><?php the_title(); ?></h3>
-        <?php echo excerpt(24); ?><br>
-        <br>
+      foreach ($posts as $post) :
+        setup_postdata( $post );
+        ?>
+        <div>
+          <div class="date"><?php the_date(); ?></div>
+          <h3><?php the_title(); ?></h3>
+          <?php echo excerpt(24); ?><br>
+          <br>
 
-        <a href="<?php the_permalink(); ?>" class="link">Read More</a>
-      </div>
-    <?php endforeach; ?>
+          <a href="<?php the_permalink(); ?>" class="link">Read More</a>
+        </div>
+      <?php
+      endforeach;
+    }
+    ?>
 
     <a href="news" class="button blue">View All Posts</a>
   </div>

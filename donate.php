@@ -3,101 +3,115 @@ $PageTitle = "Donate";
 include "header.php";
 ?>
 
-<div class="banner" style="background-image: url(images/banner-donate.jpg);">
-  <div class="site-width big">
+<div class="subheader" style="background-image: url(images/banner-donate.webp);">
+  <div class="site-width programs-subheader">
     We greatly appreciate your donation to Park's Edge Preschool.
-  </div>
+  </div> <!-- /.site-width -->
+</div> <!-- /.subheader -->
 
-  <div class="torn-header-white"></div>
-</div>
-
-<div class="site-width donate-page">
-  <div class="centered">Please select how you wish to give.</div><br>
+<div id="donate" class="site-width donate-page">
+  <div style="text-align: center;">Please select how you wish to give.</div><br>
   <br>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('input[name="amount"]').on('change', function(){
-        if ($('#other').is(':checked')) {
-          $("#other-text").attr("name", "amount");
-          $("#other-text").css("display", "block");
-        } else {
-          $("#other-text").attr("name", "");
-          $("#other-text").css("display", "none");
-          $('#other-text').val('');
-        }
-      });
+  <div class="columns">
+    <div>
+      <h1>One-Time Donation</h1>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form" id="otd">
+        <div>
+          <input type="hidden" name="cmd" value="_cart">
+          <input type="hidden" name="upload" value="1">
+          <input type="hidden" name="business" value="francis@foresitegrp.com">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="item_name_1" value="Park's Edge Preschool donation">
 
-      $('input[name="a3"]').on('change', function(){
-        if ($('#rec-other').is(':checked')) {
-          $("#rec-other-text").attr("name", "a3");
-          $("#rec-other-text").css("display", "block");
-        } else {
-          $("#rec-other-text").attr("name", "");
-          $("#rec-other-text").css("display", "none");
-          $('#rec-other-text').val('');
-        }
-      });
-    });
-  </script>
-  
-  <div class="donate-left">
-    <h2>ONE-TIME DONATION</h2>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <div>
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="francis@foresitegrp.com">
-        <input type="hidden" name="item_name" value="Park's Edge Preschool donation">
-        <input type="hidden" name="item_number" value="pepdonation">
-        <input type="hidden" name="no_shipping" value="1">
+          <div class="radio">
+            <label><input type="radio" name="amount_1" value="25">$25</label>
+            <label><input type="radio" name="amount_1" value="50">$50</label>
+            <label><input type="radio" name="amount_1" value="100">$100</label>
+            <label><input type="radio" name="amount_1" value="500">$500</label>
+            <label><input type="radio" name="amount_1" value="" id="otd_other">Other Amount</label>
+          </div>
 
-        <div class="one-fourth"><input type="radio" name="amount" value="25">$25</div>
-        <div class="one-fourth"><input type="radio" name="amount" value="50">$50</div>
-        <div class="one-fourth"><input type="radio" name="amount" value="100">$100</div>
-        <div class="one-fourth"><input type="radio" name="amount" value="500">$500</div>
-        <input type="radio" name="amount" value="" id="other">Other Amount
-        <input type="text" name="" id="other-text" placeholder="Amount $">
-        
-        <input type="submit" name="submit" value="DONATE">
-      </div>
-    </form>
-  </div>
-  
-  <div class="donate-right">
-    <h2>MONTHLY DONATION</h2>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <div>
-        <input type="hidden" name="cmd" value="_xclick-subscriptions">
-        <input type="hidden" name="business" value="francis@foresitegrp.com">
-        <input type="hidden" name="item_name" value="Park's Edge Preschool monthly donation">
-        <input type="hidden" name="item_number" value="pepmonthlydonation">
-        <input type="hidden" name="no_shipping" value="1">
-        <input type="hidden" name="src" value="1">
-        <input type="hidden" name="p3" value="1">
-        <input type="hidden" name="t3" value="M">
-        
-        <div class="one-fourth"><input type="radio" name="a3" value="10">$10</div>
-        <div class="one-fourth"><input type="radio" name="a3" value="25">$25</div>
-        <div class="one-fourth"><input type="radio" name="a3" value="50">$50</div>
-        <div class="one-fourth"><input type="radio" name="a3" value="100">$100</div>
-        <input type="radio" name="a3" value="" id="rec-other">Other Amount
-        <input type="text" name="" id="rec-other-text" placeholder="Amount $">
-        
-        <input type="submit" name="submit" value="DONATE">
-      </div>
-    </form>
-  </div>
-</div>
+          <input type="text" name="" id="otd_other_text" placeholder="Amount $">
+          
+          <input type="submit" name="submit" value="Donate">
+        </div>
+      </form>
+    </div>
+    
+    <div>
+      <h1>Monthly Donation</h1>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form" id="md">
+        <div>
+          <input type="hidden" name="cmd" value="_xclick-subscriptions">
+          <input type="hidden" name="business" value="francis@foresitegrp.com">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="item_name" value="Park's Edge Preschool monthly donation">
+          <input type="hidden" name="item_number" value="pepmonthlydonation">
+          <input type="hidden" name="src" value="1">
+          <input type="hidden" name="p3" value="1">
+          <input type="hidden" name="t3" value="M">
+
+          <div class="radio">
+            <label><input type="radio" name="a3" value="10">$10</label>
+            <label><input type="radio" name="a3" value="25">$25</label>
+            <label><input type="radio" name="a3" value="50">$50</label>
+            <label><input type="radio" name="a3" value="100">$100</label>
+            <label><input type="radio" name="a3" value="" id="md_other">Other Amount</label>
+          </div>
+
+          <input type="text" name="" id="md_other_text" placeholder="Amount $">
+          
+          <input type="submit" name="submit" value="Donate">
+        </div>
+      </form>
+    </div>
+  </div> <!-- /.columns -->
+</div> <!-- /#donate -->
 
 <div class="contact-section green">
   <div class="site-width">
-    For enrollment or to learn more about Park's Edge Preschool email or give us a call at <strong class="darkbluetext">414-427-9561</strong><br>
+    For enrollment or to learn more about Park's Edge Preschool email or give us a call at <strong class="phone">414-427-9561</strong><br>
     <br>
 
-    <a href="contact.php" class="button">CONTACT BY EMAIL</a>
-  </div>
+    <a href="contact.php" class="button">Contact By Email</a>
+  </div> <!-- /.site-width -->
+</div> <!-- /.contact-section -->
 
-  <div class="torn-footer"></div>
-</div>
+<script>
+  // One-Time Donation
+  var otd_other = document.getElementById('otd_other');
+  var otd_other_text = document.getElementById('otd_other_text');
+
+  if (otd_other.checked) otd_other_text.style.display = 'block';
+  otd_other.value = otd_other_text.value;
+
+  document.querySelectorAll('#otd input[name="amount_1"]').forEach((input) => {
+    input.addEventListener('change', function() {
+      otd_other_text.style.display = (this.id == 'otd_other') ? 'block' : 'none';
+    });
+  });
+
+  otd_other_text.addEventListener('input', function() {
+    otd_other.value = otd_other_text.value;
+  });
+  
+  //Monthly Donation
+  var md_other = document.getElementById('md_other');
+  var md_other_text = document.getElementById('md_other_text');
+
+  if (md_other.checked) md_other_text.style.display = 'block';
+  md_other.value = md_other_text.value;
+
+  document.querySelectorAll('#md input[name="a3"]').forEach((input) => {
+    input.addEventListener('change', function() {
+      md_other_text.style.display = (this.id == 'md_other') ? 'block' : 'none';
+    });
+  });
+
+  md_other_text.addEventListener('input', function() {
+    md_other.value = md_other_text.value;
+  });
+</script>
 
 <?php include "footer.php"; ?>

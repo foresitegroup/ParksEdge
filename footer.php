@@ -2,7 +2,7 @@
       <div class="site-width">
         <div>
           <h2>Resources</h2>
-          <a href="https://parksedgepreschool.smugmug.com">Gallery</a><br>
+          <!-- <a href="https://parksedgepreschool.smugmug.com">Gallery</a><br> -->
           <a href="<?php echo $TopDir; ?>parents.php">Menu &amp; Calendar</a><br>
           <a href="<?php echo $TopDir; ?>parents.php#forms">Forms</a><br>
           <a href="<?php echo $TopDir; ?>donate.php">Donate</a>
