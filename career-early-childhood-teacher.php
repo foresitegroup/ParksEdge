@@ -3,16 +3,14 @@ $PageTitle = "Careers - Early Childhood Teacher";
 include "header.php";
 ?>
 
-<div class="banner" style="background-image: url(images/banner-about.jpg);">
-  <div class="site-width big">
+<div class="subheader" style="background-image: url(images/banner-about.webp);">
+  <div class="site-width programs-subheader">
     Careers - Early Childhood Teacher
-  </div>
+  </div> <!-- /.site-width -->
+</div> <!-- /.subheader -->
 
-  <div class="torn-header-white"></div>
-</div>
-
-<div class="careers single">
-  <h2>Early Childhood Teacher</h2>
+<div class="careers single site-width">
+  <h1>Early Childhood Teacher</h1>
   Preschool Teacher<br>
   <br>
 
@@ -26,7 +24,7 @@ include "header.php";
   <br>
   <br>
 
-  <h3>Work Location</h3>
+  <h2>Work Location</h2>
   Our center is located in Hales Corners, WI<br>
   <br>
   <br>
@@ -37,8 +35,6 @@ include "header.php";
 
 </div> <!-- /.careers.single -->
 
-<div class="contact-section blank">
-  <div class="torn-footer"></div>
-</div>
+<div class="contact-section empty"></div> <!-- /.contact-section -->
 
 <?php include "footer.php"; ?>

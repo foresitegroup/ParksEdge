@@ -1,9 +1,19 @@
 <?php
-if (isset($_FILES['pdf']) && $_FILES['pdf']['error'] == 0) {
-  $target = '../pdf/newsletters/'.$_FILES['pdf']['name'];
+$allowed = array("pdf");
 
-  move_uploaded_file($_FILES['pdf']['tmp_name'], $target);
+if ($_FILES['newsletter']['tmp_name'] != "") {
+  if (in_array(strtolower(pathinfo($_FILES['newsletter']['name'], PATHINFO_EXTENSION)), $allowed)) {
+
+    move_uploaded_file($_FILES['newsletter']['tmp_name'], '../pdf/newsletters/'.$_FILES['newsletter']['name']);
+  }
 }
 
-header( "Location: newsletter.php" );
+
+// if (isset($_FILES['pdf']) && $_FILES['pdf']['error'] == 0) {
+//   $target = '../pdf/newsletters/'.$_FILES['pdf']['name'];
+
+//   move_uploaded_file($_FILES['pdf']['tmp_name'], $target);
+// }
+
+header("Location: newsletter.php");
 ?>

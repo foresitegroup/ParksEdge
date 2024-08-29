@@ -5,44 +5,46 @@ $PageTitle = "Newsletter";
 include "header.php";
 ?>
 
-<div class="site-width content admin-cal">
-  <div class="one-half">
-    <h3>Add Newsletter</h3>
+<div class="site-width content newsletter">
+  <div>
+    <h1>Add Newsletter</h1>
 
     <strong>IMPORTANT!</strong> The file MUST be named using the format "Newsletter_[4 digit year]_[2 digit month].pdf"<br>
     For example, <strong>Newsletter_2018_05.pdf</strong><br>
     <br>
 
-    <form action="newsletter-db.php" method="POST" enctype="multipart/form-data">
-      <input type="file" name="pdf">
-      <input type="submit" name="submit" value="UPLOAD">
+    <form action="newsletter-db.php" method="POST" enctype="multipart/form-data" class="form">
+      <input type="file" name="newsletter" accept=".pdf" id="newsletter">
+      <label for="newsletter">Select File</label>
+      <br><br>
+      <input type="submit" name="submit" value="Upload">
     </form>
   </div>
   
-  <div class="one-half last cal-list">
-    <h3>Newsletters</h3>
+  <div>
+    <h1>Newsletters</h1>
     <?php
-    $main_dir = "../pdf/newsletters";
-
-    $files = scandir($main_dir);
-    foreach($files as $file) {
-      // Ignore non-files
-      if ($file == "." || $file == "..") continue;
-
-      // Put results into an array
-      $results[] = $main_dir . "/" . $file;
+    $dir = opendir("../pdf/newsletters");
+    $files = [];
+    while (false != ($file = readdir($dir))) {
+      if (($file != ".") and ($file != "..")) $files[] = $file;
     }
-
-    natcasesort($results);
-    $results = array_reverse($results);
-
-    foreach($results as $result) {
-      $filename = basename($result, ".pdf");
-      $pieces = explode("_", $filename);
-      echo "<div class=\"one-half\"><a href=\"" . $result . "\"> " . date("F Y", strtotime($pieces[2] . "/1/" . $pieces[1])) . "</a></div>";
+    closedir($dir);
+    natcasesort($files);
+    $files = array_reverse($files);
+    
+    foreach ($files as $file) {
+      echo '<a href="../pdf/newsletters/'.$file.'">'.date("F Y", strtotime(substr($file, 11, 4)."-".substr($file, 16, 2).'-01'))."</a><br>\n";
     }
     ?>
   </div>
 </div>
+
+<script>
+  // Add file name after upload button
+  document.querySelector('input[name="newsletter"]').addEventListener('change', function() {
+    document.querySelector('#newsletter + LABEL').dataset.content = this.value.split('\\').pop();
+  });
+</script>
 
 <?php include "footer.php"; ?>

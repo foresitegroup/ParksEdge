@@ -101,15 +101,18 @@ function showLoginPasswordProtect($error_msg) {
 ?>
 
 <div class="site-width">
-  <form method="post" style="text-align: center;">
-    <div style="width: 60%; margin: 0 auto;">
-      <span style="color: red;"><?php echo $error_msg; ?></span><br>
+  <br>
+
+  <form method="post" style="width: 60%; margin: 0 auto; text-align: center;" class="form">
+    <div style="color: red;"><?php echo $error_msg; ?></div>
+
+    <div style="display: flex; justify-content: space-between;">
       <?php if (USE_USERNAME) echo '<strong>Login:</strong> <input type="input" name="access_login" style="width: 30%;"><br>'; ?>
-      <input type="password" name="access_password" id="access_password" style="float: left; width: 77%;" placeholder="Password"> <input type="submit" name="Submit" value="LOGIN" style="float: right; width: 20%;">
-      <br><br>
+      <input type="password" name="access_password" id="access_password" placeholder="Password" style="width: 75%; margin: 0;">
+      <input type="submit" name="Submit" value="Login" style="width: 20%; padding: 0;">
     </div>
   </form>
-</div>
+</div> <!-- /.site-width -->
 
 <?php
   include "footer.php";

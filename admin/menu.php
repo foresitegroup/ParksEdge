@@ -6,30 +6,22 @@ include "header.php";
 ?>
 
 <div class="site-width content admin-menu">
-  <h3>Add Menu Date</h3>
-  <form action="menu-db.php?a=add" method="POST">
+  <h1>Add Menu Date</h1>
+  <form action="menu-db.php?a=add" method="POST" class="form">
     <div>
-      <div class="one-third">
-        <textarea name="lunch" placeholder="Lunch"></textarea>
-      </div>
+      <textarea name="lunch" placeholder="Lunch"></textarea>
+      
+      <textarea name="am_snack" placeholder="AM Snack"></textarea>
+      
+      <textarea name="pm_snack" placeholder="PM Snack"></textarea>
 
-      <div class="one-third">
-        <textarea name="am_snack" placeholder="AM Snack"></textarea>
-      </div>
+      <div style="width: 100%;"></div>
 
-      <div class="one-third last">
-        <textarea name="pm_snack" placeholder="PM Snack"></textarea>
-      </div>
-
-      <div style="clear: both;"></div>
-
-      <input type="text" name="date" class="menudate" placeholder="Date" autocomplete="off">
+      <input type="date" name="date" id="date">
 
       <input type="hidden" name="page" value="<?php if (!empty($_SERVER['QUERY_STRING'])) echo $_SERVER['QUERY_STRING']; ?>">
 
-      <input type="submit" name="submit" value="SUBMIT" id="submit" class="submit">
-
-      <div style="clear: both;"></div>
+      <input type="submit" name="submit" value="Submit" id="submit" disabled>
     </div>
   </form>
 
@@ -114,8 +106,8 @@ include "header.php";
               if ($eventarr[$day_num][$key]['pm_snack'] != "") echo "<br><br><strong>PM SNACK</strong><br>" . nl2br(stripslashes($eventarr[$day_num][$key]['pm_snack']));
 
               echo "<div class=\"controls\">
-                <a href=\"menu-edit.php?a=edit&id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" title=\"Edit\" class=\"c-edit\"><i class=\"fa fa-pencil\"></i></a>
-                <a href=\"menu-db.php?a=delete&id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" onClick=\"return(confirm('Are you sure you want to delete this record?'));\" title=\"Delete\" class=\"c-delete\"><i class=\"fa fa-trash\"></i></a>
+                <a href=\"menu-edit.php?a=edit&id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" title=\"Edit\" class=\"c-edit\"></a>
+                <a href=\"menu-db.php?a=delete&id=" . $eventarr[$day_num][$key]['id'] . "&loc=" . $loc . "\" onClick=\"return(confirm('Are you sure you want to delete this record?'));\" title=\"Delete\" class=\"c-delete\"></a>
               </div>";
             }
           }
@@ -146,5 +138,16 @@ include "header.php";
 
   <br>
 </div>
+
+<script>
+  // Disable submit button if no date is set
+  document.getElementById('date').addEventListener('input', function() {
+    if (document.getElementById('date').value.length != 0) {
+      document.getElementById('submit').removeAttribute('disabled');
+    } else {
+      document.getElementById('submit').setAttribute('disabled', '');
+    }
+  });
+</script>
 
 <?php include "footer.php"; ?>

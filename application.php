@@ -3,16 +3,11 @@ $PageTitle = "Application";
 include "header.php";
 ?>
 
-<link rel="stylesheet" href="inc/jquery.fancybox.min.css">
-<script src="inc/jquery.fancybox.min.js"></script>
-
-<div class="banner" style="background-image: url(images/banner-about.jpg);">
-  <div class="site-width big">
+<div class="subheader" style="background-image: url(images/banner-about.webp);">
+  <div class="site-width programs-subheader">
     Join Our Team at Park's Edge
-  </div>
-
-  <div class="torn-header-white"></div>
-</div>
+  </div> <!-- /.site-width -->
+</div> <!-- /.subheader -->
 
 <div class="site-width application">
   <div class="center">
@@ -24,13 +19,13 @@ include "header.php";
   </div>
 
   <form action="form-application.php" method="POST" enctype="multipart/form-data" id="application" novalidate>
-    <h2>Park's Edge Preschool Application</h2>
+    <h1>Park's Edge Preschool Application</h1>
 
     <div id="page1">
-      <div class="upload">
-        <input type="file" name="resume">
-        <button>Upload Resume <span>(PDF or DOCX files)</span></button>
-      </div>
+      <input type="text" name="username" tabindex="-1" aria-hidden="true" autocomplete="new-password">
+
+      <input type="file" name="resume" accept=".pdf, .docx, .txt" id="resume">
+      <label for="resume">Upload Resume <span>(PDF or DOCX files)</span></label>
 
       <br><br><br>
 
@@ -246,7 +241,7 @@ include "header.php";
           <span></span>
         </div>
 
-        <a href="#" class="submit topage2">Next Page</a><br>
+        <a href="" class="submit topage2">Next Page</a><br>
 
         Page 1/3
       </div> <!-- /.nav -->
@@ -483,12 +478,12 @@ include "header.php";
 
       <div class="nav">
         <div class="pager">
-          <a href="#" class="topage1"></a>
+          <a href="" class="topage1"></a>
           <span class="active"></span>
           <span></span>
         </div>
 
-        <a href="#" class="submit topage3">Next Page</a><br>
+        <a href="" class="submit topage3">Next Page</a><br>
 
         Page 2/3
       </div> <!-- /.nav -->
@@ -676,12 +671,12 @@ include "header.php";
 
       <div class="nav">
         <div class="pager">
-          <a href="#" class="topage1"></a>
-          <a href="#" class="topage2"></a>
+          <a href="" class="topage1"></a>
+          <a href="" class="topage2"></a>
           <span class="active"></span>
         </div>
 
-        <input type="submit" name="submit" value="Finish"><br>
+        <button type="submit" id="submit" class='submit'>Finish</button><br>
 
         Page 3/3
       </div> <!-- /.nav -->
@@ -689,184 +684,148 @@ include "header.php";
   </form>
 </div> <!-- /.site-width.application -->
 
+<div class="contact-section empty"></div> <!-- /.contact-section -->
+
 <script type="text/javascript">
-  $(document).ready(function() {
-    $('input[name="resume"]').change(function() {
-      var output = $(this).val().split('\\').pop();
-      $(this).parent().after('<span>'+output+'</span>');
-    });
+  const page1 = document.getElementById('page1');
+  const page2 = document.getElementById('page2');
+  const page3 = document.getElementById('page3');
 
-    $(".topage1").click(function(event){
-      event.preventDefault();
+  var pagevalid = 'yes';
+  var pagechange = 'no';
+  
+  // Add file name after upload button
+  document.querySelector('input[name="resume"]').addEventListener('change', function() {
+    document.querySelector('#resume + LABEL').dataset.content = this.value.split('\\').pop();
+  });
 
-      $("#page1, #page2, #page3").removeClass('hidden');
-      $("#page2, #page3").addClass('hidden');
-      $(window).scrollTop(0);
-    });
-
-    $(".topage2").click(function(event){
-      event.preventDefault();
-
-      function Page1Val() {
-        var page1missing = 'no';
-        $('#page1 [required]').each(function(){
-          if ($(this).val() === "") {
-            $(this).addClass('alert').attr("placeholder", "REQUIRED");
-            page1missing = 'yes';
-          }
-
-          if (!$("input:radio[name='age']").is(":checked")) {
-            $("#age").addClass('alert');
-            page1missing = 'yes';
-          }
-
-          if (!$("input:radio[name='citizen']").is(":checked")) {
-            $("#citizen").addClass('alert');
-            page1missing = 'yes';
-          }
-
-          if (!$("input:radio[name='authorized']").is(":checked")) {
-            $("#authorized").addClass('alert');
-            page1missing = 'yes';
-          }
-
-          if ($("#education SELECT").val() === "") {
-            $("#education").addClass('alert');
-            page1missing = 'yes';
-          }
+  function validateInputs(thepage) {
+    for (const el of thepage.querySelectorAll('[required]')) {
+      if (!el.checkValidity()) {
+        document.getElementsByName(el.name).forEach(function (input) {
+          input.classList.add('alert');
+          input.placeholder = input.placeholder+' REQUIRED';
         });
-        return (page1missing == 'no') ? true : false;
-      }
 
-      if (Page1Val()) {
-        $("#page1, #page2, #page3").removeClass('hidden');
-        $("#page1, #page3").addClass('hidden');
-        $('#page1 .alert').each(function(){ $(this).removeClass('alert').attr("placeholder", ""); });
-        $(window).scrollTop(0);
+        pagevalid = 'no';
       }
+    }
+
+    return pagevalid;
+  }
+
+  function validateChecks(value) {
+    if (document.querySelector('input[name="'+value+'"]:checked') == null) {
+      document.getElementById(value).classList.add('alert');
+      pagevalid = 'no';
+
+      return pagevalid;
+    }
+  }
+
+  function clearAlerts(thepage) {
+    document.getElementById(thepage.id).querySelectorAll('.alert').forEach(function (alert) {
+      alert.classList.remove('alert');
+      if (alert.placeholder !== undefined) alert.placeholder = "";
     });
+  }
+  
+  // Change pages
+  document.querySelectorAll('.topage1, .topage2, .topage3').forEach(topage => {
+    topage.addEventListener('click', function(e) {
+      e.preventDefault();
 
-    $(".topage3").click(function(event){
-      event.preventDefault();
+      if (this.classList.contains('topage1')) var topage = page1;
+      
+      if (this.classList.contains('topage2')) {
+        var thepage = page1; var topage = page2;
+        
+        // Validate Page 1 specific elements
+        validateChecks('age');
+        validateChecks('citizen');
+        validateChecks('authorized');
 
-      function Page2Val() {
-        var page2missing = 'no';
-        $('#page2 [required]').each(function(){
-          if ($(this).val() === "") {
-            $(this).addClass('alert').attr("placeholder", "REQUIRED");
-            page2missing = 'yes';
-          }
-        });
-        return (page2missing == 'no') ? true : false;
+        if (document.querySelector('#education SELECT').value == "") {
+          document.getElementById('education').classList.add('alert');
+          pagevalid = 'no';
+        }
       }
 
-      if (Page2Val()) {
-        $("#page1, #page2, #page3").removeClass('hidden');
-        $("#page1, #page2").addClass('hidden');
-        $('#page2 .alert').each(function(){ $(this).removeClass('alert').attr("placeholder", ""); });
-        $(window).scrollTop(0);
+      if (this.classList.contains('topage3')) {
+        var thepage = page2; var topage = page3;
       }
-    });
+      
+      // Validate any required elements on the page
+      if (thepage) validateInputs(thepage);
 
-    var form = $('#application');
-    $(form).submit(function(event) {
-      event.preventDefault();
-
-      function Page3Val() {
-        var page3missing = 'no';
-        $('#page3 [required]').each(function(){
-          if ($(this).val() === "") {
-            $(this).addClass('alert').attr("placeholder", "REQUIRED");
-            page3missing = 'yes';
-          }
-
-          if (!$("input:checkbox[name='infoaccurate']").is(":checked")) {
-            $("#infoaccurate").addClass('alert');
-            page3missing = 'yes';
-          }
-
-          if (!$("input:checkbox[name='authorize']").is(":checked")) {
-            $("#authorize").addClass('alert');
-            page3missing = 'yes';
-          }
-
-          if (!$("input:checkbox[name='drugfree']").is(":checked")) {
-            $("#drugfree").addClass('alert');
-            page3missing = 'yes';
-          }
-
-          if (!$("input:checkbox[name='misrepresentation']").is(":checked")) {
-            $("#misrepresentation").addClass('alert');
-            page3missing = 'yes';
-          }
-
-          if (!$("input:checkbox[name='atwill']").is(":checked")) {
-            $("#atwill").addClass('alert');
-            page3missing = 'yes';
-          }
-
-          if (!$("input:checkbox[name='placedsig']").is(":checked")) {
-            $("#placedsig").addClass('alert');
-            page3missing = 'yes';
-          }
-        });
-        return (page3missing == 'no') ? true : false;
-      }
-
-      var form = '#'+$(this).attr('id');
-      var formData = new FormData(this);
-
-    //   function formValidation() {
-    //     var missing = 'no';
-
-    //     $(form+' [required]').each(function(){
-    //       if ($(this).val() === "") {
-    //         $(this).addClass('alert').attr("placeholder", "REQUIRED");
-    //         missing = 'yes';
-    //       }
-
-    //       if (!$("input:radio[name='age']").is(":checked")) {
-    //         $("#age").addClass('alert');
-    //         missing = 'yes';
-    //       }
-
-    //       if (!$("input:radio[name='citizen']").is(":checked")) {
-    //         $("#citizen").addClass('alert');
-    //         missing = 'yes';
-    //       }
-
-    //       if (!$("input:radio[name='authorized']").is(":checked")) {
-    //         $("#authorized").addClass('alert');
-    //         missing = 'yes';
-    //       }
-    //     });
-
-    //     if (missing == 'yes') $('html,body').animate({scrollTop: $('.alert').offset().top - 104}, 300);
-
-    //     return (missing == 'no') ? true : false;
-    //   }
-
-      if (Page3Val()) {
-        $.ajax({
-          type: 'POST',
-          url: $(form).attr('action'),
-          data: formData,
-          processData: false,
-          contentType: false,
-          success: function(data){
-            if (data) $.fancybox.open('<div id="alert-modal">'+data+'</div>');
-            $(form).find('input[type="text"], input[type="email"], input[type="tel"], textarea, select, input[type="file"]').val('');
-            $(form).find('input[type="checkbox"], input[type="radio"]').prop('checked', false);
-            $('.upload').after('');
-          }
-        });
+      if (pagevalid == 'yes' || pagechange == 'yes') {
+        // Toggle page panels
+        page1.classList.add('hidden');
+        page2.classList.add('hidden');
+        page3.classList.add('hidden');
+        topage.classList.remove('hidden');
+        
+        // Scroll to top of new page
+        setTimeout(function () {
+          window.scroll({ top: 0, behavior: "smooth" });
+        },2);
+        
+        // Clear any alerts from the previous page
+        if (thepage) clearAlerts(thepage);
+        if (pagechange == 'yes') clearAlerts(page3);
+      } else {
+        // Invalid fields so scroll to the top of the page
+        window.scroll({ top: 0, behavior: "smooth" });
+        pagevalid = 'yes'
       }
     });
   });
-</script>
 
-<div class="contact-section blank">
-  <div class="torn-footer"></div>
-</div>
+  const form = document.getElementById('application');
+  form.addEventListener('submit', submitForm);
+
+  function submitForm(event) {
+    event.preventDefault();
+
+    pagechange = 'yes';
+    
+    // Validate page 3 checkboxes
+    validateChecks('infoaccurate');
+    validateChecks('authorize');
+    validateChecks('drugfree');
+    validateChecks('misrepresentation');
+    validateChecks('atwill');
+    validateChecks('placedsig');
+
+    validateInputs(page3);
+
+    if (pagevalid == 'yes') {
+      document.getElementById("submit").classList.add("loader");
+
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data
+      })
+      .then((response) => response.text())
+      .then((result) => {
+        // Data sent, so display success message in modal
+        // and clear all the form fields
+        document.getElementById('modal-content').innerHTML = result;
+        modal.style.display = "block";
+        form.reset();
+        
+        // Clear alerts
+        document.querySelectorAll('.alert').forEach(function (alert) {
+          alert.classList.remove('alert');
+          alert.placeholder = alert.placeholder.substring(0, alert.placeholder.length-9);
+        });
+
+        document.getElementById("submit").classList.remove("loader");
+      });
+    }
+  }
+</script>
 
 <?php include "footer.php"; ?>

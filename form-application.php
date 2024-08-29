@@ -1,11 +1,37 @@
 <?php
-// include_once "inc/dbconfig.php";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-// $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".RECAPTCHA_SECRET_KEY."&response=".$_POST['g-recaptcha-response']);
-// $responsekeys = json_decode($response);
+require 'inc/PHPMailer/Exception.php';
+require 'inc/PHPMailer/PHPMailer.php';
+require 'inc/PHPMailer/SMTP.php';
 
-// if ($responsekeys->success) {
+include_once "inc/dbconfig.php";
+
+if ($_POST['username'] == "") {
+  $mail = new PHPMailer(true);
+
+  $mail->SMTPAuth = true;
+  $mail->Username = SMTP_USER;
+  $mail->Password = SMTP_PASS;
+  $mail->Host = SMTP_HOST;
+  $mail->Port = SMTP_PORT;
+
+  $mail->setFrom(SMTP_USER, 'Application Form');
+  $mail->addAddress('hello@parksedgepreschool.com');
+  $mail->addBCC('foresitegroupllc@gmail.com');
+  $mail->addReplyTo($_POST['email']);
+  $mail->Subject = 'Application';
+
   $Message = "";
+  
+  $allowed = array("pdf","docx","txt");
+  if ($_FILES['resume']['tmp_name'] != "") {
+    if (in_array(strtolower(pathinfo($_FILES['resume']['name'], PATHINFO_EXTENSION)), $allowed)) {
+      $mail->addAttachment($_FILES['resume']['tmp_name'], $_FILES['resume']['name']);
+    }
+  }
 
   if ($_POST['firstname'] != "") $Message .= "FIRST NAME: " . $_POST['firstname'] . "\n";
   if ($_POST['lastname'] != "") $Message .= "LAST NAME: " . $_POST['lastname'] . "\n";
@@ -43,7 +69,7 @@
 
   if (!empty($_POST['wage']) || !empty($_POST['employmentdesired']) || !empty($_POST['availability']) || !empty($_POST['datestart'])) $Message .= "\n";
 
-  if ($_POST['abletoperform'] != "") $Message .= "ARE YOU ABLE TO PERFORM THE ESSENTIAL FUNCTIONS OF THE POSITION YOU ARE APPLYING FOR?: " . $_POST['education'] . "\n\n";
+  if (isset($_POST['abletoperform'])) $Message .= "ARE YOU ABLE TO PERFORM THE ESSENTIAL FUNCTIONS OF THE POSITION YOU ARE APPLYING FOR?: " . $_POST['education'] . "\n\n";
   
   $college = "no";
   foreach($_POST as $key => $value) if (strpos($key, "college") === 0) if ($_POST[$key] != "") $college = "yes";
@@ -59,7 +85,7 @@
   
   if ($college == "yes") $Message .= "\n";
 
-  if ($_POST['wiregistry'] != "") $Message .= "ARE YOU CURRENTLY ON THE WISCONSIN REGISTRY?: " . $_POST['wiregistry'] . "\n";
+  if (isset($_POST['wiregistry'])) $Message .= "ARE YOU CURRENTLY ON THE WISCONSIN REGISTRY?: " . $_POST['wiregistry'] . "\n";
   if ($_POST['wiregistryylevel'] != "") $Message .= "I am at level " . $_POST['wiregistryylevel'] . "\n";
   if (!empty($_POST['wiregistry']) || !empty($_POST['wiregistryylevel'])) $Message .= "\n";
 
@@ -146,12 +172,12 @@
 
   if (!empty($_POST['additionalinformation'])) $Message .= "PLEASE SHARE WITH US ANY ADDITIONAL INFORMATION ABOUT YOURSELF THAT YOU WOULD LIKE US TO TAKE INTO CONSIDERATION WHEN REVIEWING YOUR APPLICATION.\n" . $_POST['additionalinformation'] . "\n\n";
 
-  if ($_POST['infoaccurate'] != "") $Message .= $_POST['infoaccurate']."\n\n";
-  if ($_POST['authorize'] != "") $Message .= $_POST['authorize']."\n\n";
-  if ($_POST['drugfree'] != "") $Message .= $_POST['drugfree']."\n\n";
-  if ($_POST['misrepresentation'] != "") $Message .= $_POST['misrepresentation']."\n\n";
-  if ($_POST['atwill'] != "") $Message .= $_POST['atwill']."\n\n";
-  if ($_POST['placedsig'] != "") $Message .= $_POST['placedsig']."\n\n";
+  if (isset($_POST['infoaccurate'])) $Message .= $_POST['infoaccurate']."\n\n";
+  if (isset($_POST['authorize'])) $Message .= $_POST['authorize']."\n\n";
+  if (isset($_POST['drugfree'])) $Message .= $_POST['drugfree']."\n\n";
+  if (isset($_POST['misrepresentation'])) $Message .= $_POST['misrepresentation']."\n\n";
+  if (isset($_POST['atwill'])) $Message .= $_POST['atwill']."\n\n";
+  if (isset($_POST['placedsig'])) $Message .= $_POST['placedsig']."\n\n";
 
   if ($_POST['signature'] != "") $Message .= "ELECTRONIC SIGNATURE: " . $_POST['signature'] . "\n";
   if ($_POST['todaysdate'] != "") $Message .= "TODAY'S DATE: " . $_POST['todaysdate'] . "\n";
@@ -160,26 +186,12 @@
 
   $Message = stripslashes($Message);
 
-  require_once "inc/swiftmailer/swift_required.php";
+  $mail->Body = $Message;
 
-  $sm = Swift_Message::newInstance();
-  $sm->setTo(array("hello@parksedgepreschool.com"));
-  $sm->setBcc(array("foresitegroupllc@gmail.com"));
-  $sm->setFrom(array("donotreply@parksedgepreschool.com" => "Application Form"));
-  $sm->setReplyTo($_POST['email']);
-  $sm->setSubject("Application");
+  $mail->send();
 
-  if ($_FILES['resume']['tmp_name'] != "") $sm->attach(Swift_Attachment::fromPath($_FILES['resume']['tmp_name'])->setFilename($_FILES['resume']['name']));
+  $feedback = "Thank you for your application.";
+}
 
-  $sm->setBody($Message);
-
-  // Create the Transport and Mailer
-  $transport = Swift_MailTransport::newInstance();
-  $mailer = Swift_Mailer::newInstance($transport);
-  
-  // Send it!
-  $result = $mailer->send($sm);
-
-  echo "Thank you for your application.";
-// }
+echo $feedback;
 ?>

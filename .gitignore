@@ -12,3 +12,5 @@ news/wp-content/themes/parksedge/.DS_Store
 pdf/newsletters
 pdf/lessonplans
 inc/recaptchalib.php
+admin/login.php
+/inc/PHPMailer

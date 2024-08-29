@@ -102,13 +102,7 @@ $next = $date+604800;
 
       <a href="pdf/schedule_change_notice.pdf">Schedule Change Notice</a><br>
 
-      <a href="pdf/PEP_Summer_Program_2020.pdf">2020 Summer Program</a><br>
-
-      <a href="pdf/Summer_Outdoor_Schedule-2020.pdf">2020 Summer Outdoor Schedule</a><br>
-
-      <a href="pdf/2020_PEP_NAC_Questionnaire.pdf">2020 PEP NAC Questionnaire</a><br>
-
-      <a href="pdf/PEP_and_Virtual_Schooling.pdf">PEP and Virtual Schooling</a>
+      <a href="pdf/Summer_Outdoor_Schedule-2020.pdf">2020 Summer Outdoor Schedule</a>
     </div> <!-- /#forms -->
   </div> <!-- /.site-width -->
 </div> <!-- /.parents-newsletter-forms -->
