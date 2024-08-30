@@ -94,7 +94,7 @@ include "header.php";
 
       <strong>5 Star YoungStar Rating! YoungStar</strong> is Wisconsin's child care quality rating and improvement system. We give parents the tools and information they need to raise happy, healthy kids. And, we help preschools, home-based programs, learning centers, and other child care providers give children safe, nurturing places to grow.<br>
 
-      <a href="https://www.youtube.com/watch?v=T3s7bcOmHpg" data-fancybox="youngstar" class="play">Learn More</a><br>
+      <a href="https://www.youtube.com/watch?v=T3s7bcOmHpg" data-fancybox="youngstar" class="play" aria-label="Watch a video about YoungStar">Learn More</a><br>
     </div>
   </div> <!-- /.site-width -->
 </div> <!-- /.about-accreditation -->

@@ -2389,6 +2389,11 @@ INPUT[type="checkbox"].alert + LABEL { outline: 0.063rem solid var(--orange); }
 .nav-links A.page-numbers,
 .nav-links .page-numbers { padding: 0 0.1em; }
 
-.nav-links .page-numbers:first-child:before {
+/*.nav-links .page-numbers:first-child:before {
   content: "Page: "; color: var(--lightgray);
-}
+}*/
+
+.page404 { padding: 3rem 0; }
+
+.page404 H1 { color: var(--darkblue); font-size: 3rem; }
+.page404 H2 { color: var(--darkblue); font-size: 2rem; }
