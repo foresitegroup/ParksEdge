@@ -4,14 +4,14 @@ include "header.php";
 ?>
 
 <div class="subheader simple" style="background-image: url(images/banner-pricing.webp);">
-  <h1>2024 PEP Rates</h1>
+  <h1>2025 PEP Rates</h1>
 </div> <!-- /.subheader -->
 
 <div class="site-width pricing-intro">
   <span class="bluetext">Tuition Payments:</span> All tuition payments are due the first enrollment day of the week and are considered past due if not received by Wednesday at 9:00 a.m. A $25.00 late fee will be assessed at that time on a weekly basis. Children are required to be enrolled at least 2 days a week. Your child's enrollment is reserved. We can usually add days but are not able to switch days.<br>
   <br>
 
-  Be sure to complete a Tuition Express Automatic Payment Processing form for secure, convenient and easy electronic funds transfer authorization or credit card-monthly or weekly. (Please note a $5.00 fee applied to all Credit/Debit Card transactions.)<br>
+  Be sure to complete a Tuition Express Automatic Payment Processing form for secure, convenient and easy electronic funds transfer authorization or credit card-monthly or weekly. (Please note a $40.00 fee applied to all Credit/Debit Card transactions.)<br>
   <br>
 
   <span class="bluetext">Registration Fee:</span> $100.00 one child/ $150.00 family&mdash;non-refundable annual fee. Upon registration, one week of tuition will be collected and applied to your child's first week. For continued enrollment the registration fee is applied to the family's account annually September 1st.
@@ -31,23 +31,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days (Infants 1 & 2 / full-time only):</td>
-        <td>$360.00</td>
-        <td>$72.00</td>
+        <td>$375.00</td>
+        <td>$75.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$312.00</td>
-        <td>$78.00</td>
+        <td>$324.00</td>
+        <td>$81.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$249.00</td>
-        <td>$83.00</td>
+        <td>$258.00</td>
+        <td>$85.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$176.00</td>
-        <td>$88.00</td>
+        <td>$182.00</td>
+        <td>$91.00</td>
       </tr>
     </table>
   </div> <!-- /.pricing-rates -->
@@ -67,23 +67,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$330.00</td>
-        <td>$66.00</td>
+        <td>$345.00</td>
+        <td>$69.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$284.00</td>
-        <td>$71.00</td>
+        <td>$296.00</td>
+        <td>$74.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$216.00</td>
-        <td>$72.00</td>
+        <td>$225.00</td>
+        <td>$75.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$156.00</td>
-        <td>$78.00</td>
+        <td>$162.00</td>
+        <td>$81.00</td>
       </tr>
     </table>
   </div> <!-- /.pricing-rates -->
@@ -103,28 +103,28 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$305 / $61</td>
-        <td>$250 / $50</td>
+        <td>$320 / $64</td>
+        <td>$265 / $53</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$260 / $65</td>
-        <td>$220 / $55</td>
+        <td>$272 / $68</td>
+        <td>$232 / $58</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$201 / $67</td>
-        <td>$180 / $60</td>
+        <td>$210 / $70</td>
+        <td>$189 / $63</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$142 / $71</td>
-        <td>$122 / $61</td>
+        <td>$148 / $74</td>
+        <td>$128 / $64</td>
       </tr>
     </table><br>
     <br>
 
-    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $48.00/day.<br>
+    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $51.00/day.<br>
     * Daily rates are based on 10 hours or less; more than 10 hours a day a $5.00 fee will be charged per family. Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
   </div> <!-- /.pricing-rates -->
 </div> <!-- /.gray-section -->
@@ -177,23 +177,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$305 / $61</td>
-        <td>$250 / $50</td>
+        <td>$285 / $57</td>
+        <td>$230 / $46</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$260 / $65</td>
-        <td>$220 / $55</td>
+        <td>$244 / $61</td>
+        <td>$204 / $51</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$201 / $67</td>
-        <td>$180 / $60</td>
+        <td>$189 / $63</td>
+        <td>$168 / $56</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$142 / $71</td>
-        <td>$122 / $61</td>
+        <td>$134 / $67</td>
+        <td>$114 / $57</td>
       </tr>
     </table>
   </div> <!-- /.pricing-rates -->
@@ -203,10 +203,10 @@ include "header.php";
   <em>* Daily rates are based on ten hours or less. 'More than 10 hours a day' fee charges: $5 per family.</em><br>
   <br>
 
-  <strong>Days Off &amp; Early Release Days during the School Year:</strong> If your child attends P.E.P. on an early release day or a day off from school the above rates apply with additional fees: $20 early release day and $25.00 for a day off from school will be added (with regular school year attendance).<br>
+  <strong>Days Off &amp; Early Release Days during the School Year:</strong> If your child attends P.E.P. on an early release day or a day off from school the above rates apply with additional fees: $25 early release day and $30.00 for a day off from school will be added (with regular school year attendance).<br>
   <br>
 
-  <strong>School-age drop off rates:</strong> a 2-week minimum notice is required to reserve space for a school-age child not in regular attendance during the school year. $60.00/ full daily<br>
+  <strong>School-age drop off rates:</strong> a 2-week minimum notice is required to reserve space for a school-age child not in regular attendance during the school year. $65.00/ full daily<br>
   <br>
   <br>
 
