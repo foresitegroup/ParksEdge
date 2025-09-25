@@ -6,7 +6,8 @@ date_default_timezone_set('America/Chicago');
 $mid = strtotime(date('Y-m-d 00:00:00', $_SERVER['QUERY_STRING']));
 
 $monday = (date('w', $mid) == 1) ? $mid : $mid - (86400 * date('w', $mid));
-$friday = ($monday + (86400*5)) - 1;
+// $friday = ($monday + (86400*5)) - 1;
+$friday = $monday + (86400*5);
 
 $days = $mysqli->execute_query("SELECT * FROM menu WHERE date >= '$monday' AND date <= '$friday' ORDER BY date ASC");
 
