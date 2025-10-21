@@ -100,9 +100,7 @@ $next = $date+604800;
 
       <a href="pdf/Health_History_and_Emergency_Care_Plan.pdf">Health History and Emergency Care Plan</a><br>
 
-      <a href="pdf/schedule_change_notice.pdf">Schedule Change Notice</a><br>
-
-      <a href="pdf/Summer_Outdoor_Schedule-2020.pdf">2020 Summer Outdoor Schedule</a>
+      <a href="pdf/schedule_change_notice.pdf">Schedule Change Notice</a>
     </div> <!-- /#forms -->
   </div> <!-- /.site-width -->
 </div> <!-- /.parents-newsletter-forms -->
