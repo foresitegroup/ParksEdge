@@ -4,7 +4,7 @@ include "header.php";
 ?>
 
 <div class="subheader simple" style="background-image: url(images/banner-pricing.webp);">
-  <h1>2025 PEP Rates</h1>
+  <h1>2026 PEP Rates</h1>
 </div> <!-- /.subheader -->
 
 <div class="site-width pricing-intro">
@@ -31,23 +31,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days (Infants 1 & 2 / full-time only):</td>
-        <td>$375.00</td>
-        <td>$75.00</td>
+        <td>$395.00</td>
+        <td>$79.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$324.00</td>
-        <td>$81.00</td>
-      </tr>
-      <tr>
-        <td>Three Days:</td>
-        <td>$258.00</td>
+        <td>$340.00</td>
         <td>$85.00</td>
       </tr>
       <tr>
-        <td>Two Days:</td>
-        <td>$182.00</td>
+        <td>Three Days:</td>
+        <td>$273.00</td>
         <td>$91.00</td>
+      </tr>
+      <tr>
+        <td>Two Days:</td>
+        <td>$190.00</td>
+        <td>$95.00</td>
       </tr>
     </table>
   </div> <!-- /.pricing-rates -->
@@ -67,23 +67,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$345.00</td>
-        <td>$69.00</td>
+        <td>$365.00</td>
+        <td>$73.00</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$296.00</td>
-        <td>$74.00</td>
+        <td>$312.00</td>
+        <td>$78.00</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$225.00</td>
-        <td>$75.00</td>
+        <td>$237.00</td>
+        <td>$79.00</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$162.00</td>
-        <td>$81.00</td>
+        <td>$170.00</td>
+        <td>$85.00</td>
       </tr>
     </table>
   </div> <!-- /.pricing-rates -->
@@ -103,28 +103,28 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$320 / $64</td>
-        <td>$265 / $53</td>
+        <td>$335 / $67</td>
+        <td>$280 / $56</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$272 / $68</td>
-        <td>$232 / $58</td>
+        <td>$284 / $71</td>
+        <td>$244 / $61</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$210 / $70</td>
-        <td>$189 / $63</td>
+        <td>$219 / $73</td>
+        <td>$198 / $66</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$148 / $74</td>
-        <td>$128 / $64</td>
+        <td>$154 / $77</td>
+        <td>$134 / $67</td>
       </tr>
     </table><br>
     <br>
 
-    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $51.00/day.<br>
+    * Preschool Only: 8:30 A.M-12:30 P.M. Morning snack &amp; lunch is included only $54.00/day.<br>
     * Daily rates are based on 10 hours or less; more than 10 hours a day a $5.00 fee will be charged per family. Park's Edge Preschool's half-day rate is up to 5 hours with lunch included.
   </div> <!-- /.pricing-rates -->
 </div> <!-- /.gray-section -->
@@ -143,23 +143,23 @@ include "header.php";
       </tr>
       <tr>
         <td>Five Days:</td>
-        <td>$110 / $22</td>
-        <td>$155 / $31</td>
+        <td>$115 / $23</td>
+        <td>$160 / $32</td>
       </tr>
       <tr>
         <td>Four Days:</td>
-        <td>$100 / $25</td>
-        <td>$136 / $34</td>
+        <td>$104 / $26</td>
+        <td>$140 / $35</td>
       </tr>
       <tr>
         <td>Three Days:</td>
-        <td>$81 / $27</td>
-        <td>$108 / $36</td>
+        <td>$84 / $28</td>
+        <td>$111 / $37</td>
       </tr>
       <tr>
         <td>Two Days:</td>
-        <td>$60 / $30</td>
-        <td>$80 / $40</td>
+        <td>$62 / $31</td>
+        <td>$82 / $41</td>
       </tr>
     </table>
 
@@ -203,7 +203,7 @@ include "header.php";
   <em>* Daily rates are based on ten hours or less. 'More than 10 hours a day' fee charges: $5 per family.</em><br>
   <br>
 
-  <strong>Days Off &amp; Early Release Days during the School Year:</strong> If your child attends P.E.P. on an early release day or a day off from school the above rates apply with additional fees: $25 early release day and $30.00 for a day off from school will be added (with regular school year attendance).<br>
+  <strong>Days Off &amp; Early Release Days during the School Year:</strong> If your child attends P.E.P. on an early release day or a day off from school the above rates apply with additional fees: $30 early release day and $35.00 for a day off from school will be added (with regular school year attendance).<br>
   <br>
 
   <strong>School-age drop off rates:</strong> a 2-week minimum notice is required to reserve space for a school-age child not in regular attendance during the school year. $65.00/ full daily<br>
