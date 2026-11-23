@@ -135,8 +135,7 @@ A:hover { color: var(--darkblue); text-decoration: none; }
 .orangetext { color: var(--orange); }
 
 .gallery {
-  display: flex; justify-content: space-between;
-  flex-wrap: wrap; gap: 2.063rem 3.3%;
+  display: flex; flex-wrap: wrap; gap: 2.063rem 3.3%;
 
   @media (max-width: 1024px) { & { gap: 3.3vw 3.3%; } }
 }

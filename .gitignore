@@ -14,3 +14,4 @@ pdf/lessonplans
 inc/recaptchalib.php
 admin/login.php
 /inc/PHPMailer
+*.mp4
