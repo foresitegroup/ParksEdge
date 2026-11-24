@@ -59,37 +59,37 @@ include "header.php";
   <br>
 
   <div class="gallery">
-    <a href="images/tour/preschool-schoolage-01.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-01.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-02.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-02.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-03.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-03.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-04.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-04.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-05.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-05.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-06.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-06.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-07.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-07.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-08.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-08.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-09.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-09.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-10.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-10.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-11.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-11.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-12.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-12.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-13.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-13.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-14.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-14.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-15.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-15.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-16.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-16.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-17.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-17.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-18.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-18.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/preschool-schoolage-19.webp" data-fancybox="pssa" style="background-image: url(images/tour/preschool-schoolage-19.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-01.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-01.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-02.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-02.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-03.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-03.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-04.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-04.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-05.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-05.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-06.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-06.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-07.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-07.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-08.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-08.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/older-kids-09.webp" data-fancybox="pssa" style="background-image: url(images/tour/older-kids-09.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/library-01.webp" data-fancybox="pssa" style="background-image: url(images/tour/library-01.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/library-02.webp" data-fancybox="pssa" style="background-image: url(images/tour/library-02.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
-    <a href="images/tour/library-03.webp" data-fancybox="pssa" style="background-image: url(images/tour/library-03.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-01.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-01.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-02.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-02.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-03.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-03.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-04.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-04.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-05.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-05.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-06.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-06.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-07.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-07.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-08.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-08.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-09.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-09.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-10.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-10.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-11.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-11.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-12.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-12.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-13.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-13.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-14.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-14.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-15.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-15.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-16.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-16.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-17.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-17.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-18.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-18.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/preschool-schoolage-19.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/preschool-schoolage-19.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-01.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-01.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-02.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-02.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-03.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-03.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-04.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-04.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-05.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-05.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-06.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-06.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-07.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-07.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-08.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-08.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/older-kids-09.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/older-kids-09.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/library-01.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/library-01.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/library-02.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/library-02.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
+    <a href="images/tour/library-03.webp" data-fancybox="pssa-gallery" style="background-image: url(images/tour/library-03.webp)" aria-label="View a gallery about our preschool and school-age area"></a>
   </div> <!-- /.gallery -->
 
   <hr>
@@ -103,15 +103,15 @@ include "header.php";
   <br>
 
   <div class="gallery">
-    <a href="images/tour/outdoor-01.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-01.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-02.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-02.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-03.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-03.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-04.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-04.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-05.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-05.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-06.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-06.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-07.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-07.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-08.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-08.webp)" aria-label="View a gallery about our outdoor area"></a>
-    <a href="images/tour/outdoor-09.webp" data-fancybox="outdoor" style="background-image: url(images/tour/outdoor-09.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-01.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-01.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-02.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-02.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-03.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-03.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-04.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-04.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-05.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-05.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-06.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-06.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-07.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-07.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-08.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-08.webp)" aria-label="View a gallery about our outdoor area"></a>
+    <a href="images/tour/outdoor-09.webp" data-fancybox="od-gallery" style="background-image: url(images/tour/outdoor-09.webp)" aria-label="View a gallery about our outdoor area"></a>
   </div> <!-- /.gallery -->
 </div> <!-- /.site-width -->
 
